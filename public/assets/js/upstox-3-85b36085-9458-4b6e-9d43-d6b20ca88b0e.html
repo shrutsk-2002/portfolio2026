@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+</helmet>
+<aside style="position: fixed; top: 0; left: 0; bottom: 0; z-index: 60; width: {{ asideW }}; box-sizing: border-box; padding: 32px 24px; transform: translateX({{ asideTx }}); box-shadow: {{ asideShadow }}; transition: transform 320ms cubic-bezier(0.22,1,0.36,1), box-shadow 320ms ease; overflow-y: auto; border-right: 1px solid #DCD6CD; background-color: var(--paper); color: #161412; display: flex; flex-direction: column; justify-content: space-between;">
+  <a href="/index.html" onClick="{{ menuClose }}" aria-label="Home" style="width: 64px; height: 64px; border-radius: 50%; background: #6B3FB0; color: #F4F1EC; display: flex; align-items: center; justify-content: center; font-family: var(--font-serif); font-size: 26px; font-style: italic; text-decoration: none;">SK</a>
+  <nav style="display: flex; flex-direction: column; gap: 22px; align-items: flex-start; font-family: var(--font-sans); font-size: 15px; font-weight: 500;">
+    <sc-for list="{{ navLinks }}" as="l" hint-placeholder-count="6"><a href="{{ l.href }}" onClick="{{ menuClose }}" target="{{ l.target }}" rel="{{ l.rel }}" style="{{ l.style }}" style-hover="opacity: 1;"><span>{{ l.label }}</span><img src="/uploads/icon-arrow-outward-dark.svg" alt="" style="{{ l.iconStyle }}"></img></a></sc-for>
+  </nav>
+  <div style="display: flex; flex-direction: column; gap: 8px; font-family: var(--font-sans); font-size: 12px; color: #6E6862;">
+    <span style="display: flex; align-items: center; gap: 10px;"><img src="/assets/img/8c843d698b0dc1b8.webp" alt="" style="width: 20px; height: 20px; border-radius: 5px; flex: none;"></img><span>Coded by Claude</span></span>
+    <span style="display: flex; align-items: center; gap: 10px;"><span style="width: 20px; height: 20px; flex: none; background-color: #6E6862; -webkit-mask: url(/assets/img/6ebb157bbc0cdc8b.svg) center / contain no-repeat; mask: url(/assets/img/6ebb157bbc0cdc8b.svg) center / contain no-repeat;"></span><span>Written by Shruti</span></span>
+    <span style="display: flex; align-items: center; gap: 10px;"><span style="width: 20px; height: 20px; flex: none; display: flex; align-items: center; justify-content: center; font-size: 14px; line-height: 20px;">©</span><span>Shruti Kalamdani 2026</span></span>
+  </div>
+</aside>
+<header style="position: fixed; top: 0; left: 0; right: 0; z-index: 49; height: 64px; box-sizing: border-box; padding: 0 12px 0 20px; display: {{ topbarDisplay }}; align-items: center; justify-content: space-between; background-color: var(--paper); color: #161412; border-bottom: 1px solid #DCD6CD;">
+  <a href="/index.html" aria-label="Home" style="width: 40px; height: 40px; border-radius: 50%; background: #6B3FB0; color: #F4F1EC; display: flex; align-items: center; justify-content: center; font-family: var(--font-serif); font-size: 17px; font-style: italic; text-decoration: none;">SK</a>
+  <button onClick="{{ menuToggle }}" aria-label="{{ menuLabel }}" aria-expanded="{{ menuOpen }}" style="width: 44px; height: 44px; padding: 0; border: 0; background: transparent; color: inherit; cursor: pointer; display: flex; align-items: center; justify-content: center;">
+    <span style="position: relative; width: 20px; height: 14px; display: block;">
+      <span style="position: absolute; left: 0; width: 20px; height: 2px; background: currentColor; border-radius: 2px; transition: transform 240ms cubic-bezier(0.22,1,0.36,1), top 240ms cubic-bezier(0.22,1,0.36,1); top: {{ hbTop }}; transform: rotate({{ hbRotA }});"></span>
+      <span style="position: absolute; left: 0; width: 20px; height: 2px; background: currentColor; border-radius: 2px; top: 6px; opacity: {{ hbMidOp }}; transition: opacity 160ms ease;"></span>
+      <span style="position: absolute; left: 0; width: 20px; height: 2px; background: currentColor; border-radius: 2px; transition: transform 240ms cubic-bezier(0.22,1,0.36,1), top 240ms cubic-bezier(0.22,1,0.36,1); top: {{ hbBot }}; transform: rotate({{ hbRotB }});"></span>
+    </span>
+  </button>
+</header>
+<div onClick="{{ menuClose }}" style="position: fixed; inset: 0; z-index: 55; background: rgba(12,10,9,.5); opacity: {{ backdropOp }}; pointer-events: {{ backdropPe }}; transition: opacity 240ms ease;"></div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;active&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;home&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;options&quot;:[&quot;home&quot;,&quot;upstox&quot;,&quot;amazon&quot;,&quot;linkedin&quot;,&quot;resume&quot;,&quot;contact&quot;]}}">
+class Component extends DCLogic {
+  state = { menu: false, mobile: typeof window !== 'undefined' && window.innerWidth < 699 };
+  componentDidMount() { this.onR = () => { const m = window.innerWidth < 699; if (m !== this.state.mobile) this.setState({ mobile: m, menu: false }); }; window.addEventListener('resize', this.onR); this.onR(); }
+  componentWillUnmount() { window.removeEventListener('resize', this.onR); }
+  renderVals() {
+    const { mobile, menu } = this.state;
+    const active = this.props.active ?? 'home';
+    const navLinks = [
+      { key: 'home', label: 'Home', href: '/index.html' },
+      { key: 'upstox', label: 'My Work – Upstox', href: '/work/upstox.html' },
+      { key: 'amazon', label: 'My Work – Amazon', href: '/work/amazon.html' },
+      { key: 'linkedin', label: 'LinkedIn', ext: true, href: 'https://www.linkedin.com/in/shruti-kalamdani/', target: '_blank', rel: 'noopener' },
+      { key: 'resume', label: 'Resume', ext: true, href: '/assets/Shruti_Kalamdani_Resume.pdf', target: '_blank', rel: 'noopener' },
+      { key: 'contact', label: 'Contact Me', href: '/index.html#contact' },
+    ].map(l => { const on = l.key === active; return { ...l, iconStyle: { display: l.ext ? 'inline-block' : 'none', width: '14px', height: '14px', marginLeft: '4px', verticalAlign: 'middle', flex: 'none' }, style: { display: 'inline-flex', alignItems: 'center', textDecoration: 'none', color: on ? '#43165B' : '#161412', opacity: on ? 1 : 0.7, paddingBottom: '3px', borderBottom: '1.5px solid ' + (on ? '#43165B' : 'transparent'), transition: 'opacity .2s ease' } }; });
+    return {
+      navLinks,
+      asideW: mobile ? 'min(280px, 82vw)' : '240px',
+      asideTx: mobile && !menu ? '-100%' : '0',
+      asideShadow: mobile && menu ? '0 0 40px rgba(0,0,0,.35)' : 'none',
+      menuOpen: menu, menuLabel: menu ? 'Close menu' : 'Open menu',
+      menuToggle: () => this.setState(s => ({ menu: !s.menu })), menuClose: () => this.setState({ menu: false }),
+      backdropOp: mobile && menu ? 1 : 0, backdropPe: mobile && menu ? 'auto' : 'none',
+      hbTop: menu ? '6px' : '0px', hbBot: menu ? '6px' : '12px', hbRotA: menu ? '45deg' : '0deg', hbRotB: menu ? '-45deg' : '0deg', hbMidOp: menu ? 0 : 1,
+      topbarDisplay: mobile ? 'flex' : 'none',
+    };
+  }
+}
+</script>
+</body>
+</html>
