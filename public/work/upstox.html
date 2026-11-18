@@ -2716,9 +2716,9 @@ class Component extends DCLogic {
       ],
       
       caseStudies: [
-        { id: "case-1", title: "Opening a Demat account", summary: "Rebuilding the account opening flow to cut errors, lift conversion and make every step modular.", tags: ["Growth funnel", "Cross-team"], date: "Jan 2025", role: "Leader + hands-on", tags: ["Growth funnel", "Cross-team"], meta: "", href: "/case-studies/upstox-1.html", image: "/assets/img/thumb-account-opening-dark.png" },
+        { id: "case-1", title: "Opening Demat account", summary: "Rebuilding the account opening flow to cut errors, lift conversion and make every step modular.", tags: ["Growth funnel", "Cross-team"], date: "Jan 2025", role: "Leader + hands-on", tags: ["Growth funnel", "Cross-team"], meta: "", href: "/case-studies/upstox-1.html", image: "/assets/img/thumb-account-opening-dark.png" },
         { id: "case-2", title: "Simplifying finance", summary: "Bringing one philosophy to every screen in the app, so people of any financial confidence can invest with clarity.", tags: ["Design philosophy", "App-wide"], date: "Jan 2022 – Dec 2025", role: "Led the team", meta: "", href: "/case-studies/upstox-2.html", image: "/assets/img/thumb-simplifying-finance-dark.png" },
-        { id: "case-3", title: "Insurance", summary: "Building a curated marketplace for life, health and motor insurance.", tags: ["0→1 launch", "New business line"], date: "Aug 2024", role: "Led the team", meta: "", href: "/case-studies/upstox-3.html", image: "/assets/img/thumb-insurance-dark.png" }
+        { id: "case-3", title: "Buy insurance", summary: "Building a curated marketplace for life, health and motor insurance.", tags: ["0→1 launch", "New business line"], date: "Aug 2024", role: "Led the team", meta: "", href: "/case-studies/upstox-3.html", image: "/assets/img/thumb-insurance-dark.png" }
       ]
     };
     vals.caseStudies = vals.caseStudies.map(c => ({ ...c, tagLine: c.tags.join(" · "), soon: !c.href, locked: !!c.href && !c.unlocked, noImage: !c.image, imgStyle: c.image ? { position: "absolute", inset: 0, backgroundImage: `url("${c.image}")`, backgroundSize: "cover", backgroundPosition: "center" } : null }));
