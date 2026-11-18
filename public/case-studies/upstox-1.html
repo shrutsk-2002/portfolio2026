@@ -2537,7 +2537,7 @@ hr {
      </div>
     </section>
 
-    <section style="{{ launchSectionStyle }}">
+    <section style="{{ launchSectionStyle }}"><div style="{{ launchInnerStyle }}">
       <h2 style="{{ subHeadingStyle }}">How we launched</h2>
       <p style="{{ leadLineStyle }}">A phased rollout, so problems surfaced at 1% instead of 100%.</p>
       <ul style="{{ listStyle }}">
@@ -2548,7 +2548,7 @@ hr {
           </li>
         </sc-for>
       </ul>
-    </section>
+    </div></section>
 
     <section style="{{ diffSection }}"><div style="{{ diffInner }}">
       <h2 style="{{ diffHeading }}">What I'd do differently</h2>
@@ -2800,7 +2800,8 @@ class Component extends DCLogic {
       statDivider: { width: "1px", height: "52px", marginTop: "2px", background: "var(--line)", flexShrink: 0 },
 
       sectionStyle: { paddingTop: "52px", paddingBottom: "40px", paddingLeft: pad, paddingRight: pad },
-      launchSectionStyle: { paddingTop: "72px", paddingBottom: "16px", paddingLeft: pad, paddingRight: pad },
+      launchSectionStyle: { paddingTop: tlM ? "72px" : "120px", paddingBottom: tlM ? "88px" : "136px", paddingLeft: pad, paddingRight: pad },
+      launchInnerStyle: { maxWidth: "880px", paddingTop: tlM ? "56px" : "72px", borderTop: "1px solid var(--line)" },
       sectionTightStyle: { paddingTop: "72px", paddingBottom: "112px", paddingLeft: pad, paddingRight: pad },
       pageSubStyle: { fontFamily: "Inter, sans-serif", fontSize: "20px", fontWeight: 400, color: "#6B645C", margin: "0 0 48px 0", lineHeight: 1.5 },
       pageTitleStyle: { fontFamily: "var(--font-serif)", fontSize: titleOneLine ? titleFit + "px" : titleSize, fontWeight: 700, margin: "0 0 48px 0", lineHeight: 1.08, letterSpacing: "-0.03em", whiteSpace: titleOneLine ? "nowrap" : "normal", textWrap: titleOneLine ? "nowrap" : "balance" },
