@@ -2700,7 +2700,7 @@ class Component extends DCLogic {
     const panelAreas = panelStack ? '"dur" "team" "role"' : panelTwoUp ? '"dur role" "team team"' : '"dur team role"';
     const panelPad = contentW < 700 ? "22px 22px" : "26px 28px";
     const panelCellBg = "linear-gradient(rgba(110,63,176,0.035), rgba(110,63,176,0.035)), var(--paper)";
-    const heroStack = window.innerWidth < 768;
+    const heroStack = window.innerWidth < 699 || (window.innerWidth - 240) < 860;
     const tlM = window.innerWidth < 699;
     const heroGap = contentW >= 1100 ? 80 : 64;
     const heroColW = (Math.min(1200, contentW - 120) - heroGap) * 0.38;
