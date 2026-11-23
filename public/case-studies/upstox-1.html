@@ -1,17 +1,2202 @@
 <!DOCTYPE html>
-<html><head>
+<html lang="en"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Opening Demat account | Shruti Kalamdani</title>
+<script>document.documentElement.className+=" js";</script>
+<style>x-dc{display:none!important}.js #dc-prerender{display:none!important}</style>
+<noscript><style>/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/inter-normal-400-cyrillic-ext.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/inter-normal-400-cyrillic.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/inter-normal-400-greek-ext.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/inter-normal-400-greek.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/inter-normal-400-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/inter-normal-400-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/inter-normal-400-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/fonts/inter-normal-400-cyrillic-ext.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/fonts/inter-normal-400-cyrillic.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/fonts/inter-normal-400-greek-ext.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/fonts/inter-normal-400-greek.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/fonts/inter-normal-400-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/fonts/inter-normal-400-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/fonts/inter-normal-400-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style><style>/* Webfonts — Shruti Kalamdani Design System
+   Currently loaded from Google Fonts CDN. For production / offline use,
+   self-host the .woff2 files and replace this @import with @font-face rules.
+   Noto Serif  — editorial display + prose serif
+   Archivo     — neutral grotesque for UI, labels, meta
+   IBM Plex Mono — small data, captions, indices */
+
+/* vietnamese */
+@font-face {
+  font-family: 'Archivo';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-italic-400-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Archivo';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-italic-400-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Archivo';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-italic-400-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-normal-400-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-normal-400-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-normal-400-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-normal-400-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-normal-400-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-normal-400-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-normal-400-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-normal-400-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-normal-400-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-normal-400-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-normal-400-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-normal-400-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v23/-F63fjptAgt5VM-kVkqdyU8n1iIq131nj-otFQ.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v23/-F63fjptAgt5VM-kVkqdyU8n1isq131nj-otFQ.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* symbols2 */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v23/-F63fjptAgt5VM-kVkqdyU8n1pUL8lJPheIVLNg.woff2) format('woff2');
+  unicode-range: U+2000-2001, U+2004-2008, U+200A, U+23B8-23BD, U+2500-259F;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v23/-F63fjptAgt5VM-kVkqdyU8n1iAq131nj-otFQ.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v23/-F63fjptAgt5VM-kVkqdyU8n1iEq131nj-otFQ.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v23/-F63fjptAgt5VM-kVkqdyU8n1i8q131nj-o.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v23/-F6qfjptAgt5VM-kVkqdyU8n3twJwl1FgsAXHNlYzg.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v23/-F6qfjptAgt5VM-kVkqdyU8n3twJwlRFgsAXHNlYzg.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* symbols2 */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v23/-F6qfjptAgt5VM-kVkqdyU8n3twJwupkp-8_FtFg95o.woff2) format('woff2');
+  unicode-range: U+2000-2001, U+2004-2008, U+200A, U+23B8-23BD, U+2500-259F;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v23/-F6qfjptAgt5VM-kVkqdyU8n3twJwl9FgsAXHNlYzg.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v23/-F6qfjptAgt5VM-kVkqdyU8n3twJwl5FgsAXHNlYzg.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v23/-F6qfjptAgt5VM-kVkqdyU8n3twJwlBFgsAXHNk.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-cyrillic-ext.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-cyrillic.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-greek-ext.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-greek.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* math */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-math.woff2") format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-209F, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-cyrillic-ext.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-cyrillic.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-greek-ext.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-greek.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* math */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-math.woff2") format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-209F, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-cyrillic-ext.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-cyrillic.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-greek-ext.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-greek.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* math */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-math.woff2") format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-209F, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-cyrillic-ext.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-cyrillic.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-greek-ext.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-greek.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* math */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-math.woff2") format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-209F, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-cyrillic-ext.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-cyrillic.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-greek-ext.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-greek.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* math */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-math.woff2") format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-209F, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-cyrillic-ext.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-cyrillic.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-greek-ext.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-greek.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* math */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-math.woff2") format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-209F, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+</style><style>/* Colors — Shruti Kalamdani Design System
+   Warm editorial neutrals + a single bold purple accent.
+   Base values first, semantic aliases below. */
+
+:root {
+  /* ── Warm neutral scale ── */
+  --paper:        #FAF8F4; /* page background — warm off-white */
+  --paper-2:      #F2EEE7; /* recessed panels, hovers */
+  --paper-3:      #EAE4DA; /* deeper fill */
+  --white:        #FFFFFF; /* cards, raised surfaces */
+
+  --ink:          #1A1714; /* near-black, primary text */
+  --ink-2:        #4A443D; /* secondary text */
+  --ink-3:        #8A8178; /* muted text, meta, captions */
+  --ink-4:        #B6AEA2; /* disabled, faint */
+
+  --line:         #E4DED4; /* hairline borders */
+  --line-2:       #D4CCBE; /* stronger borders */
+
+  /* ── Accent — purple ── */
+  --accent:        #6E3FB0; /* primary bold accent */
+  --accent-ink:    #57309A; /* darker — links, hover, text-on-paper */
+  --accent-deep:   #46267E; /* pressed */
+  --accent-soft:   #ECE3F7; /* tint fill */
+  --accent-tint:   #F7F2FC; /* faintest wash */
+  --accent-on-dark:#B794E8; /* lighter tint — accent text/links on dark ink */
+
+  /* ── Alternate accents (documented — swap --accent to retheme) ── */
+  --alt-persimmon: #DE4D26;
+  --alt-crimson:   #C41E48;
+  --alt-cobalt:    #2B4ACC;
+  --alt-forest:    #1F6B4A;
+  --alt-ink:       #1A1714;
+
+  /* ── Status ── */
+  --positive:     #1F7A4D;
+  --negative:     #C23B2E;
+  --warning:      #B7791F;
+
+  /* ── Semantic aliases ── */
+  --surface-page:   var(--paper);
+  --surface-card:   var(--white);
+  --surface-panel:  var(--paper-2);
+  --surface-sunken: var(--paper-3);
+  --surface-invert: var(--ink);
+
+  --text-primary:   var(--ink);
+  --text-secondary: var(--ink-2);
+  --text-muted:     var(--ink-3);
+  --text-faint:     var(--ink-4);
+  --text-invert:    var(--paper);
+  --text-accent:    var(--accent-ink);
+
+  --border:         var(--line);
+  --border-strong:  var(--line-2);
+
+  --link:           var(--accent-ink);
+  --link-hover:     var(--accent-deep);
+  --focus-ring:     var(--accent);
+}
+</style><style>/* Typography — Shruti Kalamdani Design System
+   Serif-led editorial system. Noto Serif for display + prose,
+   Archivo for UI/labels/meta, IBM Plex Mono for indices + data. */
+
+:root {
+  /* ── Families ── */
+  --font-serif: "Noto Serif", Georgia, "Times New Roman", serif;
+  --font-sans:  "Archivo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono:  "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+
+  /* ── Size scale (editorial, large) ── */
+  --text-xs:    0.75rem;   /* 12px — micro labels, indices */
+  --text-sm:    0.875rem;  /* 14px — meta, captions */
+  --text-base:  1.0625rem; /* 17px — body */
+  --text-lg:    1.25rem;   /* 20px — lead paragraph */
+  --text-xl:    1.625rem;  /* 26px — small headings */
+  --text-2xl:   2.125rem;  /* 34px — section heads */
+  --text-3xl:   2.875rem;  /* 46px — page titles */
+  --text-4xl:   3.875rem;  /* 62px — display */
+  --text-5xl:   5.25rem;   /* 84px — hero display */
+  --text-6xl:   7rem;      /* 112px — oversized statement */
+
+  /* ── Line heights ── */
+  --leading-none:    1;
+  --leading-tight:   1.06;  /* display */
+  --leading-snug:    1.18;  /* headings */
+  --leading-normal:  1.5;   /* UI text */
+  --leading-relaxed: 1.65;  /* serif prose */
+
+  /* ── Letter spacing ── */
+  --tracking-tighter: -0.03em; /* large display serif */
+  --tracking-tight:   -0.015em;
+  --tracking-normal:  0;
+  --tracking-wide:    0.08em;  /* uppercase eyebrows */
+  --tracking-wider:   0.16em;  /* spaced micro-labels */
+
+  /* ── Weights ── */
+  --weight-light:    300;
+  --weight-regular:  400;
+  --weight-medium:   500;
+  --weight-semibold: 600;
+  --weight-bold:     700;
+}
+</style><style>/* Spacing, radii, shadows, layout — Shruti Kalamdani Design System
+   8px base rhythm with finer steps for type-level adjustments. */
+
+:root {
+  /* ── Spacing scale ── */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  24px;
+  --space-6:  32px;
+  --space-7:  48px;
+  --space-8:  64px;
+  --space-9:  96px;
+  --space-10: 128px;
+  --space-11: 192px;
+
+  /* ── Corner radii (minimal, editorial) ── */
+  --radius-xs:   2px;
+  --radius-sm:   4px;
+  --radius-md:   8px;
+  --radius-lg:   14px;
+  --radius-xl:   22px;
+  --radius-pill: 999px;
+
+  /* ── Borders ── */
+  --border-hair:  1px solid var(--line);
+  --border-solid: 1px solid var(--line-2);
+  --border-ink:   1px solid var(--ink);
+
+  /* ── Shadows (soft, warm-tinted, restrained) ── */
+  --shadow-xs: 0 1px 2px rgba(26, 23, 20, 0.05);
+  --shadow-sm: 0 2px 8px rgba(26, 23, 20, 0.06);
+  --shadow-md: 0 10px 28px rgba(26, 23, 20, 0.08);
+  --shadow-lg: 0 24px 56px rgba(26, 23, 20, 0.11);
+  --shadow-focus: 0 0 0 3px rgba(110, 63, 176, 0.30);
+
+  /* ── Layout widths ── */
+  --container:        1200px;
+  --container-wide:   1440px;
+  --container-narrow: 720px; /* reading measure */
+  --gutter:           var(--space-5);
+
+  /* ── Motion ── */
+  --ease-out:   cubic-bezier(0.22, 1, 0.36, 1); /* @kind other */
+  --ease-inout: cubic-bezier(0.65, 0, 0.35, 1); /* @kind other */
+  --dur-fast:   140ms; /* @kind other */
+  --dur-base:   240ms; /* @kind other */
+  --dur-slow:   420ms; /* @kind other */
+}
+</style><style>/* Base element styling + a small set of editorial utilities.
+   Imported last so it can rely on every token. */
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--surface-page);
+  color: var(--text-primary);
+  font-family: var(--font-serif);
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+  font-optical-sizing: auto;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Headings — serif display, tight tracking */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  font-weight: var(--weight-regular);
+  line-height: var(--leading-snug);
+  letter-spacing: var(--tracking-tight);
+  color: var(--text-primary);
+  margin: 0 0 0.4em;
+  text-wrap: balance;
+}
+h1 { font-size: var(--text-4xl); line-height: var(--leading-tight); letter-spacing: var(--tracking-tighter); }
+h2 { font-size: var(--text-3xl); }
+h3 { font-size: var(--text-2xl); }
+h4 { font-size: var(--text-xl); }
+
+p { margin: 0 0 1em; text-wrap: pretty; }
+p:last-child { margin-bottom: 0; }
+
+a {
+  color: var(--link);
+  text-decoration: none;
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 1px;
+  transition: color var(--dur-fast) var(--ease-out);
+}
+a:hover { color: var(--link-hover); text-decoration: underline; }
+
+strong, b { font-weight: var(--weight-semibold); }
+em, i { font-style: italic; }
+
+hr {
+  border: none;
+  border-top: var(--border-hair);
+  margin: var(--space-7) 0;
+}
+
+::selection { background: var(--accent-soft); color: var(--ink); }
+
+:focus-visible {
+  outline: none;
+  box-shadow: var(--shadow-focus);
+  border-radius: var(--radius-sm);
+}
+
+/* ── Editorial utility classes ── */
+
+/* Spaced uppercase label — eyebrows, section indices */
+.sk-eyebrow {
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+/* Monospace index — 01 / 02 / 03 */
+.sk-index {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  color: var(--text-accent);
+  font-feature-settings: "tnum" 1;
+}
+
+/* Reading measure for prose blocks */
+.sk-measure { max-width: var(--container-narrow); }
+
+/* Sans meta / captions */
+.sk-meta {
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  line-height: var(--leading-normal);
+}
+
+/* Lead paragraph */
+.sk-lead {
+  font-size: var(--text-lg);
+  line-height: var(--leading-relaxed);
+  color: var(--text-secondary);
+}
+
+/* Accent underline rule */
+.sk-rule-accent {
+  width: 48px;
+  height: 2px;
+  background: var(--accent);
+  border: none;
+  margin: 0;
+}
+</style><style>/* ─────────────────────────────────────────────────────────────
+   Shruti Kalamdani Design System — global stylesheet entry point.
+   Consumers link THIS file. It is a manifest of @import lines only;
+   never add rules directly here.
+   ───────────────────────────────────────────────────────────── */
+
+/* Webfonts — Shruti Kalamdani Design System
+   Currently loaded from Google Fonts CDN. For production / offline use,
+   self-host the .woff2 files and replace this @import with @font-face rules.
+   Noto Serif  — editorial display + prose serif
+   Archivo     — neutral grotesque for UI, labels, meta
+   IBM Plex Mono — small data, captions, indices */
+
+/* vietnamese */
+@font-face {
+  font-family: 'Archivo';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-italic-400-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Archivo';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-italic-400-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Archivo';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-italic-400-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-normal-400-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-normal-400-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-normal-400-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-normal-400-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-normal-400-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-normal-400-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-normal-400-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-normal-400-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-normal-400-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-normal-400-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-normal-400-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-normal-400-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v23/-F63fjptAgt5VM-kVkqdyU8n1iIq131nj-otFQ.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v23/-F63fjptAgt5VM-kVkqdyU8n1isq131nj-otFQ.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* symbols2 */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v23/-F63fjptAgt5VM-kVkqdyU8n1pUL8lJPheIVLNg.woff2) format('woff2');
+  unicode-range: U+2000-2001, U+2004-2008, U+200A, U+23B8-23BD, U+2500-259F;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v23/-F63fjptAgt5VM-kVkqdyU8n1iAq131nj-otFQ.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v23/-F63fjptAgt5VM-kVkqdyU8n1iEq131nj-otFQ.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v23/-F63fjptAgt5VM-kVkqdyU8n1i8q131nj-o.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v23/-F6qfjptAgt5VM-kVkqdyU8n3twJwl1FgsAXHNlYzg.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v23/-F6qfjptAgt5VM-kVkqdyU8n3twJwlRFgsAXHNlYzg.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* symbols2 */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v23/-F6qfjptAgt5VM-kVkqdyU8n3twJwupkp-8_FtFg95o.woff2) format('woff2');
+  unicode-range: U+2000-2001, U+2004-2008, U+200A, U+23B8-23BD, U+2500-259F;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v23/-F6qfjptAgt5VM-kVkqdyU8n3twJwl9FgsAXHNlYzg.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v23/-F6qfjptAgt5VM-kVkqdyU8n3twJwl5FgsAXHNlYzg.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v23/-F6qfjptAgt5VM-kVkqdyU8n3twJwlBFgsAXHNk.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-cyrillic-ext.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-cyrillic.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-greek-ext.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-greek.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* math */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-math.woff2") format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-209F, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-cyrillic-ext.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-cyrillic.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-greek-ext.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-greek.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* math */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-math.woff2") format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-209F, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-cyrillic-ext.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-cyrillic.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-greek-ext.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-greek.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* math */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-math.woff2") format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-209F, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-cyrillic-ext.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-cyrillic.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-greek-ext.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-greek.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* math */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-math.woff2") format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-209F, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-cyrillic-ext.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-cyrillic.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-greek-ext.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-greek.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* math */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-math.woff2") format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-209F, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-cyrillic-ext.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-cyrillic.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-greek-ext.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-greek.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* math */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-math.woff2") format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-209F, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+/* Colors — Shruti Kalamdani Design System
+   Warm editorial neutrals + a single bold purple accent.
+   Base values first, semantic aliases below. */
+
+:root {
+  /* ── Warm neutral scale ── */
+  --paper:        #FAF8F4; /* page background — warm off-white */
+  --paper-2:      #F2EEE7; /* recessed panels, hovers */
+  --paper-3:      #EAE4DA; /* deeper fill */
+  --white:        #FFFFFF; /* cards, raised surfaces */
+
+  --ink:          #1A1714; /* near-black, primary text */
+  --ink-2:        #4A443D; /* secondary text */
+  --ink-3:        #8A8178; /* muted text, meta, captions */
+  --ink-4:        #B6AEA2; /* disabled, faint */
+
+  --line:         #E4DED4; /* hairline borders */
+  --line-2:       #D4CCBE; /* stronger borders */
+
+  /* ── Accent — purple ── */
+  --accent:        #6E3FB0; /* primary bold accent */
+  --accent-ink:    #57309A; /* darker — links, hover, text-on-paper */
+  --accent-deep:   #46267E; /* pressed */
+  --accent-soft:   #ECE3F7; /* tint fill */
+  --accent-tint:   #F7F2FC; /* faintest wash */
+  --accent-on-dark:#B794E8; /* lighter tint — accent text/links on dark ink */
+
+  /* ── Alternate accents (documented — swap --accent to retheme) ── */
+  --alt-persimmon: #DE4D26;
+  --alt-crimson:   #C41E48;
+  --alt-cobalt:    #2B4ACC;
+  --alt-forest:    #1F6B4A;
+  --alt-ink:       #1A1714;
+
+  /* ── Status ── */
+  --positive:     #1F7A4D;
+  --negative:     #C23B2E;
+  --warning:      #B7791F;
+
+  /* ── Semantic aliases ── */
+  --surface-page:   var(--paper);
+  --surface-card:   var(--white);
+  --surface-panel:  var(--paper-2);
+  --surface-sunken: var(--paper-3);
+  --surface-invert: var(--ink);
+
+  --text-primary:   var(--ink);
+  --text-secondary: var(--ink-2);
+  --text-muted:     var(--ink-3);
+  --text-faint:     var(--ink-4);
+  --text-invert:    var(--paper);
+  --text-accent:    var(--accent-ink);
+
+  --border:         var(--line);
+  --border-strong:  var(--line-2);
+
+  --link:           var(--accent-ink);
+  --link-hover:     var(--accent-deep);
+  --focus-ring:     var(--accent);
+}
+
+/* Typography — Shruti Kalamdani Design System
+   Serif-led editorial system. Noto Serif for display + prose,
+   Archivo for UI/labels/meta, IBM Plex Mono for indices + data. */
+
+:root {
+  /* ── Families ── */
+  --font-serif: "Noto Serif", Georgia, "Times New Roman", serif;
+  --font-sans:  "Archivo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono:  "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+
+  /* ── Size scale (editorial, large) ── */
+  --text-xs:    0.75rem;   /* 12px — micro labels, indices */
+  --text-sm:    0.875rem;  /* 14px — meta, captions */
+  --text-base:  1.0625rem; /* 17px — body */
+  --text-lg:    1.25rem;   /* 20px — lead paragraph */
+  --text-xl:    1.625rem;  /* 26px — small headings */
+  --text-2xl:   2.125rem;  /* 34px — section heads */
+  --text-3xl:   2.875rem;  /* 46px — page titles */
+  --text-4xl:   3.875rem;  /* 62px — display */
+  --text-5xl:   5.25rem;   /* 84px — hero display */
+  --text-6xl:   7rem;      /* 112px — oversized statement */
+
+  /* ── Line heights ── */
+  --leading-none:    1;
+  --leading-tight:   1.06;  /* display */
+  --leading-snug:    1.18;  /* headings */
+  --leading-normal:  1.5;   /* UI text */
+  --leading-relaxed: 1.65;  /* serif prose */
+
+  /* ── Letter spacing ── */
+  --tracking-tighter: -0.03em; /* large display serif */
+  --tracking-tight:   -0.015em;
+  --tracking-normal:  0;
+  --tracking-wide:    0.08em;  /* uppercase eyebrows */
+  --tracking-wider:   0.16em;  /* spaced micro-labels */
+
+  /* ── Weights ── */
+  --weight-light:    300;
+  --weight-regular:  400;
+  --weight-medium:   500;
+  --weight-semibold: 600;
+  --weight-bold:     700;
+}
+
+/* Spacing, radii, shadows, layout — Shruti Kalamdani Design System
+   8px base rhythm with finer steps for type-level adjustments. */
+
+:root {
+  /* ── Spacing scale ── */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  24px;
+  --space-6:  32px;
+  --space-7:  48px;
+  --space-8:  64px;
+  --space-9:  96px;
+  --space-10: 128px;
+  --space-11: 192px;
+
+  /* ── Corner radii (minimal, editorial) ── */
+  --radius-xs:   2px;
+  --radius-sm:   4px;
+  --radius-md:   8px;
+  --radius-lg:   14px;
+  --radius-xl:   22px;
+  --radius-pill: 999px;
+
+  /* ── Borders ── */
+  --border-hair:  1px solid var(--line);
+  --border-solid: 1px solid var(--line-2);
+  --border-ink:   1px solid var(--ink);
+
+  /* ── Shadows (soft, warm-tinted, restrained) ── */
+  --shadow-xs: 0 1px 2px rgba(26, 23, 20, 0.05);
+  --shadow-sm: 0 2px 8px rgba(26, 23, 20, 0.06);
+  --shadow-md: 0 10px 28px rgba(26, 23, 20, 0.08);
+  --shadow-lg: 0 24px 56px rgba(26, 23, 20, 0.11);
+  --shadow-focus: 0 0 0 3px rgba(110, 63, 176, 0.30);
+
+  /* ── Layout widths ── */
+  --container:        1200px;
+  --container-wide:   1440px;
+  --container-narrow: 720px; /* reading measure */
+  --gutter:           var(--space-5);
+
+  /* ── Motion ── */
+  --ease-out:   cubic-bezier(0.22, 1, 0.36, 1); /* @kind other */
+  --ease-inout: cubic-bezier(0.65, 0, 0.35, 1); /* @kind other */
+  --dur-fast:   140ms; /* @kind other */
+  --dur-base:   240ms; /* @kind other */
+  --dur-slow:   420ms; /* @kind other */
+}
+
+/* Base element styling + a small set of editorial utilities.
+   Imported last so it can rely on every token. */
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--surface-page);
+  color: var(--text-primary);
+  font-family: var(--font-serif);
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+  font-optical-sizing: auto;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Headings — serif display, tight tracking */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  font-weight: var(--weight-regular);
+  line-height: var(--leading-snug);
+  letter-spacing: var(--tracking-tight);
+  color: var(--text-primary);
+  margin: 0 0 0.4em;
+  text-wrap: balance;
+}
+h1 { font-size: var(--text-4xl); line-height: var(--leading-tight); letter-spacing: var(--tracking-tighter); }
+h2 { font-size: var(--text-3xl); }
+h3 { font-size: var(--text-2xl); }
+h4 { font-size: var(--text-xl); }
+
+p { margin: 0 0 1em; text-wrap: pretty; }
+p:last-child { margin-bottom: 0; }
+
+a {
+  color: var(--link);
+  text-decoration: none;
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 1px;
+  transition: color var(--dur-fast) var(--ease-out);
+}
+a:hover { color: var(--link-hover); text-decoration: underline; }
+
+strong, b { font-weight: var(--weight-semibold); }
+em, i { font-style: italic; }
+
+hr {
+  border: none;
+  border-top: var(--border-hair);
+  margin: var(--space-7) 0;
+}
+
+::selection { background: var(--accent-soft); color: var(--ink); }
+
+:focus-visible {
+  outline: none;
+  box-shadow: var(--shadow-focus);
+  border-radius: var(--radius-sm);
+}
+
+/* ── Editorial utility classes ── */
+
+/* Spaced uppercase label — eyebrows, section indices */
+.sk-eyebrow {
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+/* Monospace index — 01 / 02 / 03 */
+.sk-index {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  color: var(--text-accent);
+  font-feature-settings: "tnum" 1;
+}
+
+/* Reading measure for prose blocks */
+.sk-measure { max-width: var(--container-narrow); }
+
+/* Sans meta / captions */
+.sk-meta {
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  line-height: var(--leading-normal);
+}
+
+/* Lead paragraph */
+.sk-lead {
+  font-size: var(--text-lg);
+  line-height: var(--leading-relaxed);
+  color: var(--text-secondary);
+}
+
+/* Accent underline rule */
+.sk-rule-accent {
+  width: 48px;
+  height: 2px;
+  background: var(--accent);
+  border: none;
+  margin: 0;
+}
+
+</style><style>
+    html { scroll-snap-type: y proximity; }
+    body { margin: 0; background: var(--paper); scroll-behavior: smooth; overflow-x: hidden; }
+    a { color: var(--accent-ink); text-decoration: none; }
+    a:hover { color: var(--accent-deep); }
+  </style><style>html,body{overflow-x:hidden}</style></noscript>
 <meta name="description" content="Case study: rebuilding Upstox's Demat account opening flow to cut errors, lift conversion and make every step modular.">
+<link rel="canonical" href="https://www.shruti-kalamdani.com/case-studies/upstox-1.html">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#161412">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Shruti Kalamdani">
+<meta property="og:title" content="Opening Demat account | Shruti Kalamdani">
+<meta property="og:description" content="Case study: rebuilding Upstox&#x27;s Demat account opening flow to cut errors, lift conversion and make every step modular.">
+<meta property="og:url" content="https://www.shruti-kalamdani.com/case-studies/upstox-1.html">
+<meta property="og:image" content="https://www.shruti-kalamdani.com/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Shruti Kalamdani, Product Design Leader, Dubai">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Opening Demat account | Shruti Kalamdani">
+<meta name="twitter:description" content="Case study: rebuilding Upstox&#x27;s Demat account opening flow to cut errors, lift conversion and make every step modular.">
+<meta name="twitter:image" content="https://www.shruti-kalamdani.com/assets/img/og-image.jpg">
 <script>
 (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","z1vhn5b7ar");
 </script>
 <script>window.__resources = {"./Sidebar.dc.html": "/assets/js/sidebar.html", "https://cdn.jsdelivr.net/npm/react@18.3.1/umd/react.production.min.js": "/assets/js/react.production.min.js", "https://cdn.jsdelivr.net/npm/react-dom@18.3.1/umd/react-dom.production.min.js": "/assets/js/react-dom.production.min.js"};</script>
 <script src="/assets/js/dc-runtime.js"></script>
+<script src="/assets/js/a11y.js" defer></script>
+<link rel="stylesheet" href="/assets/css/fixes.css">
 </head>
 <body>
-<x-dc>
+<script type="text/x-dc-template" id="dc-tpl">
 <helmet>
   <style>/* cyrillic-ext */
 @font-face {
@@ -2177,8 +4362,8 @@ hr {
 }
 
 </style>
-  <script src="/assets/js/ds-bundle.js"></script>
-  <script src="/assets/js/portfolio-data.js"></script>
+  <script src="/assets/js/ds-bundle.js"><\/script>
+  <script src="/assets/js/portfolio-data.js"><\/script>
   <style>
     html { scroll-snap-type: y proximity; }
     body { margin: 0; background: var(--paper); scroll-behavior: smooth; overflow-x: hidden; }
@@ -2218,7 +4403,7 @@ hr {
             </div>
             <div style="{{ detailsPairStyle }}">
               <dt style="{{ detailsLabelStyle }}">Duration</dt>
-              <dd style="{{ detailsValueStyle }}">9 weeks + 2 months of A/B testing</dd>
+              <dd style="{{ detailsValueStyle }}">9 weeks + A/B test</dd>
             </div>
             <div style="{{ detailsPairStyle }}">
               <dt style="{{ detailsLabelStyle }}">Team</dt>
@@ -2288,9 +4473,9 @@ hr {
 
       <sc-if value="{{ isScore }}" hint-placeholder-val="{{ true }}">
         <sc-if value="{{ isCompare }}" hint-placeholder-val="{{ false }}"><p style="{{ cmpLabel }}">Option 1 · Scoreboard</p></sc-if>
-        <div style="{{ sbWrap }}">
+        <div style="{{ sbWrap }}" data-tldr="">
           <div style="{{ tdInner }}">
-            <div style="display: flex; align-items: baseline; gap: 12px; margin-bottom: 32px;"><span style="color: #E0A458; font-size: 20px;">✦</span><span style="font-family: var(--font-serif); font-size: 24px; font-weight: 500; color: #C9AEF0; line-height: 1.2;">TL;DR</span></div>
+            <div style="display: flex; align-items: baseline; gap: 12px; margin-bottom: clamp(14px, 3.2vh, 32px);"><span style="color: #E0A458; font-size: 20px;">✦</span><span style="font-family: var(--font-serif); font-size: 24px; font-weight: 500; color: #C9AEF0; line-height: 1.2;">TL;DR</span></div>
             <div style="{{ tdRow }}"><span style="{{ tdLabel }}">Problem</span><span style="{{ tdText }}">Completion had been sliding for months, and our rigid flow couldn't test a fix. We had a hypothesis and a locked door.</span></div>
             <div style="{{ tdRow }}"><span style="{{ tdLabel }}">Ideas</span><span style="{{ tdText }}"><span style="display: flex; flex-direction: column; gap: 8px;"><span style="{{ tdIdea }}"><span style="{{ tdNum }}">01</span><span style="min-width: 0;">Mapped drop-off and errors at every step, then fixed the worst points with visual aids and motion.</span></span><span style="{{ tdIdea }}"><span style="{{ tdNum }}">02</span><span style="min-width: 0;">Swapped a long, upload-heavy document process for an automatic fetch.</span></span><span style="{{ tdIdea }}"><span style="{{ tdNum }}">03</span><span style="min-width: 0;">Made every step reorderable, addable or switchable without a new design.</span></span></span></span></div>
             <div style="{{ tdRowLast }}"><span style="{{ tdLabel }}">Outcome</span><div style="{{ tdTiles }}">
@@ -2550,30 +4735,23 @@ hr {
       </ul>
     </div></section>
 
-    <section style="{{ diffSection }}"><div style="{{ diffInner }}">
-      <h2 style="{{ diffHeading }}">What I'd do differently</h2>
-      <ul style="{{ diffList }}">
-        <li style="{{ diffItem }}">
-          <span style="{{ diffBullet }}"></span>
-          <span style="{{ diffText }}"><strong>Lean harder on the bank integration</strong> — it already returned name, father's name, PAN details and bank linking, yet people still typed most of it in. It could have been step one, turning everything after it into review-and-approve. We held back because its error rate was high, and building on it would have brought back the sequential dependency the redesign set out to remove.</span>
-        </li>
-        <li style="{{ diffItem }}">
-          <span style="{{ diffBullet }}"></span>
-          <span style="{{ diffText }}"><strong>Test in a closed sandbox first</strong> — this flow drives the funnel and the revenue behind it, and the change was drastic; upfront testing would likely have caught UX issues before they shipped. Given the timeline, we chose A/B testing in production over a 2–3 week delay.</span>
-        </li>
-        <li style="{{ diffItem }}">
-          <span style="{{ diffBullet }}"></span>
-          <span style="{{ diffText }}"><strong>Bring integration owners in earlier</strong> — the bank-statement and penny-drop failures were foreseeable, since both depended on third parties. Involving those teams during design, not after launch, would have surfaced them before rollout instead of during it.</span>
-        </li>
-      </ul>
-    </div></section>
+    <section class="lrn" data-screen-label="Learnings">
+     <div class="lrn-wrap">
+      <div class="lrn-in">
+        <h2>What I'd do differently</h2>
+        <div class="lrn-row"><span class="lrn-num">01</span><div class="lrn-txt"><p class="lrn-t">Lean harder on the bank integration.</p><p class="lrn-b">It already returned name, father's name, PAN details and bank linking, yet people still typed most of it in. It could have been step one, turning everything after it into review-and-approve. We held back because its error rate was high, and building on it would have brought back the sequential dependency the redesign set out to remove.</p></div></div>
+        <div class="lrn-row"><span class="lrn-num">02</span><div class="lrn-txt"><p class="lrn-t">Test in a closed sandbox first.</p><p class="lrn-b">This flow drives the funnel and the revenue behind it, and the change was drastic; upfront testing would likely have caught UX issues before they shipped. Given the timeline, we chose A/B testing in production over a 2–3 week delay.</p></div></div>
+        <div class="lrn-row"><span class="lrn-num">03</span><div class="lrn-txt"><p class="lrn-t">Bring integration owners in earlier.</p><p class="lrn-b">The bank-statement and penny-drop failures were foreseeable, since both depended on third parties. Involving those teams during design, not after launch, would have surfaced them before rollout instead of during it.</p></div></div>
+      </div>
+     </div>
+    </section>
     <section style="{{ mcSection }}">
       <div style="{{ mcInner }}">
         <span style="font-family: Inter, sans-serif; font-size: 12px; text-transform: uppercase; letter-spacing: 0.14em; color: #8A8278;">Keep exploring</span>
         <h2 style="font-family: var(--font-serif); font-size: 40px; font-weight: 500; color: #1B1815; margin: 12px 0 56px 0; line-height: 1.15;">More case studies</h2>
         <div style="{{ mcGrid }}">
           <a href="{{ mcC0.href }}" sc-camel-on-mouse-enter="{{ mcC0.on }}" sc-camel-on-mouse-leave="{{ mcOut }}" sc-camel-on-focus="{{ mcC0.on }}" sc-camel-on-blur="{{ mcOut }}" style="{{ mcC0.linkStyle }}" style-focus="outline: 2px solid #5A3796; outline-offset: 4px;">
-            <div style="{{ mcImg }}"><img src="/assets/img/thumb-simplifying-finance-dark.png" alt="{{ mcC0.title }}" style="{{ mcC0.thumbStyle }}"></div>
+            <div style="{{ mcImg }}"><img src="/assets/img/thumb-simplifying-finance-dark.webp" alt="{{ mcC0.title }}" style="{{ mcC0.thumbStyle }}"></div>
             <div style="padding-top: 20px; margin-top: auto;">
               <h3 style="{{ mcC0.titleStyle }}">{{ mcC0.title }}</h3>
               <p style="font-family: Inter, var(--font-sans); font-size: 14px; line-height: 1.5; color: rgba(27,24,21,0.6); margin: 0 0 14px 0; min-height: 4.5em; text-wrap: pretty;">{{ mcC0.desc }}</p>
@@ -2582,7 +4760,7 @@ hr {
             <div style="border-top: 1.2px dotted rgba(27,24,21,0.12); padding-top: 10px; margin-top: 16px; display: flex; align-items: center; gap: 12px; white-space: nowrap; font-family: Inter, var(--font-sans); font-size: 15px; font-weight: 600; color: #5A3796;"><span>Read case study</span><span style="{{ mcC0.arrowStyle }}">→</span></div>
           </a>
           <a href="{{ mcC1.href }}" sc-camel-on-mouse-enter="{{ mcC1.on }}" sc-camel-on-mouse-leave="{{ mcOut }}" sc-camel-on-focus="{{ mcC1.on }}" sc-camel-on-blur="{{ mcOut }}" style="{{ mcC1.linkStyle }}" style-focus="outline: 2px solid #5A3796; outline-offset: 4px;">
-            <div style="{{ mcImg }}"><img src="/assets/img/thumb-insurance-dark.png" alt="{{ mcC1.title }}" style="{{ mcC1.thumbStyle }}"></div>
+            <div style="{{ mcImg }}"><img src="/assets/img/thumb-insurance-dark.webp" alt="{{ mcC1.title }}" style="{{ mcC1.thumbStyle }}"></div>
             <div style="padding-top: 20px; margin-top: auto;">
               <h3 style="{{ mcC1.titleStyle }}">{{ mcC1.title }}</h3>
               <p style="font-family: Inter, var(--font-sans); font-size: 14px; line-height: 1.5; color: rgba(27,24,21,0.6); margin: 0 0 14px 0; min-height: 4.5em; text-wrap: pretty;">{{ mcC1.desc }}</p>
@@ -2596,7 +4774,347 @@ hr {
     </section>
   </div>
 </div>
-</x-dc>
+</script>
+<script>(function(){var s=document.getElementById("dc-tpl"),t=s.textContent.replace(/<\\\/script/g,"</scr"+"ipt").replace(/<\\!--/g,"<!"+"--");var x=document.createElement("x-dc");Object.defineProperty(x,"innerHTML",{get:function(){return t},configurable:true});s.parentNode.insertBefore(x,s);s.remove();})();</script>
+<div id="dc-prerender"><div class="sc-host" data-sc-name="upstox-1"><div style="display: flex; min-height: 100vh; background: var(--paper);">
+  <div class="sc-host" data-sc-name="Sidebar" style="position: absolute; width: 0px; height: 0px;"><aside style="position: fixed; top: 0px; left: 0px; bottom: 0px; z-index: 60; width: 240px; box-sizing: border-box; padding: 32px 24px; transform: translateX(0px); box-shadow: none; transition: transform 320ms cubic-bezier(0.22, 1, 0.36, 1), box-shadow 320ms; overflow-y: auto; border-right: 1px solid rgb(220, 214, 205); background-color: var(--paper); color: rgb(22, 20, 18); display: flex; flex-direction: column; justify-content: space-between;">
+  <a href="/index.html" aria-label="Home" style="width: 64px; height: 64px; border-radius: 50%; background: rgb(107, 63, 176); color: rgb(244, 241, 236); display: flex; align-items: center; justify-content: center; font-family: var(--font-serif); font-size: 26px; font-style: italic; text-decoration: none;">SK</a>
+  <nav style="display: flex; flex-direction: column; gap: 22px; align-items: flex-start; font-family: var(--font-sans); font-size: 15px; font-weight: 500;">
+    <a href="/index.html" class="scp4" style="display: inline-flex; align-items: center; text-decoration: none; color: rgb(22, 20, 18); opacity: 0.7; padding-bottom: 3px; border-bottom: 1.5px solid transparent; transition: opacity 0.2s;"><span><span class="sc-interp">Home</span></span><img src="/assets/img/icon-arrow-outward-dark.svg" alt="" aria-hidden="true" style="display: none; width: 14px; height: 14px; margin-left: 4px; vertical-align: middle; flex: 0 0 auto;" loading="lazy"></a><a href="/work/upstox.html" class="scp4" style="display: inline-flex; align-items: center; text-decoration: none; color: rgb(67, 22, 91); opacity: 1; padding-bottom: 3px; border-bottom: 1.5px solid rgb(67, 22, 91); transition: opacity 0.2s;"><span><span class="sc-interp">My Work – Upstox</span></span><img src="/assets/img/icon-arrow-outward-dark.svg" alt="" aria-hidden="true" style="display: none; width: 14px; height: 14px; margin-left: 4px; vertical-align: middle; flex: 0 0 auto;" loading="lazy"></a><a href="/work/amazon.html" class="scp4" style="display: inline-flex; align-items: center; text-decoration: none; color: rgb(22, 20, 18); opacity: 0.7; padding-bottom: 3px; border-bottom: 1.5px solid transparent; transition: opacity 0.2s;"><span><span class="sc-interp">My Work – Amazon</span></span><img src="/assets/img/icon-arrow-outward-dark.svg" alt="" aria-hidden="true" style="display: none; width: 14px; height: 14px; margin-left: 4px; vertical-align: middle; flex: 0 0 auto;" loading="lazy"></a><a href="https://www.linkedin.com/in/shruti-kalamdani/" target="_blank" rel="noopener" class="scp4" style="display: inline-flex; align-items: center; text-decoration: none; color: rgb(22, 20, 18); opacity: 0.7; padding-bottom: 3px; border-bottom: 1.5px solid transparent; transition: opacity 0.2s;"><span><span class="sc-interp">LinkedIn</span></span><img src="/assets/img/icon-arrow-outward-dark.svg" alt="" aria-hidden="true" style="display: inline-block; width: 14px; height: 14px; margin-left: 4px; vertical-align: middle; flex: 0 0 auto;" loading="lazy"></a><a href="/assets/Shruti_Kalamdani_Resume.pdf" target="_blank" rel="noopener" class="scp4" style="display: inline-flex; align-items: center; text-decoration: none; color: rgb(22, 20, 18); opacity: 0.7; padding-bottom: 3px; border-bottom: 1.5px solid transparent; transition: opacity 0.2s;"><span><span class="sc-interp">Resume</span></span><img src="/assets/img/icon-arrow-outward-dark.svg" alt="" aria-hidden="true" style="display: inline-block; width: 14px; height: 14px; margin-left: 4px; vertical-align: middle; flex: 0 0 auto;" loading="lazy"></a><a href="/index.html#contact" class="scp4" style="display: inline-flex; align-items: center; text-decoration: none; color: rgb(22, 20, 18); opacity: 0.7; padding-bottom: 3px; border-bottom: 1.5px solid transparent; transition: opacity 0.2s;"><span><span class="sc-interp">Contact Me</span></span><img src="/assets/img/icon-arrow-outward-dark.svg" alt="" aria-hidden="true" style="display: none; width: 14px; height: 14px; margin-left: 4px; vertical-align: middle; flex: 0 0 auto;" loading="lazy"></a>
+  </nav>
+  <div style="display: flex; flex-direction: column; gap: 8px; font-family: var(--font-sans); font-size: 12px; color: rgb(110, 104, 98);">
+    <span style="display: flex; align-items: center; gap: 10px;"><img src="/assets/img/claude-ai-icon.webp" alt="" aria-hidden="true" style="width: 20px; height: 20px; border-radius: 5px; flex: 0 0 auto;" loading="lazy"><span>Coded by Claude</span></span>
+    <span style="display: flex; align-items: center; gap: 10px;"><span style="width: 20px; height: 20px; flex: 0 0 auto; background-color: rgb(110, 104, 98); mask: url(&quot;/assets/img/icon-written-by.svg&quot;) center center / contain no-repeat;"></span><span>Written by Shruti</span></span>
+    <span style="display: flex; align-items: center; gap: 10px;"><span style="width: 20px; height: 20px; flex: 0 0 auto; display: flex; align-items: center; justify-content: center; font-size: 14px; line-height: 20px;">©</span><span>Shruti Kalamdani 2026</span></span>
+  </div></aside><header style="position: fixed; top: 0px; left: 0px; right: 0px; z-index: 49; height: 64px; box-sizing: border-box; padding: 0px 12px 0px 20px; display: none; align-items: center; justify-content: space-between; background-color: var(--paper); color: rgb(22, 20, 18); border-bottom: 1px solid rgb(220, 214, 205);">
+  <a href="/index.html" aria-label="Home" style="width: 40px; height: 40px; border-radius: 50%; background: rgb(107, 63, 176); color: rgb(244, 241, 236); display: flex; align-items: center; justify-content: center; font-family: var(--font-serif); font-size: 17px; font-style: italic; text-decoration: none;">SK</a>
+  <button aria-label="Open menu" aria-expanded="false" style="width: 44px; height: 44px; padding: 0px; border: 0px; background: transparent; color: inherit; cursor: pointer; display: flex; align-items: center; justify-content: center;">
+    <span style="position: relative; width: 20px; height: 14px; display: block;">
+      <span style="position: absolute; left: 0px; width: 20px; height: 2px; background: currentcolor; border-radius: 2px; transition: transform 240ms cubic-bezier(0.22, 1, 0.36, 1), top 240ms cubic-bezier(0.22, 1, 0.36, 1); top: 0px; transform: rotate(0deg);"></span>
+      <span style="position: absolute; left: 0px; width: 20px; height: 2px; background: currentcolor; border-radius: 2px; top: 6px; opacity: 1; transition: opacity 160ms;"></span>
+      <span style="position: absolute; left: 0px; width: 20px; height: 2px; background: currentcolor; border-radius: 2px; transition: transform 240ms cubic-bezier(0.22, 1, 0.36, 1), top 240ms cubic-bezier(0.22, 1, 0.36, 1); top: 12px; transform: rotate(0deg);"></span>
+    </span>
+  </button></header><div style="position: fixed; inset: 0px; z-index: 55; background: rgba(12, 10, 9, 0.5); opacity: 0; pointer-events: none; transition: opacity 240ms;"></div></div>
+
+  <div style="flex: 1 1 0%; margin-left: 240px; padding-top: 0px; min-width: 0px; padding-bottom: 96px;">
+    <section id="top" style="padding: 52px 60px 40px;">
+      <div style="max-width: 1200px; scroll-snap-align: start; scroll-margin-top: 52px;">
+      <div style="display: flex; align-items: center; gap: 14px; margin: 0px 0px 20px; min-width: 0px;">
+        <button type="button" aria-label="Go back" class="scp0 scp1" style="width: 36px; height: 36px; flex: 0 0 auto; padding: 0px; border-radius: 50%; border: 1px solid rgb(218, 212, 203); background: var(--paper); color: rgb(27, 24, 21); cursor: pointer; display: flex; align-items: center; justify-content: center;">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto; transition: transform 160ms cubic-bezier(0.22, 1, 0.36, 1); transform: none;"><path d="M13 8H3"></path><path d="M7 4L3 8l4 4"></path></svg>
+        </button>
+        <span style="font-family: Inter, sans-serif; font-size: 12px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.16em; color: var(--text-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0px;"><span class="sc-interp">MY WORK · UPSTOX · 2025</span></span>
+      </div>
+      <h1 style="font-family: var(--font-serif); font-size: 44px; font-weight: 700; margin: 0px 0px 48px; line-height: 1.08; letter-spacing: -0.03em; white-space: nowrap; text-wrap-style: initial;">Account opening - Improving the funnel</h1>
+      <div style="display: grid; grid-template-columns: 276px minmax(0px, 1fr); gap: 80px; align-items: center; margin-bottom: 96px;">
+        <div style="display: flex; justify-content: flex-start; min-width: 0px;">
+          <div style="width: 276px; height: 593px; flex: 0 0 auto; box-sizing: border-box; padding: 9px; background: var(--ink); border-radius: 36px; box-shadow: rgba(26, 23, 20, 0.11) 0px 24px 48px, rgba(26, 23, 20, 0.06) 0px 4px 12px;">
+            <div style="width: 100%; height: 100%; border-radius: 27px; overflow: hidden; background: rgb(0, 0, 0);">
+              <video src="/assets/video/intro-screens.mp4" poster="/assets/img/intro-screens-poster.jpg" loop="" playsinline="" preload="none" aria-label="Screen recording of the redesigned account opening flow" style="width: 100%; height: 100%; object-fit: cover; display: block;"></video>
+            </div>
+          </div>
+        </div>
+        <div style="display: flex; flex-direction: column; justify-content: center; min-width: 0px;">
+          <p style="font-family: var(--font-sans); font-size: 16px; font-weight: 400; line-height: 1.75; color: var(--ink); max-width: 100%; margin: 0px; text-wrap: pretty;">Every investor in India needs a Demat account (the electronic account that holds their shares) before they can trade. Ours was a rigid, fixed-order flow stacked with third-party integrations and validation checks — and fewer than one in four people who started it finished. We rebuilt it as a modular flow: <strong>fewer errors</strong>, <strong>more completions</strong>, and a product team <strong>free to test the sequence</strong> itself.</p>
+          <dl style="display: grid; grid-template-columns: repeat(3, minmax(0px, 1fr)); gap: 32px; margin: 32px 0px 0px; padding-top: 32px; border-top: 1px solid var(--line);">
+            <div style="display: flex; flex-direction: column; gap: 8px; min-width: 0px;">
+              <dt style="font-family: var(--font-sans); font-size: 11px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--text-muted); margin: 0px;">Contribution</dt>
+              <dd style="font-family: var(--font-sans); font-size: 16px; font-weight: 400; line-height: 1.55; color: var(--ink); margin: 0px; text-wrap: pretty;">Hands-on + Leader</dd>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 8px; min-width: 0px;">
+              <dt style="font-family: var(--font-sans); font-size: 11px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--text-muted); margin: 0px;">Duration</dt>
+              <dd style="font-family: var(--font-sans); font-size: 16px; font-weight: 400; line-height: 1.55; color: var(--ink); margin: 0px; text-wrap: pretty;">9 weeks + A/B test</dd>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 8px; min-width: 0px;">
+              <dt style="font-family: var(--font-sans); font-size: 11px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--text-muted); margin: 0px;">Team</dt>
+              <dd style="font-family: var(--font-sans); font-size: 16px; font-weight: 400; line-height: 1.55; color: var(--ink); margin: 0px; text-wrap: pretty;">Me + 2 designers + 1 PM + 3 engineers</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+      </div>
+
+      
+
+      
+        
+        <div data-tldr="" style="margin-left: -60px; margin-right: -60px; box-sizing: border-box; background: rgb(27, 24, 21); display: flex; align-items: center; justify-content: center; padding: 0px 56px; height: max(100svh, 720px); scroll-snap-align: start;">
+          <div style="width: 100%; max-width: 1040px; margin: 0px auto; text-align: left;">
+            <div style="display: flex; align-items: baseline; gap: 12px; margin-bottom: clamp(14px, 3.2vh, 32px);"><span style="color: rgb(224, 164, 88); font-size: 20px;">✦</span><span style="font-family: var(--font-serif); font-size: 24px; font-weight: 500; color: rgb(201, 174, 240); line-height: 1.2;">TL;DR</span></div>
+            <div style="display: grid; grid-template-columns: 150px minmax(0px, 1fr); gap: 24px; padding: clamp(10px, 2.4vh, 24px) 0px; border-top: 1px solid rgb(58, 53, 48);"><span style="font-family: var(--font-serif); font-size: 16px; font-weight: 500; color: rgb(244, 241, 236); line-height: 1.6;">Problem</span><span style="font-family: Inter, sans-serif; font-size: 17px; line-height: 1.6; color: rgb(233, 228, 220); min-width: 0px;">Completion had been sliding for months, and our rigid flow couldn't test a fix. We had a hypothesis and a locked door.</span></div>
+            <div style="display: grid; grid-template-columns: 150px minmax(0px, 1fr); gap: 24px; padding: clamp(10px, 2.4vh, 24px) 0px; border-top: 1px solid rgb(58, 53, 48);"><span style="font-family: var(--font-serif); font-size: 16px; font-weight: 500; color: rgb(244, 241, 236); line-height: 1.6;">Ideas</span><span style="font-family: Inter, sans-serif; font-size: 17px; line-height: 1.6; color: rgb(233, 228, 220); min-width: 0px;"><span style="display: flex; flex-direction: column; gap: 8px;"><span style="display: flex; gap: 12px; align-items: baseline;"><span style="font-family: var(--font-mono, monospace); font-size: 13px; color: rgb(183, 154, 224); flex: 0 0 auto;">01</span><span style="min-width: 0px;">Mapped drop-off and errors at every step, then fixed the worst points with visual aids and motion.</span></span><span style="display: flex; gap: 12px; align-items: baseline;"><span style="font-family: var(--font-mono, monospace); font-size: 13px; color: rgb(183, 154, 224); flex: 0 0 auto;">02</span><span style="min-width: 0px;">Swapped a long, upload-heavy document process for an automatic fetch.</span></span><span style="display: flex; gap: 12px; align-items: baseline;"><span style="font-family: var(--font-mono, monospace); font-size: 13px; color: rgb(183, 154, 224); flex: 0 0 auto;">03</span><span style="min-width: 0px;">Made every step reorderable, addable or switchable without a new design.</span></span></span></span></div>
+            <div style="display: grid; grid-template-columns: 150px minmax(0px, 1fr); gap: 24px; padding: clamp(10px, 2.4vh, 24px) 0px; border-top: 1px solid rgb(58, 53, 48);"><span style="font-family: var(--font-serif); font-size: 16px; font-weight: 500; color: rgb(244, 241, 236); line-height: 1.6;">Outcome</span><div style="display: grid; grid-template-columns: repeat(3, minmax(0px, 1fr)); min-width: 0px;">
+              <div style="display: flex; flex-direction: column; gap: 10px; min-width: 0px; padding: 0px 28px 0px 0px; margin-top: 0px;"><span style="font-family: Inter, sans-serif; font-size: 11px; text-transform: uppercase; letter-spacing: 0.14em; color: rgb(143, 134, 160);">FLOW COMPLETION</span><span style="font-family: var(--font-serif); font-size: clamp(30px, 3.9vw, 56px); font-weight: 500; color: rgb(255, 255, 255); line-height: 1; overflow-wrap: anywhere;">32%</span><span style="font-family: var(--font-mono, monospace); font-size: 14px; color: rgb(183, 154, 224);">up from 24%</span><span style="font-family: Inter, sans-serif; font-size: 14px; line-height: 1.5; color: rgb(183, 175, 164);">Within two months of release.</span></div>
+              <div style="display: flex; flex-direction: column; gap: 10px; min-width: 0px; padding: 0px 28px; border-left: 1px solid rgb(58, 53, 48); border-top-width: medium; border-top-style: none; border-top-color: currentcolor; margin-top: 0px;"><span style="font-family: Inter, sans-serif; font-size: 11px; text-transform: uppercase; letter-spacing: 0.14em; color: rgb(143, 134, 160);">F&amp;O ACTIVATION</span><span style="font-family: var(--font-serif); font-size: clamp(30px, 3.9vw, 56px); font-weight: 500; color: rgb(255, 255, 255); line-height: 1; overflow-wrap: anywhere;">10.5%</span><span style="font-family: var(--font-mono, monospace); font-size: 14px; color: rgb(183, 154, 224);">up from 5%</span><span style="font-family: Inter, sans-serif; font-size: 14px; line-height: 1.5; color: rgb(183, 175, 164);">More than doubled in the first 2 months.</span></div>
+              <div style="display: flex; flex-direction: column; gap: 10px; min-width: 0px; padding: 0px 0px 0px 28px; border-left: 1px solid rgb(58, 53, 48); border-top-width: medium; border-top-style: none; border-top-color: currentcolor; margin-top: 0px;"><span style="font-family: Inter, sans-serif; font-size: 11px; text-transform: uppercase; letter-spacing: 0.14em; color: rgb(143, 134, 160);">STEP ORDER</span><span style="font-family: var(--font-serif); font-size: clamp(30px, 3.9vw, 56px); font-weight: 500; color: rgb(255, 255, 255); line-height: 1; overflow-wrap: anywhere;">Modular</span><span style="font-family: var(--font-mono, monospace); font-size: 14px; color: rgb(183, 154, 224);">was one fixed order</span><span style="font-family: Inter, sans-serif; font-size: 14px; line-height: 1.5; color: rgb(183, 175, 164);">Experiments ship without waiting on design.</span></div>
+            </div></div>
+          </div>
+        </div>
+      
+
+      
+
+      
+    </section>
+
+    <section style="padding: 88px 60px 0px;">
+     <div style="display: grid; grid-template-columns: minmax(200px, 1fr) minmax(0px, 2fr); gap: 56px; align-items: start; max-width: 100%;">
+      <div style="position: sticky; top: 56px; align-self: start; display: flex; flex-direction: column; gap: 24px; padding-left: 22px; padding-top: 4px; padding-bottom: 4px; border-left: 3px solid var(--accent);">
+        <div style="display: flex; flex-direction: column; gap: 16px;">
+          <p style="font-family: var(--font-mono, monospace); font-size: 11px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; line-height: 1; color: var(--text-muted); margin: 0px;">Problem 01</p>
+          <p style="font-family: var(--font-serif); font-size: 40px; font-weight: 700; line-height: 1.12; letter-spacing: -0.03em; color: var(--ink); margin: 0px; max-width: 16ch; text-wrap: pretty;">Get more people through the flow.</p>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 12px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 16px 0px; margin-top: 6px;">
+          <p style="font-family: var(--font-sans); font-size: 10px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--text-muted); margin: 0px;">Flow completion rate</p>
+          <div style="display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap;">
+            <span style="font-family: var(--font-mono, monospace); font-size: 20px; font-weight: 500; color: var(--text-muted); text-decoration: line-through;">24%</span>
+            <span style="font-family: var(--font-sans); font-size: 16px; color: var(--text-muted);">→</span>
+            <span style="font-family: var(--font-serif); font-size: 34px; font-weight: 700; letter-spacing: -0.03em; color: var(--accent); line-height: 1;">32%</span>
+          </div>
+        </div>
+      </div>
+      <div>
+      <h2 style="font-family: var(--font-serif); font-size: 34px; font-weight: 700; margin: 0px 0px 20px; letter-spacing: -0.02em; max-width: 100%; text-wrap: pretty;">Finding where people dropped off</h2>
+      <p style="font-family: var(--font-sans); font-size: 15px; line-height: 1.75; color: var(--ink); max-width: 100%; margin: 0px 0px 20px; text-wrap: pretty;">Completion had been sliding for months. We ruled out the obvious suspects first — market conditions, a failing integration — and found no pattern. Product wanted to test a different step order, but the way the flow was built made that impossible. So we walked it step by step and mapped every error state and drop-off point.</p>
+      <p style="font-family: var(--font-sans); font-size: 15px; line-height: 1.75; color: var(--ink); max-width: 100%; margin: 0px 0px 20px; text-wrap: pretty;">The failures fell into two groups.</p>
+
+      <h3 style="font-family: var(--font-serif); font-size: 24px; font-weight: 700; margin: 48px 0px 16px; letter-spacing: -0.015em; max-width: 100%; text-wrap: pretty;">Data mismatches: small errors, outright rejections</h3>
+      <p style="font-family: var(--font-sans); font-size: 15px; line-height: 1.75; color: var(--ink); max-width: 100%; margin: 0px 0px 20px; text-wrap: pretty;">People entered a name, signature or place of birth that didn't exactly match their official documents, or took selfies that failed verification. Each mismatch meant a rejection, and people rarely understood why.</p>
+      <p style="font-family: var(--font-sans); font-size: 15px; line-height: 1.75; color: var(--ink); max-width: 100%; margin: 0px 0px 20px; text-wrap: pretty;"><strong>What we built:</strong> visual references to match against. We showed the PAN card (India's tax ID card) exactly as it would appear, so people could match details and signature as shown on the card to prevent errors.</p>
+      <figure style="margin: 8px 0px 32px; max-width: 100%; display: flex; flex-direction: column; gap: 10px;">
+        <div style="display: flex; flex-direction: row; justify-content: center; align-items: flex-start; gap: 48px; padding: 16px 0px 8px;">
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 14px; width: 210px; flex: 0 0 auto;">
+            <p style="font-family: var(--font-sans); font-size: 11px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--text-muted); margin: 0px;">Before</p>
+            <div style="width: 210px; height: 457px; flex: 0 0 auto; box-sizing: border-box; padding: 4px; background: var(--ink); border-radius: 31px; box-shadow: rgba(26, 23, 20, 0.11) 0px 24px 48px, rgba(26, 23, 20, 0.06) 0px 4px 12px;">
+              <div style="width: 100%; height: 100%; border-radius: 27px; overflow: hidden; background: rgb(0, 0, 0);">
+                <video src="/assets/video/pan-before.mp4" poster="/assets/img/pan-before-poster.jpg" loop="" playsinline="" preload="none" aria-label="Before: PAN details step with blank fields" style="width: 100%; height: 100%; object-fit: cover; display: block;"></video>
+              </div>
+            </div>
+            <p style="font-family: var(--font-sans); font-size: 13px; line-height: 1.45; color: var(--text-muted); margin: 0px; text-align: center; text-wrap: pretty;">Blank fields — people guessed, and got rejected</p>
+          </div>
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 14px; width: 210px; flex: 0 0 auto;">
+            <p style="font-family: var(--font-sans); font-size: 11px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent); margin: 0px;">After</p>
+            <div style="width: 210px; height: 457px; flex: 0 0 auto; box-sizing: border-box; padding: 4px; background: var(--ink); border-radius: 31px; box-shadow: rgba(26, 23, 20, 0.11) 0px 24px 48px, rgba(26, 23, 20, 0.06) 0px 4px 12px;">
+              <div style="width: 100%; height: 100%; border-radius: 27px; overflow: hidden; background: rgb(0, 0, 0);">
+                <video src="/assets/video/pan-after.mp4" poster="/assets/img/pan-after-poster.jpg" loop="" playsinline="" preload="none" aria-label="After: PAN card shown upfront for exact matching" style="width: 100%; height: 100%; object-fit: cover; display: block;"></video>
+              </div>
+            </div>
+            <p style="font-family: var(--font-sans); font-size: 13px; line-height: 1.45; color: var(--text-muted); margin: 0px; text-align: center; text-wrap: pretty;">PAN card shown upfront — people match exactly</p>
+          </div>
+        </div>
+        <figcaption style="font-family: var(--font-mono, monospace); font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted); margin: 0px;">PAN card details — before vs after</figcaption>
+      </figure>
+      <p style="font-family: var(--font-sans); font-size: 15px; line-height: 1.75; color: var(--ink); max-width: 100%; margin: 0px 0px 20px; text-wrap: pretty;">Every new account needs a liveness check: a selfie matched against the photo on the person’s official documents. This step had one of the highest rejection rates in the flow. Selfies failed because of poor lighting, covered faces, glasses, or someone else in the frame.</p>
+      <p style="font-family: var(--font-sans); font-size: 15px; line-height: 1.75; color: var(--ink); max-width: 100%; margin: 0px 0px 20px; text-wrap: pretty;">We explained the rules in text before the camera opened. People skimmed it, took the selfie anyway, and were rejected without knowing why.</p>
+      <p style="font-family: var(--font-sans); font-size: 15px; line-height: 1.75; color: var(--ink); max-width: 100%; margin: 0px 0px 20px; text-wrap: pretty;"><strong>What we built:</strong> a short looping animation, shown right before the camera opens, of selfies that fail and selfies that pass. People understood the rules in seconds, and more got it right on the first try.</p>
+      <figure style="margin: 8px 0px 32px; max-width: 100%; display: flex; flex-direction: column; gap: 10px;">
+        <div style="display: flex; flex-direction: row; justify-content: center; align-items: flex-start; gap: 48px; padding: 16px 0px 8px;">
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 14px; width: 210px; flex: 0 0 auto;">
+            <p style="font-family: var(--font-sans); font-size: 11px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--text-muted); margin: 0px;">Before</p>
+            <div style="width: 210px; height: 457px; flex: 0 0 auto; box-sizing: border-box; padding: 4px; background: var(--ink); border-radius: 31px; box-shadow: rgba(26, 23, 20, 0.11) 0px 24px 48px, rgba(26, 23, 20, 0.06) 0px 4px 12px;">
+              <div style="width: 100%; height: 100%; border-radius: 27px; overflow: hidden; background: rgb(0, 0, 0);">
+                <img src="/assets/img/ao-selfie-1.svg" alt="Before: selfie step with text-only rules" style="width: 100%; height: 100%; object-fit: cover; display: block;" loading="lazy">
+              </div>
+            </div>
+            <p style="font-family: var(--font-sans); font-size: 13px; line-height: 1.45; color: var(--text-muted); margin: 0px; text-align: center; text-wrap: pretty;">Text-only rules — people guessed what counted</p>
+          </div>
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 14px; width: 210px; flex: 0 0 auto;">
+            <p style="font-family: var(--font-sans); font-size: 11px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent); margin: 0px;">After</p>
+            <div style="width: 210px; height: 457px; flex: 0 0 auto; box-sizing: border-box; padding: 4px; background: var(--ink); border-radius: 31px; box-shadow: rgba(26, 23, 20, 0.11) 0px 24px 48px, rgba(26, 23, 20, 0.06) 0px 4px 12px;">
+              <div style="width: 100%; height: 100%; border-radius: 27px; overflow: hidden; background: rgb(0, 0, 0);">
+                <div style="position: relative; width: 100%; height: 100%;">
+                  <img src="/assets/img/ao-selfie-2.svg" alt="After: selfie step with rejected examples shown upfront" style="width: 100%; height: 100%; object-fit: cover; display: block;" loading="lazy">
+                  <video src="/assets/video/liveness-test.mp4" poster="/assets/img/liveness-test-poster.jpg" loop="" playsinline="" preload="none" aria-hidden="true" style="position: absolute; left: 9.444%; top: 29.625%; width: 80.833%; height: 38.375%; object-fit: cover; display: block;"></video>
+                </div>
+              </div>
+            </div>
+            <p style="font-family: var(--font-sans); font-size: 13px; line-height: 1.45; color: var(--text-muted); margin: 0px; text-align: center; text-wrap: pretty;">Rejected examples shown upfront — people got it right first time</p>
+          </div>
+        </div>
+        <figcaption style="font-family: var(--font-mono, monospace); font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted); margin: 0px;">Selfie guidance — before vs after</figcaption>
+      </figure>
+
+      <h3 style="font-family: var(--font-serif); font-size: 24px; font-weight: 700; margin: 48px 0px 16px; letter-spacing: -0.015em; max-width: 100%; text-wrap: pretty;">Information-heavy steps: asking for what people didn't have to hand</h3>
+      <p style="font-family: var(--font-sans); font-size: 15px; line-height: 1.75; color: var(--ink); max-width: 100%; margin: 0px 0px 20px; text-wrap: pretty;">Linking a bank account meant recalling an account number and IFSC code (the bank branch's routing code) — details few people have within reach. A small ask, and a heavy drop-off.</p>
+      <p style="font-family: var(--font-sans); font-size: 15px; line-height: 1.75; color: var(--ink); max-width: 100%; margin: 0px 0px 20px; text-wrap: pretty;"><strong>What we built:</strong> we automated the step with an external service that pulls bank details from a phone number. Instead of typing, people just confirm what's been fetched.</p>
+      <figure style="margin: 8px 0px 32px; max-width: 100%; display: flex; flex-direction: column; gap: 10px;">
+        <div style="display: flex; flex-direction: row; justify-content: center; align-items: flex-start; gap: 48px; padding: 16px 0px 8px;">
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 14px; width: 210px; flex: 0 0 auto;">
+            <div style="width: 210px; height: 457px; flex: 0 0 auto; box-sizing: border-box; padding: 4px; background: var(--ink); border-radius: 31px; box-shadow: rgba(26, 23, 20, 0.11) 0px 24px 48px, rgba(26, 23, 20, 0.06) 0px 4px 12px;">
+              <div style="width: 100%; height: 100%; border-radius: 27px; overflow: hidden; background: rgb(0, 0, 0);">
+                <video src="/assets/video/bank-account-linking.mp4" poster="/assets/img/bank-account-linking-poster.jpg" loop="" playsinline="" preload="none" aria-label="Bank details fetched automatically from the phone number" style="width: 100%; height: 100%; object-fit: cover; display: block;"></video>
+              </div>
+            </div>
+            <p style="font-family: var(--font-sans); font-size: 13px; line-height: 1.45; color: var(--text-muted); margin: 0px; text-align: center; text-wrap: pretty;">Bank details fetched automatically — people just confirm</p>
+          </div>
+        </div>
+        <figcaption style="font-family: var(--font-mono, monospace); font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted); margin: 0px;">Bank account linking — automatic fetch</figcaption>
+      </figure>
+      <p style="font-family: var(--font-sans); font-size: 15px; line-height: 1.75; color: var(--ink); max-width: 100%; margin: 0px 0px 20px; text-wrap: pretty;">That alone removed most of the manual-entry errors at this step.</p>
+      </div>
+     </div>
+    </section>
+
+    <section style="padding: 88px 60px 0px;">
+     <div style="display: grid; grid-template-columns: minmax(200px, 1fr) minmax(0px, 2fr); gap: 56px; align-items: start; max-width: 100%;">
+      <div style="position: sticky; top: 56px; align-self: start; display: flex; flex-direction: column; gap: 24px; padding-left: 22px; padding-top: 4px; padding-bottom: 4px; border-left: 3px solid var(--accent);">
+        <div style="display: flex; flex-direction: column; gap: 16px;">
+          <p style="font-family: var(--font-mono, monospace); font-size: 11px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; line-height: 1; color: var(--text-muted); margin: 0px;">Problem 02</p>
+          <p style="font-family: var(--font-serif); font-size: 40px; font-weight: 700; line-height: 1.12; letter-spacing: -0.03em; color: var(--ink); margin: 0px; max-width: 16ch; text-wrap: pretty;">Get more people activated for F&amp;O.</p>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 12px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 16px 0px; margin-top: 6px;">
+          <p style="font-family: var(--font-sans); font-size: 10px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--text-muted); margin: 0px;">F&amp;O segment activation</p>
+          <div style="display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap;">
+            <span style="font-family: var(--font-mono, monospace); font-size: 20px; font-weight: 500; color: var(--text-muted); text-decoration: line-through;">5%</span>
+            <span style="font-family: var(--font-sans); font-size: 16px; color: var(--text-muted);">→</span>
+            <span style="font-family: var(--font-serif); font-size: 34px; font-weight: 700; letter-spacing: -0.03em; color: var(--accent); line-height: 1;">10.5%</span>
+          </div>
+        </div>
+      </div>
+      <div>
+      <h2 style="font-family: var(--font-serif); font-size: 34px; font-weight: 700; margin: 0px 0px 20px; letter-spacing: -0.02em; max-width: 100%; text-wrap: pretty;">Proving eligibility without the paperwork</h2>
+      <p style="font-family: var(--font-sans); font-size: 15px; line-height: 1.75; color: var(--ink); max-width: 100%; margin: 0px 0px 20px; text-wrap: pretty;">The old flow made F&amp;O feel like an extra step, so most people skipped it. Yet after their first order, many came to support asking how to activate it. The demand was there; we were asking at the wrong moment. So we moved activation into account opening.</p>
+      <p style="font-family: var(--font-sans); font-size: 15px; line-height: 1.75; color: var(--ink); max-width: 100%; margin: 0px 0px 20px; text-wrap: pretty;">SEBI, India’s market regulator, requires a bank statement showing a minimum balance over a specific period. People often uploaded the wrong period or an account without enough balance, and were almost always rejected.</p>
+      <p style="font-family: var(--font-sans); font-size: 15px; line-height: 1.75; color: var(--ink); max-width: 100%; margin: 0px 0px 20px; text-wrap: pretty;"><strong>What we built:</strong> an automatic fetch through the Account Aggregator. With the person’s consent, the statement comes straight from their bank and is validated on the spot: the account is active, belongs to them and covers the required period. People see approval on screen instead of waiting for a manual review.</p>
+      <figure style="margin: 8px 0px 32px; max-width: 100%; display: flex; flex-direction: column; gap: 10px;">
+        <div style="display: flex; flex-direction: row; justify-content: center; align-items: flex-start; gap: 48px; padding: 16px 0px 8px;">
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 14px; width: 210px; flex: 0 0 auto;">
+            <p style="font-family: var(--font-sans); font-size: 11px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--text-muted); margin: 0px;">Before</p>
+            <div style="width: 210px; height: 457px; flex: 0 0 auto; box-sizing: border-box; padding: 4px; background: var(--ink); border-radius: 31px; box-shadow: rgba(26, 23, 20, 0.11) 0px 24px 48px, rgba(26, 23, 20, 0.06) 0px 4px 12px;">
+              <div style="width: 100%; height: 100%; border-radius: 27px; overflow: hidden; background: rgb(0, 0, 0);">
+                <video src="/assets/video/income-proof-before.mp4" poster="/assets/img/income-proof-before-poster.jpg" loop="" playsinline="" preload="none" aria-label="Before: manual document upload for F&amp;O eligibility" style="width: 100%; height: 100%; object-fit: cover; display: block;"></video>
+              </div>
+            </div>
+            <p style="font-family: var(--font-sans); font-size: 13px; line-height: 1.45; color: var(--text-muted); margin: 0px; text-align: center; text-wrap: pretty;">Manual document upload — people dropped off</p>
+          </div>
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 14px; width: 210px; flex: 0 0 auto;">
+            <p style="font-family: var(--font-sans); font-size: 11px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent); margin: 0px;">After</p>
+            <div style="width: 210px; height: 457px; flex: 0 0 auto; box-sizing: border-box; padding: 4px; background: var(--ink); border-radius: 31px; box-shadow: rgba(26, 23, 20, 0.11) 0px 24px 48px, rgba(26, 23, 20, 0.06) 0px 4px 12px;">
+              <div style="width: 100%; height: 100%; border-radius: 27px; overflow: hidden; background: rgb(0, 0, 0);">
+                <video src="/assets/video/income-proof-after.mp4" poster="/assets/img/income-proof-after-poster.jpg" loop="" playsinline="" preload="none" aria-label="After: Account Aggregator fetches bank accounts automatically" style="width: 100%; height: 100%; object-fit: cover; display: block;"></video>
+              </div>
+            </div>
+            <p style="font-family: var(--font-sans); font-size: 13px; line-height: 1.45; color: var(--text-muted); margin: 0px; text-align: center; text-wrap: pretty;">Account Aggregator — accounts fetched in a tap</p>
+          </div>
+        </div>
+        <figcaption style="font-family: var(--font-mono, monospace); font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted); margin: 0px;">F&amp;O eligibility — before vs after</figcaption>
+      </figure>
+      </div>
+     </div>
+    </section>
+
+    <section style="padding: 88px 60px 0px;">
+     <div style="display: grid; grid-template-columns: minmax(200px, 1fr) minmax(0px, 2fr); gap: 56px; align-items: start; max-width: 100%;">
+      <div style="position: sticky; top: 56px; align-self: start; display: flex; flex-direction: column; gap: 24px; padding-left: 22px; padding-top: 4px; padding-bottom: 4px; border-left: 3px solid var(--accent);">
+        <div style="display: flex; flex-direction: column; gap: 16px;">
+          <p style="font-family: var(--font-mono, monospace); font-size: 11px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; line-height: 1; color: var(--text-muted); margin: 0px;">Problem 03</p>
+          <p style="font-family: var(--font-serif); font-size: 40px; font-weight: 700; line-height: 1.12; letter-spacing: -0.03em; color: var(--ink); margin: 0px; max-width: 16ch; text-wrap: pretty;">Design for experimentation.</p>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 12px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 16px 0px; margin-top: 6px;">
+          <p style="font-family: var(--font-sans); font-size: 10px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--text-muted); margin: 0px;">Post-redesign</p>
+          <p style="font-family: var(--font-serif); font-size: 23px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.25; color: var(--accent); margin: 0px; text-wrap: pretty;">Product runs experiments without waiting on design</p>
+        </div>
+      </div>
+      <div>
+      <h2 style="font-family: var(--font-serif); font-size: 34px; font-weight: 700; margin: 0px 0px 20px; letter-spacing: -0.02em; max-width: 100%; text-wrap: pretty;">One flow, any sequence.</h2>
+      <p style="font-family: var(--font-sans); font-size: 15px; line-height: 1.75; color: var(--ink); max-width: 100%; margin: 0px 0px 20px; text-wrap: pretty;">The flow was strictly linear, and product kept hitting the same wall. They needed to add a manual-entry screen when an integration failed, switch off steps in volatile markets, or simply test which order converted better. The design couldn't support any of it.</p>
+      <p style="font-family: var(--font-sans); font-size: 15px; line-height: 1.75; color: var(--ink); max-width: 100%; margin: 0px 0px 20px; text-wrap: pretty;"><strong>What we built came in two parts.</strong></p>
+      <p style="font-family: var(--font-sans); font-size: 15px; line-height: 1.75; color: var(--ink); max-width: 100%; margin: 0px 0px 20px; text-wrap: pretty;"><strong>A modular page layout</strong> — one header and footer shared by every step, around a flexible content area. Engineering could drop any step's content into it, so pages were reused instead of redesigned each time the sequence changed.</p>
+      <p style="font-family: var(--font-sans); font-size: 15px; line-height: 1.75; color: var(--ink); max-width: 100%; margin: 0px 0px 20px; text-wrap: pretty;"><strong>An index screen</strong> — showing people where they are and how much is left. It also does cognitive work: the flow runs at least eight steps, but the index groups them into three stages, giving people an anchor and making the whole thing feel lighter than it is.</p>
+      <figure style="margin: 8px 0px 32px; max-width: 100%; display: flex; flex-direction: column; gap: 10px;">
+        <div style="display: flex; flex-direction: row; justify-content: center; align-items: flex-start; gap: 48px; padding: 16px 0px 8px;">
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 14px; width: 210px; flex: 0 0 auto;">
+            <p style="font-family: var(--font-sans); font-size: 11px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent); margin: 0px;">Modular page layout</p>
+            <div style="width: 210px; height: 457px; flex: 0 0 auto; box-sizing: border-box; padding: 4px; background: var(--ink); border-radius: 31px; box-shadow: rgba(26, 23, 20, 0.11) 0px 24px 48px, rgba(26, 23, 20, 0.06) 0px 4px 12px;">
+              <div style="width: 100%; height: 100%; border-radius: 27px; overflow: hidden; background: rgb(0, 0, 0);">
+                <video src="/assets/video/page-structure.mp4" poster="/assets/img/page-structure-poster.jpg" loop="" playsinline="" preload="none" aria-label="Modular page layout: fixed header and footer with a swappable content area" style="width: 100%; height: 100%; object-fit: cover; display: block;"></video>
+              </div>
+            </div>
+            <p style="font-family: var(--font-sans); font-size: 13px; line-height: 1.45; color: var(--text-muted); margin: 0px; text-align: center; text-wrap: pretty;">Fixed header and footer — any content in between</p>
+          </div>
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 14px; width: 210px; flex: 0 0 auto;">
+            <p style="font-family: var(--font-sans); font-size: 11px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent); margin: 0px;">Index screen</p>
+            <div style="width: 210px; height: 457px; flex: 0 0 auto; box-sizing: border-box; padding: 4px; background: var(--ink); border-radius: 31px; box-shadow: rgba(26, 23, 20, 0.11) 0px 24px 48px, rgba(26, 23, 20, 0.06) 0px 4px 12px;">
+              <div style="width: 100%; height: 100%; border-radius: 27px; overflow: hidden; background: rgb(0, 0, 0);">
+                <video src="/assets/video/index-page.mp4" poster="/assets/img/index-page-poster.jpg" loop="" playsinline="" preload="none" aria-label="Index screen grouping the flow into three stages" style="width: 100%; height: 100%; object-fit: cover; display: block;"></video>
+              </div>
+            </div>
+            <p style="font-family: var(--font-sans); font-size: 13px; line-height: 1.45; color: var(--text-muted); margin: 0px; text-align: center; text-wrap: pretty;">Eight steps, grouped into three stages</p>
+          </div>
+        </div>
+        <figcaption style="font-family: var(--font-mono, monospace); font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted); margin: 0px;">Modular page layout and index screen</figcaption>
+      </figure>
+      </div>
+     </div>
+    </section>
+
+    <section style="padding: 120px 60px 136px;"><div style="max-width: 880px; padding-top: 72px; border-top: 1px solid var(--line);">
+      <h2 style="font-family: var(--font-serif); font-size: 34px; font-weight: 700; margin: 0px 0px 16px; letter-spacing: -0.02em;">How we launched</h2>
+      <p style="font-family: var(--font-sans); font-size: 15px; line-height: 1.75; color: var(--ink-2); max-width: 100%; margin: 0px 0px 28px;">A phased rollout, so problems surfaced at 1% instead of 100%.</p>
+      <ul style="list-style: none; padding: 0px; margin: 0px; display: flex; flex-direction: column; gap: 14px; max-width: 100%;">
+        
+          <li style="display: flex; align-items: flex-start; gap: 12px;">
+            <span style="width: 6px; height: 6px; border-radius: 50%; background: var(--accent); margin-top: 9px; flex-shrink: 0;"></span>
+            <span style="font-family: var(--font-sans); font-size: 15px; line-height: 1.7; color: var(--ink);"><strong><span class="sc-interp">Shipped to 1% first</span></strong> — <span class="sc-interp">page-level errors fell, but it exposed failures in third-party integrations — bank statement pulls and penny-drop verification (depositing ₹1 to confirm an account is real) — that testing had missed.</span></span>
+          </li>
+        
+          <li style="display: flex; align-items: flex-start; gap: 12px;">
+            <span style="width: 6px; height: 6px; border-radius: 50%; background: var(--accent); margin-top: 9px; flex-shrink: 0;"></span>
+            <span style="font-family: var(--font-sans); font-size: 15px; line-height: 1.7; color: var(--ink);"><strong><span class="sc-interp">Fixed the integrations</span></strong> — <span class="sc-interp">with the teams that owned them, before scaling further.</span></span>
+          </li>
+        
+          <li style="display: flex; align-items: flex-start; gap: 12px;">
+            <span style="width: 6px; height: 6px; border-radius: 50%; background: var(--accent); margin-top: 9px; flex-shrink: 0;"></span>
+            <span style="font-family: var(--font-sans); font-size: 15px; line-height: 1.7; color: var(--ink);"><strong><span class="sc-interp">Rolled out to 50%</span></strong> — <span class="sc-interp">once the flow was stable.</span></span>
+          </li>
+        
+          <li style="display: flex; align-items: flex-start; gap: 12px;">
+            <span style="width: 6px; height: 6px; border-radius: 50%; background: var(--accent); margin-top: 9px; flex-shrink: 0;"></span>
+            <span style="font-family: var(--font-sans); font-size: 15px; line-height: 1.7; color: var(--ink);"><strong><span class="sc-interp">Conversion hit 30%</span></strong> — <span class="sc-interp">in the first month, and 32% by the second.</span></span>
+          </li>
+        
+      </ul>
+    </div></section>
+
+    <section class="lrn" data-screen-label="Learnings">
+     <div class="lrn-wrap">
+      <div class="lrn-in">
+        <h2>What I'd do differently</h2>
+        <div class="lrn-row"><span class="lrn-num">01</span><div class="lrn-txt"><p class="lrn-t">Lean harder on the bank integration.</p><p class="lrn-b">It already returned name, father's name, PAN details and bank linking, yet people still typed most of it in. It could have been step one, turning everything after it into review-and-approve. We held back because its error rate was high, and building on it would have brought back the sequential dependency the redesign set out to remove.</p></div></div>
+        <div class="lrn-row"><span class="lrn-num">02</span><div class="lrn-txt"><p class="lrn-t">Test in a closed sandbox first.</p><p class="lrn-b">This flow drives the funnel and the revenue behind it, and the change was drastic; upfront testing would likely have caught UX issues before they shipped. Given the timeline, we chose A/B testing in production over a 2–3 week delay.</p></div></div>
+        <div class="lrn-row"><span class="lrn-num">03</span><div class="lrn-txt"><p class="lrn-t">Bring integration owners in earlier.</p><p class="lrn-b">The bank-statement and penny-drop failures were foreseeable, since both depended on third parties. Involving those teams during design, not after launch, would have surfaced them before rollout instead of during it.</p></div></div>
+      </div>
+     </div>
+    </section>
+    <section style="background: radial-gradient(rgba(22, 20, 18, 0.08) 1px, transparent 1px) 0px 0px / 24px 24px rgb(244, 241, 236); padding: 120px 56px 140px; box-sizing: border-box;">
+      <div style="max-width: 1040px; text-align: left;">
+        <span style="font-family: Inter, sans-serif; font-size: 12px; text-transform: uppercase; letter-spacing: 0.14em; color: rgb(138, 130, 120);">Keep exploring</span>
+        <h2 style="font-family: var(--font-serif); font-size: 40px; font-weight: 500; color: rgb(27, 24, 21); margin: 12px 0px 56px; line-height: 1.15;">More case studies</h2>
+        <div style="display: grid; grid-template-columns: repeat(2, minmax(0px, 1fr)); gap: 32px;">
+          <a href="/case-studies/upstox-2.html" class="scp2" style="display: flex; flex-direction: column; box-sizing: border-box; background: rgb(255, 255, 255); border: 1px solid rgba(27, 24, 21, 0.08); border-radius: 4px; padding: 20px; text-decoration: none; color: inherit; min-height: 520px; transition: transform 200ms, box-shadow 200ms; transform: none; box-shadow: rgba(27, 24, 21, 0.1) 0px 12px 32px;">
+            <div style="position: relative; overflow: hidden; border-radius: 4px; background: rgb(10, 10, 11); flex: 1 1 240px; min-height: 240px; aspect-ratio: auto;"><img src="/assets/img/thumb-simplifying-finance-dark.webp" alt="Simplifying finance" style="position: absolute; left: 16px; top: 16px; width: calc(100% - 16px); height: calc(100% - 16px); object-fit: cover; object-position: left top; border-radius: 8px 0px 0px; border-width: 1px 0px 0px 1px; border-style: solid none none solid; border-color: rgba(255, 255, 255, 0.14) currentcolor currentcolor rgba(255, 255, 255, 0.14); border-image: none; box-shadow: rgba(0, 0, 0, 0.6) 0px 12px 32px; transition: transform 400ms cubic-bezier(0.22, 1, 0.36, 1); transform: none;" loading="lazy"></div>
+            <div style="padding-top: 20px; margin-top: auto;">
+              <h3 style="font-family: var(--font-serif); font-size: 20px; font-weight: 700; line-height: 1.25; margin: 0px 0px 10px; color: rgb(27, 24, 21); transition: color 200ms;"><span class="sc-interp">Simplifying finance</span></h3>
+              <p style="font-family: Inter, var(--font-sans); font-size: 14px; line-height: 1.5; color: rgba(27, 24, 21, 0.6); margin: 0px 0px 14px; min-height: 4.5em; text-wrap: pretty;"><span class="sc-interp">Bringing one philosophy to every screen in the app, so people of any financial confidence can invest with clarity.</span></p>
+              <div style="font-family: Inter, var(--font-sans); font-size: 12.5px; color: rgba(27, 24, 21, 0.6); margin-bottom: 4px;"><span class="sc-interp">Led the team</span></div>
+            </div>
+            <div style="border-top: 1.2px dotted rgba(27, 24, 21, 0.12); padding-top: 10px; margin-top: 16px; display: flex; align-items: center; gap: 12px; white-space: nowrap; font-family: Inter, var(--font-sans); font-size: 15px; font-weight: 600; color: rgb(90, 55, 150);"><span>Read case study</span><span style="display: inline-block; transition: transform 200ms; transform: none;">→</span></div>
+          </a>
+          <a href="/case-studies/upstox-3.html" class="scp2" style="display: flex; flex-direction: column; box-sizing: border-box; background: rgb(255, 255, 255); border: 1px solid rgba(27, 24, 21, 0.08); border-radius: 4px; padding: 20px; text-decoration: none; color: inherit; min-height: 520px; transition: transform 200ms, box-shadow 200ms; transform: none; box-shadow: rgba(27, 24, 21, 0.1) 0px 12px 32px;">
+            <div style="position: relative; overflow: hidden; border-radius: 4px; background: rgb(10, 10, 11); flex: 1 1 240px; min-height: 240px; aspect-ratio: auto;"><img src="/assets/img/thumb-insurance-dark.webp" alt="Buy insurance" style="position: absolute; left: 16px; top: 16px; width: calc(100% - 16px); height: calc(100% - 16px); object-fit: cover; object-position: left top; border-radius: 8px 0px 0px; border-width: 1px 0px 0px 1px; border-style: solid none none solid; border-color: rgba(255, 255, 255, 0.14) currentcolor currentcolor rgba(255, 255, 255, 0.14); border-image: none; box-shadow: rgba(0, 0, 0, 0.6) 0px 12px 32px; transition: transform 400ms cubic-bezier(0.22, 1, 0.36, 1); transform: none;" loading="lazy"></div>
+            <div style="padding-top: 20px; margin-top: auto;">
+              <h3 style="font-family: var(--font-serif); font-size: 20px; font-weight: 700; line-height: 1.25; margin: 0px 0px 10px; color: rgb(27, 24, 21); transition: color 200ms;"><span class="sc-interp">Buy insurance</span></h3>
+              <p style="font-family: Inter, var(--font-sans); font-size: 14px; line-height: 1.5; color: rgba(27, 24, 21, 0.6); margin: 0px 0px 14px; min-height: 4.5em; text-wrap: pretty;"><span class="sc-interp">Building a curated marketplace for life, health and motor insurance.</span></p>
+              <div style="font-family: Inter, var(--font-sans); font-size: 12.5px; color: rgba(27, 24, 21, 0.6); margin-bottom: 4px;"><span class="sc-interp">Led the team</span></div>
+            </div>
+            <div style="border-top: 1.2px dotted rgba(27, 24, 21, 0.12); padding-top: 10px; margin-top: 16px; display: flex; align-items: center; gap: 12px; white-space: nowrap; font-family: Inter, var(--font-sans); font-size: 15px; font-weight: 600; color: rgb(90, 55, 150);"><span>Read case study</span><span style="display: inline-block; transition: transform 200ms; transform: none;">→</span></div>
+          </a>
+        </div>
+        <a href="/work/upstox.html" class="scp3" style="display: inline-block; margin-top: 64px; font-family: Inter, sans-serif; font-size: 16px; color: rgb(90, 55, 150); text-decoration: none;">← All Upstox work</a>
+      </div>
+    </section>
+  </div></div></div></div>
+<script>(function(){var p=document.getElementById("dc-prerender");if(p)p.remove();})();</script>
 <script type="text/x-dc" data-dc-script="" data-props="{&quot;accentTint&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:0.075,&quot;min&quot;:0,&quot;max&quot;:0.16,&quot;step&quot;:0.005,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Card&quot;},&quot;showProgression&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Card&quot;},&quot;psoLayout&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Compare all&quot;,&quot;Scoreboard&quot;,&quot;Before → after&quot;,&quot;Stat cards&quot;,&quot;Columns&quot;],&quot;default&quot;:&quot;Scoreboard&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Problem · Solution · Outcome&quot;}}">
 class Component extends DCLogic {
   state = { mcHov: -1, textH: 0, menuOpen: false, backHover: false };
@@ -2730,7 +5248,7 @@ class Component extends DCLogic {
       mcGrid: { display: "grid", gridTemplateColumns: tlM ? "1fr" : "repeat(2, minmax(0, 1fr))", gap: tlM ? "40px" : "32px" },
       mcOut: () => this.setState({ mcHov: -1 }),
             mcImg: { position: "relative", overflow: "hidden", borderRadius: "4px", background: "#0A0A0B", flex: tlM ? "none" : "1 1 240px", minHeight: tlM ? "220px" : "240px", aspectRatio: tlM ? "4 / 3" : "auto" },
-      mcCards: [{ title: "Simplifying finance", desc: "Bringing one philosophy to every screen in the app, so people of any financial confidence can invest with clarity.", href: "/case-studies/upstox-2.html", i: 0, image: "/assets/img/thumb-simplifying-finance-dark.png", date: "Jan 2022 – Dec 2025", tagLine: "Design philosophy · App-wide", role: "Led the team" },{ title: "Buy insurance", desc: "Building a curated marketplace for life, health and motor insurance.", href: "/case-studies/upstox-3.html", i: 1, image: "/assets/img/thumb-insurance-dark.png", date: "Aug 2024", tagLine: "0→1 launch · New business line", role: "Led the team" }].map(c => { const h = this.state.mcHov === c.i; return { ...c, on: () => this.setState({ mcHov: c.i }),
+      mcCards: [{ title: "Simplifying finance", desc: "Bringing one philosophy to every screen in the app, so people of any financial confidence can invest with clarity.", href: "/case-studies/upstox-2.html", i: 0, image: "/assets/img/thumb-simplifying-finance-dark.webp", date: "Jan 2022 – Dec 2025", tagLine: "Design philosophy · App-wide", role: "Led the team" },{ title: "Buy insurance", desc: "Building a curated marketplace for life, health and motor insurance.", href: "/case-studies/upstox-3.html", i: 1, image: "/assets/img/thumb-insurance-dark.webp", date: "Aug 2024", tagLine: "0→1 launch · New business line", role: "Led the team" }].map(c => { const h = this.state.mcHov === c.i; return { ...c, on: () => this.setState({ mcHov: c.i }),
         linkStyle: { display: "flex", flexDirection: "column", boxSizing: "border-box", background: "#fff", border: "1px solid rgba(27,24,21,0.08)", borderRadius: "4px", padding: "20px", textDecoration: "none", color: "inherit", minHeight: tlM ? "0" : "520px", transition: "transform 200ms, box-shadow 200ms", transform: h ? "translateY(-4px)" : "none", boxShadow: h ? "0 20px 40px rgba(27,24,21,0.16)" : "0 12px 32px rgba(27,24,21,0.10)" },
         thumbStyle: { position: "absolute", left: "16px", top: "16px", width: "calc(100% - 16px)", height: "calc(100% - 16px)", objectFit: "cover", objectPosition: "left top", borderRadius: "8px 0 0 0", border: "1px solid rgba(255,255,255,.14)", borderRight: 0, borderBottom: 0, boxShadow: "0 12px 32px rgba(0,0,0,.6)", transition: "transform 400ms cubic-bezier(.22,1,.36,1)", transform: h ? "translate(-4px, -4px)" : "none" },
         titleStyle: { fontFamily: "var(--font-serif)", fontSize: "20px", fontWeight: 700, lineHeight: 1.25, margin: "0 0 10px 0", color: h ? "#5A3796" : "#1B1815", transition: "color 200ms" },
@@ -2781,7 +5299,7 @@ class Component extends DCLogic {
       setDl: this.setDl,
       setVid: this.setVid,
       heroContainerStyle: { maxWidth: "1200px", scrollSnapAlign: "start", scrollMarginTop: "52px" },
-      eyebrowText: window.innerWidth < 699 ? "UPSTOX" : "MY WORK · UPSTOX",
+      eyebrowText: window.innerWidth < 699 ? "UPSTOX · 2025" : "MY WORK · UPSTOX · 2025",
       detailsSplitStyle: { display: "grid", gridTemplateColumns: heroStack ? "1fr" : phoneW + "px minmax(0, 1fr)", gap: heroStack ? "36px" : "80px", alignItems: "center", marginBottom: "96px" },
       phoneColStyle: { display: "flex", justifyContent: heroStack ? "center" : "flex-start", minWidth: 0 },
       phoneScreenStyle: { width: "100%", height: "100%", borderRadius: "27px", overflow: "hidden", background: "#000" },
@@ -2823,8 +5341,8 @@ class Component extends DCLogic {
       ].map((r, i) => ({ ...r, sbCell: { display: "flex", flexDirection: "column", gap: "6px", padding: narrow ? "24px 0" : "8px 32px", paddingLeft: narrow ? 0 : (i === 0 ? 0 : "32px"), borderLeft: !narrow && i > 0 ? "1px solid rgba(250,248,244,0.16)" : "none", borderTop: narrow && i > 0 ? "1px solid rgba(250,248,244,0.16)" : "none", minWidth: 0 } })),
       sbWrap: { marginLeft: "-" + pad, marginRight: "-" + pad, boxSizing: "border-box", background: "#1B1815", display: "flex", alignItems: "center", justifyContent: "center", padding: tlM ? "64px 24px" : "0 56px", ...(tlM ? {} : { height: "max(100svh, 720px)", scrollSnapAlign: "start" }) },
       tdInner: { width: "100%", maxWidth: "1040px", margin: "0 auto", textAlign: "left" },
-      tdRow: { display: "grid", gridTemplateColumns: tlM ? "1fr" : "150px minmax(0, 1fr)", gap: tlM ? "8px" : "24px", padding: "24px 0", borderTop: "1px solid #3A3530" },
-      tdRowLast: { display: "grid", gridTemplateColumns: tlM ? "1fr" : "150px minmax(0, 1fr)", gap: tlM ? "8px" : "24px", padding: "24px 0", borderTop: "1px solid #3A3530" },
+      tdRow: { display: "grid", gridTemplateColumns: tlM ? "1fr" : "150px minmax(0, 1fr)", gap: tlM ? "8px" : "24px", padding: (window.innerWidth < 768 ? "24px 0" : "clamp(10px, 2.4vh, 24px) 0"), borderTop: "1px solid #3A3530" },
+      tdRowLast: { display: "grid", gridTemplateColumns: tlM ? "1fr" : "150px minmax(0, 1fr)", gap: tlM ? "8px" : "24px", padding: (window.innerWidth < 768 ? "24px 0" : "clamp(10px, 2.4vh, 24px) 0"), borderTop: "1px solid #3A3530" },
       tdLabel: { fontFamily: "var(--font-serif)", fontSize: "16px", fontWeight: 500, color: "#F4F1EC", lineHeight: 1.6 },
       tdText: { fontFamily: "Inter, sans-serif", fontSize: "17px", lineHeight: 1.6, color: "#E9E4DC", minWidth: 0 },
       tdIdea: { display: "flex", gap: "12px", alignItems: "baseline" },
