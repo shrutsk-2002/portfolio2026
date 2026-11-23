@@ -1,17 +1,2197 @@
 <!DOCTYPE html>
-<html><head>
+<html lang="en"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Upstox | Shruti Kalamdani</title>
+<script>document.documentElement.className+=" js";</script>
+<style>x-dc{display:none!important}.js #dc-prerender{display:none!important}</style>
+<noscript><style>/* Webfonts — Shruti Kalamdani Design System
+   Currently loaded from Google Fonts CDN. For production / offline use,
+   self-host the .woff2 files and replace this @import with @font-face rules.
+   Noto Serif  — editorial display + prose serif
+   Archivo     — neutral grotesque for UI, labels, meta
+   IBM Plex Mono — small data, captions, indices */
+
+/* vietnamese */
+@font-face {
+  font-family: 'Archivo';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-italic-400-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Archivo';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-italic-400-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Archivo';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-italic-400-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-normal-400-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-normal-400-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-normal-400-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-normal-400-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-normal-400-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-normal-400-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-normal-400-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-normal-400-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-normal-400-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-normal-400-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-normal-400-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-normal-400-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v23/-F63fjptAgt5VM-kVkqdyU8n1iIq131nj-otFQ.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v23/-F63fjptAgt5VM-kVkqdyU8n1isq131nj-otFQ.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* symbols2 */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v23/-F63fjptAgt5VM-kVkqdyU8n1pUL8lJPheIVLNg.woff2) format('woff2');
+  unicode-range: U+2000-2001, U+2004-2008, U+200A, U+23B8-23BD, U+2500-259F;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v23/-F63fjptAgt5VM-kVkqdyU8n1iAq131nj-otFQ.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v23/-F63fjptAgt5VM-kVkqdyU8n1iEq131nj-otFQ.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v23/-F63fjptAgt5VM-kVkqdyU8n1i8q131nj-o.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v23/-F6qfjptAgt5VM-kVkqdyU8n3twJwl1FgsAXHNlYzg.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v23/-F6qfjptAgt5VM-kVkqdyU8n3twJwlRFgsAXHNlYzg.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* symbols2 */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v23/-F6qfjptAgt5VM-kVkqdyU8n3twJwupkp-8_FtFg95o.woff2) format('woff2');
+  unicode-range: U+2000-2001, U+2004-2008, U+200A, U+23B8-23BD, U+2500-259F;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v23/-F6qfjptAgt5VM-kVkqdyU8n3twJwl9FgsAXHNlYzg.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v23/-F6qfjptAgt5VM-kVkqdyU8n3twJwl5FgsAXHNlYzg.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v23/-F6qfjptAgt5VM-kVkqdyU8n3twJwlBFgsAXHNk.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-cyrillic-ext.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-cyrillic.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-greek-ext.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-greek.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* math */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-math.woff2") format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-209F, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-cyrillic-ext.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-cyrillic.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-greek-ext.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-greek.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* math */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-math.woff2") format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-209F, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-cyrillic-ext.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-cyrillic.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-greek-ext.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-greek.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* math */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-math.woff2") format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-209F, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-cyrillic-ext.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-cyrillic.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-greek-ext.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-greek.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* math */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-math.woff2") format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-209F, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-cyrillic-ext.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-cyrillic.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-greek-ext.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-greek.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* math */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-math.woff2") format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-209F, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-cyrillic-ext.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-cyrillic.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-greek-ext.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-greek.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* math */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-math.woff2") format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-209F, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+    .mob-bar[data-theme=dark]{background-color:#1B1815!important;color:#F4F1EC!important;border-bottom-color:rgba(244,241,236,.12)!important}
+</style><style>/* Colors — Shruti Kalamdani Design System
+   Warm editorial neutrals + a single bold purple accent.
+   Base values first, semantic aliases below. */
+
+:root {
+  /* ── Warm neutral scale ── */
+  --paper:        #FAF8F4; /* page background — warm off-white */
+  --paper-2:      #F2EEE7; /* recessed panels, hovers */
+  --paper-3:      #EAE4DA; /* deeper fill */
+  --white:        #FFFFFF; /* cards, raised surfaces */
+
+  --ink:          #1A1714; /* near-black, primary text */
+  --ink-2:        #4A443D; /* secondary text */
+  --ink-3:        #8A8178; /* muted text, meta, captions */
+  --ink-4:        #B6AEA2; /* disabled, faint */
+
+  --line:         #E4DED4; /* hairline borders */
+  --line-2:       #D4CCBE; /* stronger borders */
+
+  /* ── Accent — purple ── */
+  --accent:        #6E3FB0; /* primary bold accent */
+  --accent-ink:    #57309A; /* darker — links, hover, text-on-paper */
+  --accent-deep:   #46267E; /* pressed */
+  --accent-soft:   #ECE3F7; /* tint fill */
+  --accent-tint:   #F7F2FC; /* faintest wash */
+  --accent-on-dark:#B794E8; /* lighter tint — accent text/links on dark ink */
+
+  /* ── Alternate accents (documented — swap --accent to retheme) ── */
+  --alt-persimmon: #DE4D26;
+  --alt-crimson:   #C41E48;
+  --alt-cobalt:    #2B4ACC;
+  --alt-forest:    #1F6B4A;
+  --alt-ink:       #1A1714;
+
+  /* ── Status ── */
+  --positive:     #1F7A4D;
+  --negative:     #C23B2E;
+  --warning:      #B7791F;
+
+  /* ── Semantic aliases ── */
+  --surface-page:   var(--paper);
+  --surface-card:   var(--white);
+  --surface-panel:  var(--paper-2);
+  --surface-sunken: var(--paper-3);
+  --surface-invert: var(--ink);
+
+  --text-primary:   var(--ink);
+  --text-secondary: var(--ink-2);
+  --text-muted:     var(--ink-3);
+  --text-faint:     var(--ink-4);
+  --text-invert:    var(--paper);
+  --text-accent:    var(--accent-ink);
+
+  --border:         var(--line);
+  --border-strong:  var(--line-2);
+
+  --link:           var(--accent-ink);
+  --link-hover:     var(--accent-deep);
+  --focus-ring:     var(--accent);
+}
+</style><style>/* Typography — Shruti Kalamdani Design System
+   Serif-led editorial system. Noto Serif for display + prose,
+   Archivo for UI/labels/meta, IBM Plex Mono for indices + data. */
+
+:root {
+  /* ── Families ── */
+  --font-serif: "Noto Serif", Georgia, "Times New Roman", serif;
+  --font-sans:  "Archivo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono:  "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+
+  /* ── Size scale (editorial, large) ── */
+  --text-xs:    0.75rem;   /* 12px — micro labels, indices */
+  --text-sm:    0.875rem;  /* 14px — meta, captions */
+  --text-base:  1.0625rem; /* 17px — body */
+  --text-lg:    1.25rem;   /* 20px — lead paragraph */
+  --text-xl:    1.625rem;  /* 26px — small headings */
+  --text-2xl:   2.125rem;  /* 34px — section heads */
+  --text-3xl:   2.875rem;  /* 46px — page titles */
+  --text-4xl:   3.875rem;  /* 62px — display */
+  --text-5xl:   5.25rem;   /* 84px — hero display */
+  --text-6xl:   7rem;      /* 112px — oversized statement */
+
+  /* ── Line heights ── */
+  --leading-none:    1;
+  --leading-tight:   1.06;  /* display */
+  --leading-snug:    1.18;  /* headings */
+  --leading-normal:  1.5;   /* UI text */
+  --leading-relaxed: 1.65;  /* serif prose */
+
+  /* ── Letter spacing ── */
+  --tracking-tighter: -0.03em; /* large display serif */
+  --tracking-tight:   -0.015em;
+  --tracking-normal:  0;
+  --tracking-wide:    0.08em;  /* uppercase eyebrows */
+  --tracking-wider:   0.16em;  /* spaced micro-labels */
+
+  /* ── Weights ── */
+  --weight-light:    300;
+  --weight-regular:  400;
+  --weight-medium:   500;
+  --weight-semibold: 600;
+  --weight-bold:     700;
+}
+</style><style>/* Spacing, radii, shadows, layout — Shruti Kalamdani Design System
+   8px base rhythm with finer steps for type-level adjustments. */
+
+:root {
+  /* ── Spacing scale ── */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  24px;
+  --space-6:  32px;
+  --space-7:  48px;
+  --space-8:  64px;
+  --space-9:  96px;
+  --space-10: 128px;
+  --space-11: 192px;
+
+  /* ── Corner radii (minimal, editorial) ── */
+  --radius-xs:   2px;
+  --radius-sm:   4px;
+  --radius-md:   8px;
+  --radius-lg:   14px;
+  --radius-xl:   22px;
+  --radius-pill: 999px;
+
+  /* ── Borders ── */
+  --border-hair:  1px solid var(--line);
+  --border-solid: 1px solid var(--line-2);
+  --border-ink:   1px solid var(--ink);
+
+  /* ── Shadows (soft, warm-tinted, restrained) ── */
+  --shadow-xs: 0 1px 2px rgba(26, 23, 20, 0.05);
+  --shadow-sm: 0 2px 8px rgba(26, 23, 20, 0.06);
+  --shadow-md: 0 10px 28px rgba(26, 23, 20, 0.08);
+  --shadow-lg: 0 24px 56px rgba(26, 23, 20, 0.11);
+  --shadow-focus: 0 0 0 3px rgba(110, 63, 176, 0.30);
+
+  /* ── Layout widths ── */
+  --container:        1200px;
+  --container-wide:   1440px;
+  --container-narrow: 720px; /* reading measure */
+  --gutter:           var(--space-5);
+
+  /* ── Motion ── */
+  --ease-out:   cubic-bezier(0.22, 1, 0.36, 1); /* @kind other */
+  --ease-inout: cubic-bezier(0.65, 0, 0.35, 1); /* @kind other */
+  --dur-fast:   140ms; /* @kind other */
+  --dur-base:   240ms; /* @kind other */
+  --dur-slow:   420ms; /* @kind other */
+}
+</style><style>/* Base element styling + a small set of editorial utilities.
+   Imported last so it can rely on every token. */
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--surface-page);
+  color: var(--text-primary);
+  font-family: var(--font-serif);
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+  font-optical-sizing: auto;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Headings — serif display, tight tracking */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  font-weight: var(--weight-regular);
+  line-height: var(--leading-snug);
+  letter-spacing: var(--tracking-tight);
+  color: var(--text-primary);
+  margin: 0 0 0.4em;
+  text-wrap: balance;
+}
+h1 { font-size: var(--text-4xl); line-height: var(--leading-tight); letter-spacing: var(--tracking-tighter); }
+h2 { font-size: var(--text-3xl); }
+h3 { font-size: var(--text-2xl); }
+h4 { font-size: var(--text-xl); }
+
+p { margin: 0 0 1em; text-wrap: pretty; }
+p:last-child { margin-bottom: 0; }
+
+a {
+  color: var(--link);
+  text-decoration: none;
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 1px;
+  transition: color var(--dur-fast) var(--ease-out);
+}
+a:hover { color: var(--link-hover); text-decoration: underline; }
+
+strong, b { font-weight: var(--weight-semibold); }
+em, i { font-style: italic; }
+
+hr {
+  border: none;
+  border-top: var(--border-hair);
+  margin: var(--space-7) 0;
+}
+
+::selection { background: var(--accent-soft); color: var(--ink); }
+
+:focus-visible {
+  outline: none;
+  box-shadow: var(--shadow-focus);
+  border-radius: var(--radius-sm);
+}
+
+/* ── Editorial utility classes ── */
+
+/* Spaced uppercase label — eyebrows, section indices */
+.sk-eyebrow {
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+/* Monospace index — 01 / 02 / 03 */
+.sk-index {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  color: var(--text-accent);
+  font-feature-settings: "tnum" 1;
+}
+
+/* Reading measure for prose blocks */
+.sk-measure { max-width: var(--container-narrow); }
+
+/* Sans meta / captions */
+.sk-meta {
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  line-height: var(--leading-normal);
+}
+
+/* Lead paragraph */
+.sk-lead {
+  font-size: var(--text-lg);
+  line-height: var(--leading-relaxed);
+  color: var(--text-secondary);
+}
+
+/* Accent underline rule */
+.sk-rule-accent {
+  width: 48px;
+  height: 2px;
+  background: var(--accent);
+  border: none;
+  margin: 0;
+}
+</style><style>/* ─────────────────────────────────────────────────────────────
+   Shruti Kalamdani Design System — global stylesheet entry point.
+   Consumers link THIS file. It is a manifest of @import lines only;
+   never add rules directly here.
+   ───────────────────────────────────────────────────────────── */
+
+/* Webfonts — Shruti Kalamdani Design System
+   Currently loaded from Google Fonts CDN. For production / offline use,
+   self-host the .woff2 files and replace this @import with @font-face rules.
+   Noto Serif  — editorial display + prose serif
+   Archivo     — neutral grotesque for UI, labels, meta
+   IBM Plex Mono — small data, captions, indices */
+
+/* vietnamese */
+@font-face {
+  font-family: 'Archivo';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-italic-400-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Archivo';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-italic-400-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Archivo';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-italic-400-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-normal-400-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-normal-400-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-normal-400-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-normal-400-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-normal-400-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-normal-400-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-normal-400-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-normal-400-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-normal-400-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-normal-400-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-normal-400-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/archivo-normal-400-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v23/-F63fjptAgt5VM-kVkqdyU8n1iIq131nj-otFQ.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v23/-F63fjptAgt5VM-kVkqdyU8n1isq131nj-otFQ.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* symbols2 */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v23/-F63fjptAgt5VM-kVkqdyU8n1pUL8lJPheIVLNg.woff2) format('woff2');
+  unicode-range: U+2000-2001, U+2004-2008, U+200A, U+23B8-23BD, U+2500-259F;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v23/-F63fjptAgt5VM-kVkqdyU8n1iAq131nj-otFQ.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v23/-F63fjptAgt5VM-kVkqdyU8n1iEq131nj-otFQ.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v23/-F63fjptAgt5VM-kVkqdyU8n1i8q131nj-o.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v23/-F6qfjptAgt5VM-kVkqdyU8n3twJwl1FgsAXHNlYzg.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v23/-F6qfjptAgt5VM-kVkqdyU8n3twJwlRFgsAXHNlYzg.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* symbols2 */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v23/-F6qfjptAgt5VM-kVkqdyU8n3twJwupkp-8_FtFg95o.woff2) format('woff2');
+  unicode-range: U+2000-2001, U+2004-2008, U+200A, U+23B8-23BD, U+2500-259F;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v23/-F6qfjptAgt5VM-kVkqdyU8n3twJwl9FgsAXHNlYzg.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v23/-F6qfjptAgt5VM-kVkqdyU8n3twJwl5FgsAXHNlYzg.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v23/-F6qfjptAgt5VM-kVkqdyU8n3twJwlBFgsAXHNk.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-cyrillic-ext.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-cyrillic.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-greek-ext.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-greek.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* math */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-math.woff2") format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-209F, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-cyrillic-ext.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-cyrillic.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-greek-ext.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-greek.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* math */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-math.woff2") format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-209F, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-italic-400-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-cyrillic-ext.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-cyrillic.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-greek-ext.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-greek.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* math */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-math.woff2") format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-209F, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-cyrillic-ext.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-cyrillic.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-greek-ext.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-greek.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* math */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-math.woff2") format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-209F, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-cyrillic-ext.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-cyrillic.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-greek-ext.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-greek.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* math */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-math.woff2") format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-209F, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-cyrillic-ext.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-cyrillic.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-greek-ext.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-greek.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* math */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-math.woff2") format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-209F, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/fonts/noto-serif-normal-300-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+/* Colors — Shruti Kalamdani Design System
+   Warm editorial neutrals + a single bold purple accent.
+   Base values first, semantic aliases below. */
+
+:root {
+  /* ── Warm neutral scale ── */
+  --paper:        #FAF8F4; /* page background — warm off-white */
+  --paper-2:      #F2EEE7; /* recessed panels, hovers */
+  --paper-3:      #EAE4DA; /* deeper fill */
+  --white:        #FFFFFF; /* cards, raised surfaces */
+
+  --ink:          #1A1714; /* near-black, primary text */
+  --ink-2:        #4A443D; /* secondary text */
+  --ink-3:        #8A8178; /* muted text, meta, captions */
+  --ink-4:        #B6AEA2; /* disabled, faint */
+
+  --line:         #E4DED4; /* hairline borders */
+  --line-2:       #D4CCBE; /* stronger borders */
+
+  /* ── Accent — purple ── */
+  --accent:        #6E3FB0; /* primary bold accent */
+  --accent-ink:    #57309A; /* darker — links, hover, text-on-paper */
+  --accent-deep:   #46267E; /* pressed */
+  --accent-soft:   #ECE3F7; /* tint fill */
+  --accent-tint:   #F7F2FC; /* faintest wash */
+  --accent-on-dark:#B794E8; /* lighter tint — accent text/links on dark ink */
+
+  /* ── Alternate accents (documented — swap --accent to retheme) ── */
+  --alt-persimmon: #DE4D26;
+  --alt-crimson:   #C41E48;
+  --alt-cobalt:    #2B4ACC;
+  --alt-forest:    #1F6B4A;
+  --alt-ink:       #1A1714;
+
+  /* ── Status ── */
+  --positive:     #1F7A4D;
+  --negative:     #C23B2E;
+  --warning:      #B7791F;
+
+  /* ── Semantic aliases ── */
+  --surface-page:   var(--paper);
+  --surface-card:   var(--white);
+  --surface-panel:  var(--paper-2);
+  --surface-sunken: var(--paper-3);
+  --surface-invert: var(--ink);
+
+  --text-primary:   var(--ink);
+  --text-secondary: var(--ink-2);
+  --text-muted:     var(--ink-3);
+  --text-faint:     var(--ink-4);
+  --text-invert:    var(--paper);
+  --text-accent:    var(--accent-ink);
+
+  --border:         var(--line);
+  --border-strong:  var(--line-2);
+
+  --link:           var(--accent-ink);
+  --link-hover:     var(--accent-deep);
+  --focus-ring:     var(--accent);
+}
+
+/* Typography — Shruti Kalamdani Design System
+   Serif-led editorial system. Noto Serif for display + prose,
+   Archivo for UI/labels/meta, IBM Plex Mono for indices + data. */
+
+:root {
+  /* ── Families ── */
+  --font-serif: "Noto Serif", Georgia, "Times New Roman", serif;
+  --font-sans:  "Archivo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono:  "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+
+  /* ── Size scale (editorial, large) ── */
+  --text-xs:    0.75rem;   /* 12px — micro labels, indices */
+  --text-sm:    0.875rem;  /* 14px — meta, captions */
+  --text-base:  1.0625rem; /* 17px — body */
+  --text-lg:    1.25rem;   /* 20px — lead paragraph */
+  --text-xl:    1.625rem;  /* 26px — small headings */
+  --text-2xl:   2.125rem;  /* 34px — section heads */
+  --text-3xl:   2.875rem;  /* 46px — page titles */
+  --text-4xl:   3.875rem;  /* 62px — display */
+  --text-5xl:   5.25rem;   /* 84px — hero display */
+  --text-6xl:   7rem;      /* 112px — oversized statement */
+
+  /* ── Line heights ── */
+  --leading-none:    1;
+  --leading-tight:   1.06;  /* display */
+  --leading-snug:    1.18;  /* headings */
+  --leading-normal:  1.5;   /* UI text */
+  --leading-relaxed: 1.65;  /* serif prose */
+
+  /* ── Letter spacing ── */
+  --tracking-tighter: -0.03em; /* large display serif */
+  --tracking-tight:   -0.015em;
+  --tracking-normal:  0;
+  --tracking-wide:    0.08em;  /* uppercase eyebrows */
+  --tracking-wider:   0.16em;  /* spaced micro-labels */
+
+  /* ── Weights ── */
+  --weight-light:    300;
+  --weight-regular:  400;
+  --weight-medium:   500;
+  --weight-semibold: 600;
+  --weight-bold:     700;
+}
+
+/* Spacing, radii, shadows, layout — Shruti Kalamdani Design System
+   8px base rhythm with finer steps for type-level adjustments. */
+
+:root {
+  /* ── Spacing scale ── */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  24px;
+  --space-6:  32px;
+  --space-7:  48px;
+  --space-8:  64px;
+  --space-9:  96px;
+  --space-10: 128px;
+  --space-11: 192px;
+
+  /* ── Corner radii (minimal, editorial) ── */
+  --radius-xs:   2px;
+  --radius-sm:   4px;
+  --radius-md:   8px;
+  --radius-lg:   14px;
+  --radius-xl:   22px;
+  --radius-pill: 999px;
+
+  /* ── Borders ── */
+  --border-hair:  1px solid var(--line);
+  --border-solid: 1px solid var(--line-2);
+  --border-ink:   1px solid var(--ink);
+
+  /* ── Shadows (soft, warm-tinted, restrained) ── */
+  --shadow-xs: 0 1px 2px rgba(26, 23, 20, 0.05);
+  --shadow-sm: 0 2px 8px rgba(26, 23, 20, 0.06);
+  --shadow-md: 0 10px 28px rgba(26, 23, 20, 0.08);
+  --shadow-lg: 0 24px 56px rgba(26, 23, 20, 0.11);
+  --shadow-focus: 0 0 0 3px rgba(110, 63, 176, 0.30);
+
+  /* ── Layout widths ── */
+  --container:        1200px;
+  --container-wide:   1440px;
+  --container-narrow: 720px; /* reading measure */
+  --gutter:           var(--space-5);
+
+  /* ── Motion ── */
+  --ease-out:   cubic-bezier(0.22, 1, 0.36, 1); /* @kind other */
+  --ease-inout: cubic-bezier(0.65, 0, 0.35, 1); /* @kind other */
+  --dur-fast:   140ms; /* @kind other */
+  --dur-base:   240ms; /* @kind other */
+  --dur-slow:   420ms; /* @kind other */
+}
+
+/* Base element styling + a small set of editorial utilities.
+   Imported last so it can rely on every token. */
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--surface-page);
+  color: var(--text-primary);
+  font-family: var(--font-serif);
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+  font-optical-sizing: auto;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Headings — serif display, tight tracking */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  font-weight: var(--weight-regular);
+  line-height: var(--leading-snug);
+  letter-spacing: var(--tracking-tight);
+  color: var(--text-primary);
+  margin: 0 0 0.4em;
+  text-wrap: balance;
+}
+h1 { font-size: var(--text-4xl); line-height: var(--leading-tight); letter-spacing: var(--tracking-tighter); }
+h2 { font-size: var(--text-3xl); }
+h3 { font-size: var(--text-2xl); }
+h4 { font-size: var(--text-xl); }
+
+p { margin: 0 0 1em; text-wrap: pretty; }
+p:last-child { margin-bottom: 0; }
+
+a {
+  color: var(--link);
+  text-decoration: none;
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 1px;
+  transition: color var(--dur-fast) var(--ease-out);
+}
+a:hover { color: var(--link-hover); text-decoration: underline; }
+
+strong, b { font-weight: var(--weight-semibold); }
+em, i { font-style: italic; }
+
+hr {
+  border: none;
+  border-top: var(--border-hair);
+  margin: var(--space-7) 0;
+}
+
+::selection { background: var(--accent-soft); color: var(--ink); }
+
+:focus-visible {
+  outline: none;
+  box-shadow: var(--shadow-focus);
+  border-radius: var(--radius-sm);
+}
+
+/* ── Editorial utility classes ── */
+
+/* Spaced uppercase label — eyebrows, section indices */
+.sk-eyebrow {
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+/* Monospace index — 01 / 02 / 03 */
+.sk-index {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  color: var(--text-accent);
+  font-feature-settings: "tnum" 1;
+}
+
+/* Reading measure for prose blocks */
+.sk-measure { max-width: var(--container-narrow); }
+
+/* Sans meta / captions */
+.sk-meta {
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  line-height: var(--leading-normal);
+}
+
+/* Lead paragraph */
+.sk-lead {
+  font-size: var(--text-lg);
+  line-height: var(--leading-relaxed);
+  color: var(--text-secondary);
+}
+
+/* Accent underline rule */
+.sk-rule-accent {
+  width: 48px;
+  height: 2px;
+  background: var(--accent);
+  border: none;
+  margin: 0;
+}
+
+</style><style>
+    html { scroll-behavior: smooth; scroll-snap-type: y proximity; overflow-x: clip; }
+    body { margin: 0; background: var(--paper); }
+    a { color: var(--accent-ink); text-decoration: none; }
+    a:hover { color: var(--accent-deep); }
+  </style><style>
+@property --s{syntax:'<percentage>';inherits:true;initial-value:50%}
+@property --pl{syntax:'<number>';inherits:true;initial-value:0}
+@property --pr{syntax:'<number>';inherits:true;initial-value:0}
+@property --il{syntax:'<number>';inherits:true;initial-value:0}
+@property --ir{syntax:'<number>';inherits:true;initial-value:0}
+#mg{--s:50%;--pl:0;--pr:0;--il:0;--ir:0;position:relative;overflow:hidden;box-sizing:border-box;scroll-snap-align:start;scroll-snap-stop:always;font-family:Inter,var(--font-sans);color:#1B1815;background:#F4F1EC;container-type:inline-size;transition:--s 1s cubic-bezier(.65,0,.35,1),--pl 1s cubic-bezier(.65,0,.35,1),--pr 1s cubic-bezier(.65,0,.35,1),--il 1s cubic-bezier(.65,0,.35,1),--ir 1s cubic-bezier(.65,0,.35,1)}
+#mg[data-a=l]{--s:76%;--pl:1;--ir:1}
+#mg[data-a=r]{--s:24%;--pr:1;--il:1}
+#mg *{box-sizing:border-box}
+#mg .mg-layer{outline:none}
+#mg .mg-layer:focus-visible{box-shadow:inset 0 0 0 3px #5A3796}
+#mg .mg-R:focus-visible{box-shadow:inset 0 0 0 3px #F4F1EC}
+#mg .mg-L{background:#F4F1EC;color:#1B1815}
+#mg .mg-R{background:#5A3796;color:#F4F1EC}
+#mg .mg-eye{margin:0;font-weight:600;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:#1B1815;z-index:6}
+#mg .mg-hd{position:absolute;margin:0;font-family:'Noto Serif',var(--font-serif);font-weight:500;line-height:1.08;font-size:clamp(46px,5.4cqw,72px);white-space:nowrap;will-change:transform;color:inherit}
+#mg .mg-hd span{display:block}
+#mg .mg-hint{position:absolute;font-size:12px;text-transform:uppercase;letter-spacing:.14em;opacity:.5;transition:opacity .2s}
+#mg[data-a] .mg-hint{opacity:0}
+#mg .h-m,#mg .mg-plus{display:none}
+#mg .mg-cards{position:absolute;display:grid;gap:14px;opacity:0;transform:translateY(16px);pointer-events:none;transition:opacity .2s,transform .2s}
+#mg[data-a=l] .mg-L .mg-cards,#mg[data-a=r] .mg-R .mg-cards{opacity:1;transform:none;pointer-events:auto}
+#mg .mg-card{border-radius:4px;color:#1B1815;display:flex;flex-direction:column;min-width:0}
+#mg .mg-pc{background:#fff;box-shadow:0 10px 28px rgba(27,24,21,.10);padding:18px 20px}
+#mg .mg-tc{background:#FAF8F4;padding:14px 16px}
+#mg .mg-ill{display:none}
+#mg .mg-ill img,#mg .mg-ill svg{width:100%;height:100%;object-fit:contain;display:block}
+#mg .mg-pc .mg-ill{width:96px;height:96px}
+#mg .mg-tc .mg-ill{width:36px;height:36px}
+#mg .mg-card h3{font-family:'Noto Serif',var(--font-serif);font-weight:500;letter-spacing:-.02em;margin:0 0 8px}
+#mg .mg-pc h3,#mg .mg-tc h3{font-size:clamp(15px,min(1.6cqw,2.4svh),20px);line-height:1.15;margin-bottom:6px}
+#mg .mg-card p{margin:0;opacity:.7;text-wrap:pretty}
+#mg .mg-pc p,#mg .mg-tc p{font-size:clamp(10.5px,min(1.05cqw,1.55svh),12.5px);line-height:1.4}
+#mg .mg-ft{flex:none;margin-top:12px;padding-top:10px;border-top:1.2px dotted #1B1815;height:28px;display:flex;justify-content:space-between;align-items:center;gap:12px;white-space:nowrap}
+#mg .mg-tc .mg-ft{margin-top:8px;padding-top:7px;height:24px}
+#mg .mg-card a{margin:0;font-weight:600;font-size:12.5px;color:#5A3796;text-decoration:underline;white-space:nowrap}
+#mg .mg-ct{margin-left:auto;font-size:10.5px;letter-spacing:.1em;opacity:.6;white-space:nowrap}
+#mg .mg-tc .mg-ct{font-size:10.5px}
+#mg .mg-pc h3,#mg .mg-tc h3{font-size:clamp(18px,min(1.9cqw,2.8svh),24px);line-height:1.15;margin-bottom:10px}
+#mg .mg-pc p,#mg .mg-tc p{font-size:clamp(11px,min(1.1cqw,1.7svh),12.5px);line-height:1.4;margin:0;flex:1 0 auto}
+#mg .mg-pc,#mg .mg-tc{padding:18px 18px 10px}
+#mg .mg-pc h3,#mg .mg-tc h3{margin-bottom:16px}
+#mg .mg-card .mg-ft,#mg .mg-tc .mg-ft{flex:none;margin-top:12px;padding-top:8px;height:30px;box-sizing:border-box}
+#mg .mg-tc .mg-ft{display:flex}
+#mg .mg-team{gap:0}
+#mg .mg-team::before{display:none}
+#mg .mg-row::before,#mg .mg-turn,#mg .mg-end{display:none}
+#mg .mg-st{position:relative;padding:0 0 26px 46px;min-width:0}
+#mg .mg-st::after{content:"";position:absolute;left:14px;top:36px;bottom:4px;width:1px;background:rgba(244,241,236,.4)}
+#mg .mg-last::after{display:none}
+#mg .mg-no{position:absolute;left:0;top:0;z-index:1;width:30px;height:30px;border-radius:50%;background:#F4F1EC;color:#5A3796;font-size:13px;font-weight:600;line-height:30px;text-align:center}
+#mg .mg-sh{color:inherit;margin:0 0 4px;padding-top:3px;font-family:'Noto Serif',var(--font-serif);font-weight:500;font-size:18px;line-height:1.2;letter-spacing:-.01em}
+#mg .mg-road{display:none}
+#mg .mg-tm{display:block;margin:3px 0 4px;font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:500;letter-spacing:.04em;opacity:1}
+#mg .mg-tm i{font-style:normal;opacity:.6;margin-right:8px;letter-spacing:.14em;text-transform:uppercase;font-size:10px}
+#mg .mg-sd{margin:0;font-size:14px;line-height:1.45;opacity:.85;text-wrap:balance}
+@media (min-width:700px){
+#mg{height:100svh;min-height:720px}
+#mg .mg-eye{position:absolute;top:28px;left:50%;transform:translateX(-50%);background:#F4F1EC;padding:9px 16px;border-radius:4px;box-shadow:0 2px 10px rgba(27,24,21,.08)}
+#mg .mg-layer{position:absolute;inset:0}
+#mg .mg-L{clip-path:inset(0 calc(100% - var(--s)) 0 0)}
+#mg .mg-L .mg-hd{top:calc(50% * (1 - var(--pl)) + 84px * var(--pl));left:calc((var(--s) - 32px + 8px * var(--il)) * (1 - var(--pl)) + 56px * var(--pl));transform-origin:calc(100% * (1 - var(--pl))) calc(50% * (1 - var(--pl)));transform:translate(calc(-100% * (1 - var(--pl))),calc(-50% * (1 - var(--pl)))) scale(calc(1 - .45 * var(--pl) - .38 * var(--il)))}
+#mg .mg-L .mg-hd span:first-child{transform:translateX(calc(var(--d,0px) * (1 - var(--pl))))}
+#mg .mg-L .mg-hd span:last-child{transform:translate(calc(var(--d,0px) * (1 - var(--pl)) + var(--w1,0px) * var(--pl)),calc(-1.08em * var(--pl)))}
+#mg .mg-R .mg-hd{top:calc(50% * (1 - var(--pr)) + 84px * var(--pr));left:calc(var(--s) + 32px + 24px * var(--pr) - 8px * var(--ir));transform-origin:0 calc(50% * (1 - var(--pr)));transform:translate(0,calc(-50% * (1 - var(--pr)))) scale(calc(1 - .45 * var(--pr) - .38 * var(--ir)))}
+#mg .mg-R .mg-hd span:last-child{transform:translate(calc(var(--w1r,0px) * var(--pr)),calc(-1.08em * var(--pr)))}
+#mg .mg-L .mg-hint{top:calc(50% + clamp(46px,5.4cqw,72px) * 1.08 + 24px);right:calc(100% - var(--s) + 32px);text-align:right}
+#mg .mg-R .mg-hint{top:calc(50% + clamp(46px,5.4cqw,72px) * 1.08 + 24px);left:calc(var(--s) + 32px)}
+#mg .mg-cards{top:148px;width:calc(76cqw - 112px);height:calc(max(100svh,720px) - 188px)}
+#mg .mg-L .mg-cards{left:56px}
+#mg .mg-R .mg-cards{left:calc(var(--s) + 56px)}
+#mg .mg-prod{height:min(420px,calc(max(100svh,720px) - 188px));top:max(148px,calc(50% - 210px));grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:minmax(0,1fr)}
+#mg .mg-team{height:auto;max-height:calc(max(100svh,720px) - 188px);overflow-y:auto;top:max(148px,calc(50% - 230px))}
+#mg[data-a=l] .mg-L .mg-cards,#mg[data-a=r] .mg-R .mg-cards{transition:opacity .6s .6s,transform .6s .6s}
+}
+@media (min-width:1000px){
+#mg .mg-team{overflow:visible;top:148px}
+#mg .mg-snake{position:relative;width:min(100%,calc((max(100svh,720px) - 200px) * 1.2987));aspect-ratio:1000/770;container-type:inline-size;justify-self:start}
+#mg .mg-road{display:block;position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+#mg .mg-row{display:contents}
+#mg .mg-turn,#mg .mg-end,#mg .mg-st::after{display:none}
+#mg .mg-st{position:static;padding:0}
+#mg .mg-no{left:calc(var(--x) * .1%);top:calc(var(--y) * .12987%);width:clamp(24px,3.2cqw,32px);height:clamp(24px,3.2cqw,32px);font-size:clamp(11px,1.3cqw,13px);line-height:clamp(24px,3.2cqw,32px);transform:translate(-50%,-50%)}
+#mg .mg-sx{position:absolute;left:calc(var(--l) * .1%);top:calc(var(--t) * .12987%);width:calc(var(--w) * .1%);text-align:var(--a)}
+#mg .u .mg-sx{transform:translateY(-100%)}
+#mg .r .mg-sx{transform:translateY(-50%)}
+#mg .mg-tm{margin:0 0 8px;font-size:clamp(11px,1.15cqw,13px)}
+#mg .mg-sh{margin:0 0 6px;padding:0;font-size:clamp(16px,1.9cqw,21px);line-height:1.15}
+#mg .mg-sd{font-size:clamp(12px,1.3cqw,15px);line-height:1.5;text-wrap:pretty}
+}
+@media (min-width:700px) and (max-height:860px){
+#mg .mg-tc .mg-ill{width:28px;height:28px}
+}
+@media (min-width:700px) and (max-height:760px){
+#mg .mg-pc .mg-ill{width:72px;height:72px}
+#mg .mg-tc .mg-ill{width:28px;height:28px}
+}
+@media (max-width:699px){
+#mg{height:100svh;display:grid;grid-template-rows:48px 1fr 1fr;transition:grid-template-rows .65s cubic-bezier(.65,0,.35,1)}
+#mg[data-a=l]{grid-template-rows:48px 1fr 60px}
+#mg[data-a=r]{grid-template-rows:48px 60px 1fr}
+#mg .mg-eye{grid-row:1;text-align:center;line-height:48px;background:#F4F1EC}
+#mg .mg-L{grid-row:2}
+#mg .mg-R{grid-row:3}
+#mg .mg-layer{position:relative;overflow:hidden;min-height:0;cursor:pointer}
+#mg .mg-hd{left:24px;right:56px;top:50%;transform:translateY(-50%);font-size:40px;transition:top .65s cubic-bezier(.65,0,.35,1),font-size .65s cubic-bezier(.65,0,.35,1),transform .65s cubic-bezier(.65,0,.35,1)}
+#mg[data-a=l] .mg-L .mg-hd,#mg[data-a=r] .mg-R .mg-hd{top:26px;transform:none;font-size:26px}
+#mg[data-a=l] .mg-R .mg-hd,#mg[data-a=r] .mg-L .mg-hd{font-size:17px}
+#mg .mg-hint{left:24px;bottom:20px}
+#mg .h-d{display:none}#mg .h-m{display:inline}
+#mg .mg-plus{display:block;position:absolute;right:24px;top:50%;transform:translateY(-50%);font-size:22px;opacity:0;transition:opacity .3s}
+#mg[data-a=l] .mg-R .mg-plus,#mg[data-a=r] .mg-L .mg-plus{opacity:1}
+#mg .mg-cards{top:100px;left:24px;right:24px;bottom:0;overflow-y:auto;grid-template-columns:1fr;padding-bottom:24px;align-content:start}
+#mg .mg-pc .mg-ill,#mg .mg-tc .mg-ill{width:56px;height:56px;margin-bottom:14px}
+#mg .mg-pc p,#mg .mg-tc p{font-size:13.5px}
+#mg[data-a=l] .mg-L .mg-cards,#mg[data-a=r] .mg-R .mg-cards{transition:opacity .45s .5s,transform .45s .5s}
+}
+@media (prefers-reduced-motion:reduce){#mg,#mg *{transition:none!important}}
+</style><style>.cs-card{transition:transform .2s,box-shadow .2s;cursor:pointer}.cs-card:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(0,0,0,.4)!important;border-color:rgba(244,241,236,.28);color:inherit}@media (prefers-reduced-motion:reduce){.cs-card{transition:none}.cs-card:hover{transform:none}}</style><style>[data-noscroll]::-webkit-scrollbar{display:none;width:0;height:0}</style><style>html,body{overflow-x:hidden}</style></noscript>
 <meta name="description" content="Shruti Kalamdani's work at Upstox: account opening, Invest Mode and insurance.">
+<link rel="canonical" href="https://www.shruti-kalamdani.com/work/upstox.html">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#161412">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Shruti Kalamdani">
+<meta property="og:title" content="Upstox | Shruti Kalamdani">
+<meta property="og:description" content="Shruti Kalamdani&#x27;s work at Upstox: account opening, Invest Mode and insurance.">
+<meta property="og:url" content="https://www.shruti-kalamdani.com/work/upstox.html">
+<meta property="og:image" content="https://www.shruti-kalamdani.com/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Shruti Kalamdani, Product Design Leader, Dubai">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Upstox | Shruti Kalamdani">
+<meta name="twitter:description" content="Shruti Kalamdani&#x27;s work at Upstox: account opening, Invest Mode and insurance.">
+<meta name="twitter:image" content="https://www.shruti-kalamdani.com/assets/img/og-image.jpg">
 <script>
 (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","z1vhn5b7ar");
 </script>
 <script>window.__resources = {"https://cdn.jsdelivr.net/npm/react@18.3.1/umd/react.production.min.js": "/assets/js/react.production.min.js", "https://cdn.jsdelivr.net/npm/react-dom@18.3.1/umd/react-dom.production.min.js": "/assets/js/react-dom.production.min.js"};</script>
 <script src="/assets/js/dc-runtime.js"></script>
+<script src="/assets/js/a11y.js" defer></script>
+<link rel="stylesheet" href="/assets/css/fixes.css">
 </head>
 <body>
-<x-dc>
+<script type="text/x-dc-template" id="dc-tpl">
 <helmet>
   <style>/* Webfonts — Shruti Kalamdani Design System
    Currently loaded from Google Fonts CDN. For production / offline use,
@@ -759,6 +2939,8 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+
+    .mob-bar[data-theme=dark]{background-color:#1B1815!important;color:#F4F1EC!important;border-bottom-color:rgba(244,241,236,.12)!important}
 </style>
   <style>/* Colors — Shruti Kalamdani Design System
    Warm editorial neutrals + a single bold purple accent.
@@ -2050,9 +4232,9 @@ hr {
 }
 
 </style>
-  <script src="/assets/js/ds-bundle.js"></script>
-  <script src="/assets/js/portfolio-data.js"></script>
-  <script src="/assets/js/image-slot.js"></script>
+  <script src="/assets/js/ds-bundle.js"><\/script>
+  <script src="/assets/js/portfolio-data.js"><\/script>
+  <script src="/assets/js/image-slot.js"><\/script>
   <style>
     html { scroll-behavior: smooth; scroll-snap-type: y proximity; overflow-x: clip; }
     body { margin: 0; background: var(--paper); }
@@ -2198,11 +4380,14 @@ hr {
     </aside>
   </sc-if>
   <sc-if value="{{ showHamburger }}" hint-placeholder-val="{{ false }}">
-    <button aria-label="Open menu" sc-camel-on-click="{{ toggleMenu }}" style="{{ hamburgerStyle }}">
-      <span style="{{ barStyle }}"></span>
-      <span style="{{ barStyle }}"></span>
-      <span style="{{ barStyle }}"></span>
-    </button>
+    <header class="mob-bar" data-theme="{{ hdrTheme }}" style="position: fixed; top: 0; left: 0; right: 0; z-index: 60; height: 64px; box-sizing: border-box; padding: 0 12px 0 20px; display: flex; align-items: center; justify-content: space-between; background-color: var(--paper); color: #161412; border-bottom: 1px solid #DCD6CD; transition: background-color .3s ease, color .3s ease, border-color .3s ease;">
+      <a href="/index.html" aria-label="Home" style="width: 40px; height: 40px; border-radius: 50%; background: #6B3FB0; color: #F4F1EC; display: flex; align-items: center; justify-content: center; font-family: var(--font-serif); font-size: 17px; font-style: italic; text-decoration: none;">SK</a>
+      <button aria-label="Open menu" sc-camel-on-click="{{ toggleMenu }}" style="width: 44px; height: 44px; padding: 0; border: 0; background: transparent; color: inherit; cursor: pointer; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5px;">
+        <span style="width: 20px; height: 2px; background: currentColor; border-radius: 1px;"></span>
+        <span style="width: 20px; height: 2px; background: currentColor; border-radius: 1px;"></span>
+        <span style="width: 20px; height: 2px; background: currentColor; border-radius: 1px;"></span>
+      </button>
+    </header>
   </sc-if>
   <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
     <div style="{{ overlayStyle }}">
@@ -2231,9 +4416,9 @@ hr {
       </div>
       <div style="{{ hh.handCol }}">
         <div style="{{ hh.handBox }}">
-          <div style="{{ hh.screenPh }}">Add screen recording</div>
+          <div style="{{ hh.screenPh }}" aria-hidden="true"></div>
           <video src="/assets/video/invest-stocks-flows-20s.mp4" poster="/assets/img/invest-stocks-flows-20s-poster.jpg" autoplay="" muted="" loop="" playsinline="" style="{{ hh.video }}"></video>
-          <img src="/assets/img/hand-phone.png" alt="Hands holding a phone showing Upstox" sc-camel-on-error="{{ handErr }}" style="{{ hh.img }}">
+          <img src="/assets/img/hand-phone.webp" alt="Hands holding a phone showing Upstox" sc-camel-on-error="{{ handErr }}" style="{{ hh.img }}">
         </div>
       </div>
     </section>
@@ -2255,7 +4440,7 @@ hr {
               </div>
             </sc-for>
           </div>
-          <p style="font-family: var(--font-sans); font-size: 13px; line-height: 1.5; color: rgba(244,241,236,0.5); margin: auto 0 0; padding-top: 20px; max-width: 300px;">I owned the product across these three pods, and I was the people manager for the whole design team of 20.</p>
+          <p style="font-family: var(--font-sans); font-size: 13px; line-height: 1.5; color: rgba(244,241,236,0.5); margin: auto 0 0; padding-top: 20px; max-width: 300px;">I owned the product across these three pods, and I was the people manager for the whole design team, which grew to 26 designers at its peak.</p>
         </div>
         <div style="{{ pods.outer }}">
           <div style="{{ pods.fade }}">
@@ -2314,6 +4499,7 @@ hr {
                 </div>
                 <button sc-camel-on-click="{{ accNext }}" aria-label="Next product" style="width: 32px; height: 32px; padding: 0; border: 0; background: transparent; color: #F4F1EC; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: transform 120ms ease;" style-hover="transform: translateX(2px);" style-active="transform: scale(.94);"><svg width="16" height="16" sc-camel-view-box="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" style="display: block;"><path d="M3 8h10M9 4l4 4-4 4"></path></svg></button>
               </div>
+<p style="font-family: var(--font-sans); font-size: 12px; line-height: 1.55; color: rgba(244,241,236,0.55); margin: 4px 0 0; max-width: 640px; text-wrap: pretty;">Growth figures are since each product's release date shown above, from Upstox's internal reporting. Design owned the end-to-end experience; marketing, pricing and market conditions also played a part.</p>
             </div>
             </sc-if>
           </div>
@@ -2409,8 +4595,364 @@ hr {
 
   </div>
 </div>
-</x-dc>
-<div data-bundle-assets="" aria-hidden="true" hidden=""><img src="/assets/img/thumb-account-opening-dark.png" alt="" loading="lazy"><img src="/assets/img/thumb-simplifying-finance-dark.png" alt="" loading="lazy"><img src="/assets/img/thumb-insurance-dark.png" alt="" loading="lazy"><img src="/assets/img/icon-arrow-outward-light.svg" alt="" loading="lazy"><img src="/assets/img/icon-arrow-outward-dark.svg" alt="" loading="lazy"></div>
+</script>
+<script>(function(){var s=document.getElementById("dc-tpl"),t=s.textContent.replace(/<\\\/script/g,"</scr"+"ipt").replace(/<\\!--/g,"<!"+"--");var x=document.createElement("x-dc");Object.defineProperty(x,"innerHTML",{get:function(){return t},configurable:true});s.parentNode.insertBefore(x,s);s.remove();})();</script>
+<div id="dc-prerender"><div class="sc-host" data-sc-name="upstox"><div style="display: flex; min-height: 100vh;">
+  
+    <aside data-theme="light" style="position: fixed; top: 0px; left: 0px; bottom: 0px; z-index: 60; width: 240px; box-sizing: border-box; padding: 32px 24px; transition: background-color 0.4s, color 0.4s, border-color 0.4s; overflow-y: auto; border-right: 1px solid rgb(220, 214, 205); background-color: var(--paper); color: rgb(22, 20, 18); display: flex; flex-direction: column; justify-content: space-between;">
+      <a href="/index.html" style="width: 64px; height: 64px; border-radius: 50%; background: rgb(107, 63, 176); color: rgb(244, 241, 236); display: flex; align-items: center; justify-content: center; font-family: var(--font-serif); font-size: 26px; font-style: italic; text-decoration: none;">SK</a>
+      <nav style="display: flex; flex-direction: column; gap: 22px; align-items: flex-start; font-family: var(--font-sans); font-size: 15px; font-weight: 500;">
+        <a href="/index.html" class="scp0" style="display: inline-flex; align-items: center; text-decoration: none; color: rgb(22, 20, 18); opacity: 0.7; padding-bottom: 3px; border-bottom: 1.5px solid transparent; transition: color 0.4s, opacity 0.2s, border-color 0.4s;"><span><span class="sc-interp">Home</span></span></a><a href="/work/upstox.html" class="scp0" style="display: inline-flex; align-items: center; text-decoration: none; color: rgb(67, 22, 91); opacity: 1; padding-bottom: 3px; border-bottom: 1.5px solid rgb(67, 22, 91); transition: color 0.4s, opacity 0.2s, border-color 0.4s;"><span><span class="sc-interp">My Work – Upstox</span></span></a><a href="/work/amazon.html" class="scp0" style="display: inline-flex; align-items: center; text-decoration: none; color: rgb(22, 20, 18); opacity: 0.7; padding-bottom: 3px; border-bottom: 1.5px solid transparent; transition: color 0.4s, opacity 0.2s, border-color 0.4s;"><span><span class="sc-interp">My Work – Amazon</span></span></a><a href="https://www.linkedin.com/in/shruti-kalamdani/" target="_blank" rel="noopener" class="scp0" style="display: inline-flex; align-items: center; text-decoration: none; color: rgb(22, 20, 18); opacity: 0.7; padding-bottom: 3px; border-bottom: 1.5px solid transparent; transition: color 0.4s, opacity 0.2s, border-color 0.4s;"><span><span class="sc-interp">LinkedIn</span></span><span style="display: inline-block; width: 14px; height: 14px; margin-left: 4px; vertical-align: middle; flex: 0 0 auto; background-color: currentcolor; mask: url(&quot;/assets/img/icon-arrow-outward-dark.svg&quot;) center center / contain no-repeat;"></span></a><a href="/assets/Shruti_Kalamdani_Resume.pdf" target="_blank" rel="noopener" class="scp0" style="display: inline-flex; align-items: center; text-decoration: none; color: rgb(22, 20, 18); opacity: 0.7; padding-bottom: 3px; border-bottom: 1.5px solid transparent; transition: color 0.4s, opacity 0.2s, border-color 0.4s;"><span><span class="sc-interp">Resume</span></span><span style="display: inline-block; width: 14px; height: 14px; margin-left: 4px; vertical-align: middle; flex: 0 0 auto; background-color: currentcolor; mask: url(&quot;/assets/img/icon-arrow-outward-dark.svg&quot;) center center / contain no-repeat;"></span></a><a href="/index.html#contact" class="scp0" style="display: inline-flex; align-items: center; text-decoration: none; color: rgb(22, 20, 18); opacity: 0.7; padding-bottom: 3px; border-bottom: 1.5px solid transparent; transition: color 0.4s, opacity 0.2s, border-color 0.4s;"><span><span class="sc-interp">Contact Me</span></span></a>
+      </nav>
+      <div style="display: flex; flex-direction: column; gap: 8px; font-family: var(--font-sans); font-size: 12px; color: rgb(110, 104, 98); transition: color 0.4s;">
+        <span style="display: flex; align-items: center; gap: 10px;"><img src="/assets/img/claude-ai-icon.webp" alt="" aria-hidden="true" style="width: 20px; height: 20px; border-radius: 5px; flex: 0 0 auto;" loading="lazy"><span>Coded by Claude</span></span>
+        <span style="display: flex; align-items: center; gap: 10px;"><span style="width: 20px; height: 20px; flex: 0 0 auto; background-color: rgb(110, 104, 98); mask: url(&quot;/assets/img/icon-written-by.svg&quot;) center center / contain no-repeat; transition: background-color 0.4s;"></span><span>Written by Shruti</span></span>
+        <span style="display: flex; align-items: center; gap: 10px;"><span style="width: 20px; height: 20px; flex: 0 0 auto; display: flex; align-items: center; justify-content: center; font-size: 14px; line-height: 20px; font-weight: 400; overflow: visible;">©</span><span>Shruti Kalamdani 2026</span></span>
+      </div>
+    </aside>
+  
+  
+  
+
+  <div style="flex: 1 1 0%; min-width: 0px; margin-left: 240px; overflow-x: clip;">
+
+    <section data-theme="light" data-screen-label="Hero" style="position: relative; min-height: 100svh; scroll-snap-align: start; scroll-snap-stop: always; box-sizing: border-box; overflow: hidden; background: var(--paper); display: grid; flex-direction: column; grid-template-columns: minmax(0px, 1fr) minmax(0px, 1fr); align-items: center; padding: 0px 60px;">
+      <div style="display: flex; flex-direction: column; min-width: 0px; grid-column: 2; padding-left: 72px; opacity: 1; transform: none; transition: opacity 0.5s cubic-bezier(0.22, 1, 0.36, 1) 0.2s, transform 0.5s cubic-bezier(0.22, 1, 0.36, 1) 0.2s;">
+        <p style="font-family: var(--font-sans); font-size: 12px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: var(--text-muted); margin: 0px 0px 16px;">MY LATEST STINT</p>
+        <h1 style="font-family: var(--font-serif); font-size: 72px; font-weight: 600; line-height: 1.02; letter-spacing: -0.03em; color: var(--ink); margin: 0px;">Upstox</h1>
+        <p style="font-family: var(--font-sans); font-size: 18px; font-weight: 400; line-height: 1.45; color: rgba(26, 23, 20, 0.7); margin: 24px 0px 0px; max-width: 520px; text-wrap: balance;">India's 3rd largest trading and investment platform, and the place I grew from Design Architect to Director of Product Design.</p>
+        <div style="margin-top: 40px; border-top: 1px solid var(--line); max-width: 420px;"><div style="display: flex; align-items: baseline; justify-content: space-between; padding: 12px 0px; border-bottom: 1px solid var(--line);"><span style="font-family: var(--font-sans); font-size: 14px; color: var(--text-muted);">Google Play rating</span><span style="font-family: var(--font-serif); font-size: 24px; font-weight: 600; line-height: 1; letter-spacing: -0.01em; color: var(--ink); display: inline-flex; align-items: center;">4.5<svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" style="margin-left: 6px; position: relative; top: -1px; flex: 0 0 auto;"><path d="M12 3.2l2.6 5.4 5.9.8-4.3 4.1 1.1 5.9L12 16.6l-5.3 2.8 1.1-5.9L3.5 9.4l5.9-.8z" fill="#E8A317" stroke="#E8A317" stroke-width="1.5" stroke-linejoin="round"></path></svg></span></div><div style="display: flex; align-items: baseline; justify-content: space-between; padding: 12px 0px; border-bottom: 1px solid var(--line);"><span style="font-family: var(--font-sans); font-size: 14px; color: var(--text-muted);">Registered customers</span><span style="font-family: var(--font-serif); font-size: 24px; font-weight: 600; line-height: 1; letter-spacing: -0.01em; color: var(--ink);">10M+</span></div><div style="display: flex; align-items: baseline; justify-content: space-between; padding: 12px 0px; border-bottom: 1px solid var(--line);"><span style="font-family: var(--font-sans); font-size: 14px; color: var(--text-muted);">Active clients</span><span style="font-family: var(--font-serif); font-size: 24px; font-weight: 600; line-height: 1; letter-spacing: -0.01em; color: var(--ink);">2M+</span></div></div>
+        <p style="font-family: var(--font-sans); font-size: 12px; line-height: 1.5; color: rgb(163, 156, 148); margin: 14px 0px 0px; max-width: 420px;">Rank and active clients as of 2023. Registered customers and rating as of 2026.</p>
+      </div>
+      <div style="position: absolute; left: 0px; bottom: 0px; width: 50%; height: 90%; display: flex; justify-content: center; align-items: flex-end;">
+        <div style="position: relative; height: 100%; width: auto; aspect-ratio: auto; opacity: 1; transform: none; transition: opacity 0.5s cubic-bezier(0.22, 1, 0.36, 1), transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);">
+          <div aria-hidden="true" style="position: absolute; z-index: 0; left: 31.6%; top: 1.9%; width: 37%; height: 69.7%; background: rgb(27, 24, 21); display: flex; align-items: center; justify-content: center; text-align: center; font-family: var(--font-sans); font-size: 13px; color: rgb(163, 156, 148);"></div>
+          <video src="/assets/video/invest-stocks-flows-20s.mp4" poster="/assets/img/invest-stocks-flows-20s-poster.jpg" playsinline="" aria-label="Screen recording of buying stocks in Upstox Invest Mode" style="position: absolute; z-index: 1; left: 31.6%; top: 1.9%; width: 37%; height: 69.7%; object-fit: cover;" preload="none"></video>
+          <img src="/assets/img/hand-phone.webp" alt="Hands holding a phone showing Upstox" style="display: block; position: relative; z-index: 2; height: 100%; width: auto; max-width: none; pointer-events: none;" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section data-theme="dark" data-screen-label="Responsibility" style="background: rgb(27, 24, 21); color: rgb(244, 241, 236); width: 100%; height: 100svh; overflow: hidden; scroll-snap-align: start; scroll-snap-stop: always; box-sizing: border-box; padding: 48px 60px; display: flex; align-items: center;">
+      <div style="width: 100%; display: flex; flex-direction: column;">
+      <p style="font-family: var(--font-sans); font-size: 12px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(244, 241, 236, 0.55); margin: 0px 0px 48px;">WHAT I WAS RESPONSIBLE FOR</p>
+      <div style="display: grid; grid-template-columns: 340px minmax(0px, 1fr); gap: 24px; align-items: stretch; width: 100%; justify-content: start;">
+        <div style="display: flex; flex-direction: column; justify-content: flex-start; min-width: 0px;">
+          <h2 style="font-family: var(--font-serif); font-size: 44px; font-weight: 600; line-height: 1.05; letter-spacing: -0.03em; color: rgb(244, 241, 236); margin: -0.2em 0px 0px;">Three pods,<br>one product</h2>
+          <div data-noscroll="" style="margin-top: 32px;">
+            
+              <div role="button" tabindex="0" style="display: flex; gap: 8px; align-items: flex-start; padding: 16px 0px; border-top: 1px solid rgba(255, 255, 255, 0.1); border-bottom: 1px solid transparent; cursor: pointer;">
+                <span style="font-family: var(--font-sans); font-size: 13px; font-weight: 500; letter-spacing: 0.08em; line-height: 26px; height: 26px; color: rgb(244, 241, 236); width: 24px; flex: 0 0 auto; opacity: 1; transition: opacity 0.25s; display: block;"><span class="sc-interp">01</span></span>
+                <div style="display: flex; flex-direction: column; gap: 4px; min-width: 0px;">
+                  <span style="font-family: var(--font-serif); font-size: 22px; line-height: 1.2; color: rgb(244, 241, 236); opacity: 1; transition: opacity 0.25s;"><span class="sc-interp">Invest Mode</span></span>
+                  <span style="font-family: var(--font-sans); font-size: 14px; font-weight: 400; line-height: 1.4; color: rgba(244, 241, 236, 0.65); opacity: 1; transition: opacity 0.25s; display: block;"><span class="sc-interp">9 designers</span></span>
+                </div>
+              </div>
+            
+              <div role="button" tabindex="0" style="display: flex; gap: 8px; align-items: flex-start; padding: 16px 0px; border-top: 1px solid rgba(255, 255, 255, 0.1); border-bottom: 1px solid transparent; cursor: pointer;">
+                <span style="font-family: var(--font-sans); font-size: 13px; font-weight: 500; letter-spacing: 0.08em; line-height: 26px; height: 26px; color: rgb(244, 241, 236); width: 24px; flex: 0 0 auto; opacity: 0.5; transition: opacity 0.25s; display: block;"><span class="sc-interp">02</span></span>
+                <div style="display: flex; flex-direction: column; gap: 4px; min-width: 0px;">
+                  <span style="font-family: var(--font-serif); font-size: 22px; line-height: 1.2; color: rgb(244, 241, 236); opacity: 0.5; transition: opacity 0.25s;"><span class="sc-interp">Account opening</span></span>
+                  <span style="font-family: var(--font-sans); font-size: 14px; font-weight: 400; line-height: 1.4; color: rgba(244, 241, 236, 0.65); opacity: 0.4; transition: opacity 0.25s; display: block;"><span class="sc-interp">1 designer</span></span>
+                </div>
+              </div>
+            
+              <div role="button" tabindex="0" style="display: flex; gap: 8px; align-items: flex-start; padding: 16px 0px; border-top: 1px solid rgba(255, 255, 255, 0.1); border-bottom: 1px solid rgba(255, 255, 255, 0.1); cursor: pointer;">
+                <span style="font-family: var(--font-sans); font-size: 13px; font-weight: 500; letter-spacing: 0.08em; line-height: 26px; height: 26px; color: rgb(244, 241, 236); width: 24px; flex: 0 0 auto; opacity: 0.5; transition: opacity 0.25s; display: block;"><span class="sc-interp">03</span></span>
+                <div style="display: flex; flex-direction: column; gap: 4px; min-width: 0px;">
+                  <span style="font-family: var(--font-serif); font-size: 22px; line-height: 1.2; color: rgb(244, 241, 236); opacity: 0.5; transition: opacity 0.25s;"><span class="sc-interp">Website</span></span>
+                  <span style="font-family: var(--font-sans); font-size: 14px; font-weight: 400; line-height: 1.4; color: rgba(244, 241, 236, 0.65); opacity: 0.4; transition: opacity 0.25s; display: block;"><span class="sc-interp">4 designers</span></span>
+                </div>
+              </div>
+            
+          </div>
+          <p style="font-family: var(--font-sans); font-size: 13px; line-height: 1.5; color: rgba(244, 241, 236, 0.5); margin: auto 0px 0px; padding-top: 20px; max-width: 300px;">I owned the product across these three pods, and I was the people manager for the whole design team, which grew to 26 designers at its peak.</p>
+        </div>
+        <div style="display: flex; flex-direction: column; min-width: 0px;">
+          <div style="display: flex; flex-direction: column; flex: 1 1 0%; opacity: 1; transition: opacity 0.25s;">
+            
+            
+              <div style="display: flex; flex-direction: column; flex: 1 1 0%; min-height: 0px; gap: 16px;">
+              <div data-noscroll="" style="display: flex; gap: 8px; flex: 1 1 0%; min-width: 0px; overflow: hidden; min-height: 0px; outline: none;">
+                
+                  <div role="button" class="scp1" style="flex: 0 0 320px; min-width: 0px; box-sizing: border-box; border-radius: 16px; overflow: hidden; position: relative; cursor: default; scroll-snap-align: start; background: rgba(255, 255, 255, 0.08); border: 1px solid transparent; transition: flex-basis 700ms cubic-bezier(0.22, 1, 0.36, 1), background 0.25s; will-change: flex-basis;">
+                    <div style="position: absolute; inset: 0px; display: flex; flex-direction: column; align-items: center; padding: 16px 0px; opacity: 0; pointer-events: none; transition: opacity 0.15s;">
+                      <span style="font-family: var(--font-sans); font-size: 12px; color: rgba(244, 241, 236, 0.7);"><span class="sc-interp">01</span></span>
+                      <span style="writing-mode: vertical-rl; transform: rotate(180deg); font-family: var(--font-serif); font-size: clamp(16px, 1.3vw, 20px); color: rgb(244, 241, 236); white-space: nowrap; margin: auto 0px;"><span class="sc-interp">Stocks</span></span>
+                    </div>
+                    <div style="position: absolute; top: 0px; left: 0px; width: 320px; height: 100%; box-sizing: border-box; padding: 20px; overflow-y: auto; display: flex; flex-direction: column; min-height: 0px; opacity: 1; transform: none; pointer-events: auto; transition: opacity 0.6s 0.25s, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.25s;">
+                      <div style="width: 44px; height: 44px; border-radius: 12px; background: linear-gradient(135deg, rgb(139, 92, 246), rgb(183, 154, 224)); display: flex; align-items: center; justify-content: center; font-family: var(--font-serif); font-size: 18px; font-weight: 600; color: rgb(27, 24, 21); flex: 0 0 auto;"><span class="sc-interp">01</span></div>
+                      <h4 style="font-family: var(--font-serif); font-size: 28px; font-weight: 600; line-height: 1.1; letter-spacing: -0.02em; color: rgb(244, 241, 236); margin: 14px 0px 0px;"><span class="sc-interp">Stocks</span></h4>
+                      <p style="font-family: var(--font-sans); font-size: 13px; line-height: 1.45; color: rgba(244, 241, 236, 0.72); margin: 8px 0px 14px; text-wrap: pretty;"><span class="sc-interp">Designed discovering, buying and tracking stocks, with clear signals on risk so first-time investors knew what they were buying.</span></p>
+                      
+                      <div style="margin-top: auto;">
+                        
+                          <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding: 9px 0px; border-top-width: medium; border-top-style: none; border-top-color: currentcolor;"><span style="font-family: var(--font-sans); font-size: 13px; color: rgba(244, 241, 236, 0.65); min-width: 0px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;"><span class="sc-interp">Monthly active traders grew</span></span><span style="font-family: var(--font-serif); font-size: 17px; font-weight: 600; line-height: 1; color: rgb(183, 154, 224); white-space: nowrap;"><span class="sc-interp">11×</span></span></div>
+                        
+                          <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding: 9px 0px; border-top: 1px solid rgba(255, 255, 255, 0.12);"><span style="font-family: var(--font-sans); font-size: 13px; color: rgba(244, 241, 236, 0.65); min-width: 0px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;"><span class="sc-interp">Orders grew</span></span><span style="font-family: var(--font-serif); font-size: 17px; font-weight: 600; line-height: 1; color: rgb(183, 154, 224); white-space: nowrap;"><span class="sc-interp">13×</span></span></div>
+                        
+                          <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding: 9px 0px; border-top: 1px solid rgba(255, 255, 255, 0.12);"><span style="font-family: var(--font-sans); font-size: 13px; color: rgba(244, 241, 236, 0.65); min-width: 0px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;"><span class="sc-interp">Released</span></span><span style="font-family: var(--font-serif); font-size: 17px; font-weight: 600; line-height: 1; color: rgb(183, 154, 224); white-space: nowrap;"><span class="sc-interp">Mar 2022</span></span></div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                
+                  <div role="button" class="scp1" style="flex: 0 0 41.5px; min-width: 0px; box-sizing: border-box; border-radius: 16px; overflow: hidden; position: relative; cursor: pointer; scroll-snap-align: start; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); transition: flex-basis 700ms cubic-bezier(0.22, 1, 0.36, 1), background 0.25s; will-change: flex-basis;">
+                    <div style="position: absolute; inset: 0px; display: flex; flex-direction: column; align-items: center; padding: 16px 0px; opacity: 1; pointer-events: none; transition: opacity 0.15s;">
+                      <span style="font-family: var(--font-sans); font-size: 12px; color: rgba(244, 241, 236, 0.7);"><span class="sc-interp">02</span></span>
+                      <span style="writing-mode: vertical-rl; transform: rotate(180deg); font-family: var(--font-serif); font-size: clamp(16px, 1.3vw, 20px); color: rgb(244, 241, 236); white-space: nowrap; margin: auto 0px;"><span class="sc-interp">Mutual Funds</span></span>
+                    </div>
+                    <div style="position: absolute; top: 0px; left: 0px; width: 320px; height: 100%; box-sizing: border-box; padding: 20px; overflow-y: auto; display: flex; flex-direction: column; min-height: 0px; opacity: 0; transform: translateY(16px); pointer-events: none; transition: opacity 0.25s, transform 0.25s;">
+                      <div style="width: 44px; height: 44px; border-radius: 12px; background: linear-gradient(135deg, rgb(139, 92, 246), rgb(183, 154, 224)); display: flex; align-items: center; justify-content: center; font-family: var(--font-serif); font-size: 18px; font-weight: 600; color: rgb(27, 24, 21); flex: 0 0 auto;"><span class="sc-interp">02</span></div>
+                      <h4 style="font-family: var(--font-serif); font-size: 28px; font-weight: 600; line-height: 1.1; letter-spacing: -0.02em; color: rgb(244, 241, 236); margin: 14px 0px 0px;"><span class="sc-interp">Mutual Funds</span></h4>
+                      <p style="font-family: var(--font-sans); font-size: 13px; line-height: 1.45; color: rgba(244, 241, 236, 0.72); margin: 8px 0px 14px; text-wrap: pretty;"><span class="sc-interp">Designed mutual fund investing around goals, not fund jargon: discovery, SIPs and portfolio tracking.</span></p>
+                      
+                      <div style="margin-top: auto;">
+                        
+                          <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding: 9px 0px; border-top-width: medium; border-top-style: none; border-top-color: currentcolor;"><span style="font-family: var(--font-sans); font-size: 13px; color: rgba(244, 241, 236, 0.65); min-width: 0px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;"><span class="sc-interp">Monthly MF investors grew</span></span><span style="font-family: var(--font-serif); font-size: 17px; font-weight: 600; line-height: 1; color: rgb(183, 154, 224); white-space: nowrap;"><span class="sc-interp">9×</span></span></div>
+                        
+                          <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding: 9px 0px; border-top: 1px solid rgba(255, 255, 255, 0.12);"><span style="font-family: var(--font-sans); font-size: 13px; color: rgba(244, 241, 236, 0.65); min-width: 0px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;"><span class="sc-interp">Orders grew</span></span><span style="font-family: var(--font-serif); font-size: 17px; font-weight: 600; line-height: 1; color: rgb(183, 154, 224); white-space: nowrap;"><span class="sc-interp">8.8×</span></span></div>
+                        
+                          <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding: 9px 0px; border-top: 1px solid rgba(255, 255, 255, 0.12);"><span style="font-family: var(--font-sans); font-size: 13px; color: rgba(244, 241, 236, 0.65); min-width: 0px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;"><span class="sc-interp">SIP orders grew</span></span><span style="font-family: var(--font-serif); font-size: 17px; font-weight: 600; line-height: 1; color: rgb(183, 154, 224); white-space: nowrap;"><span class="sc-interp">5.8×</span></span></div>
+                        
+                          <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding: 9px 0px; border-top: 1px solid rgba(255, 255, 255, 0.12);"><span style="font-family: var(--font-sans); font-size: 13px; color: rgba(244, 241, 236, 0.65); min-width: 0px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;"><span class="sc-interp">Released</span></span><span style="font-family: var(--font-serif); font-size: 17px; font-weight: 600; line-height: 1; color: rgb(183, 154, 224); white-space: nowrap;"><span class="sc-interp">Sep 2022</span></span></div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                
+                  <div role="button" class="scp1" style="flex: 0 0 41.5px; min-width: 0px; box-sizing: border-box; border-radius: 16px; overflow: hidden; position: relative; cursor: pointer; scroll-snap-align: start; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); transition: flex-basis 700ms cubic-bezier(0.22, 1, 0.36, 1), background 0.25s; will-change: flex-basis;">
+                    <div style="position: absolute; inset: 0px; display: flex; flex-direction: column; align-items: center; padding: 16px 0px; opacity: 1; pointer-events: none; transition: opacity 0.15s;">
+                      <span style="font-family: var(--font-sans); font-size: 12px; color: rgba(244, 241, 236, 0.7);"><span class="sc-interp">03</span></span>
+                      <span style="writing-mode: vertical-rl; transform: rotate(180deg); font-family: var(--font-serif); font-size: clamp(16px, 1.3vw, 20px); color: rgb(244, 241, 236); white-space: nowrap; margin: auto 0px;"><span class="sc-interp">Insurance</span></span>
+                    </div>
+                    <div style="position: absolute; top: 0px; left: 0px; width: 320px; height: 100%; box-sizing: border-box; padding: 20px; overflow-y: auto; display: flex; flex-direction: column; min-height: 0px; opacity: 0; transform: translateY(16px); pointer-events: none; transition: opacity 0.25s, transform 0.25s;">
+                      <div style="width: 44px; height: 44px; border-radius: 12px; background: linear-gradient(135deg, rgb(139, 92, 246), rgb(183, 154, 224)); display: flex; align-items: center; justify-content: center; font-family: var(--font-serif); font-size: 18px; font-weight: 600; color: rgb(27, 24, 21); flex: 0 0 auto;"><span class="sc-interp">03</span></div>
+                      <h4 style="font-family: var(--font-serif); font-size: 28px; font-weight: 600; line-height: 1.1; letter-spacing: -0.02em; color: rgb(244, 241, 236); margin: 14px 0px 0px;"><span class="sc-interp">Insurance</span></h4>
+                      <p style="font-family: var(--font-sans); font-size: 13px; line-height: 1.45; color: rgba(244, 241, 236, 0.72); margin: 8px 0px 14px; text-wrap: pretty;"><span class="sc-interp">Designed discovery and purchase across motor, health and term life, with plain-language comparisons of cover and cost.</span></p>
+                      
+                      <div style="margin-top: auto;">
+                        
+                          <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding: 9px 0px; border-top-width: medium; border-top-style: none; border-top-color: currentcolor;"><span style="font-family: var(--font-sans); font-size: 13px; color: rgba(244, 241, 236, 0.65); min-width: 0px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;"><span class="sc-interp">Policies issued grew</span></span><span style="font-family: var(--font-serif); font-size: 17px; font-weight: 600; line-height: 1; color: rgb(183, 154, 224); white-space: nowrap;"><span class="sc-interp">3.1×</span></span></div>
+                        
+                          <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding: 9px 0px; border-top: 1px solid rgba(255, 255, 255, 0.12);"><span style="font-family: var(--font-sans); font-size: 13px; color: rgba(244, 241, 236, 0.65); min-width: 0px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;"><span class="sc-interp">Insurance lines</span></span><span style="font-family: var(--font-serif); font-size: 17px; font-weight: 600; line-height: 1; color: rgb(183, 154, 224); white-space: nowrap;"><span class="sc-interp">3</span></span></div>
+                        
+                          <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding: 9px 0px; border-top: 1px solid rgba(255, 255, 255, 0.12);"><span style="font-family: var(--font-sans); font-size: 13px; color: rgba(244, 241, 236, 0.65); min-width: 0px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;"><span class="sc-interp">Released</span></span><span style="font-family: var(--font-serif); font-size: 17px; font-weight: 600; line-height: 1; color: rgb(183, 154, 224); white-space: nowrap;"><span class="sc-interp">Sep – Dec 2024</span></span></div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                
+                  <div role="button" class="scp1" style="flex: 0 0 41.5px; min-width: 0px; box-sizing: border-box; border-radius: 16px; overflow: hidden; position: relative; cursor: pointer; scroll-snap-align: start; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); transition: flex-basis 700ms cubic-bezier(0.22, 1, 0.36, 1), background 0.25s; will-change: flex-basis;">
+                    <div style="position: absolute; inset: 0px; display: flex; flex-direction: column; align-items: center; padding: 16px 0px; opacity: 1; pointer-events: none; transition: opacity 0.15s;">
+                      <span style="font-family: var(--font-sans); font-size: 12px; color: rgba(244, 241, 236, 0.7);"><span class="sc-interp">04</span></span>
+                      <span style="writing-mode: vertical-rl; transform: rotate(180deg); font-family: var(--font-serif); font-size: clamp(16px, 1.3vw, 20px); color: rgb(244, 241, 236); white-space: nowrap; margin: auto 0px;"><span class="sc-interp">Loans</span></span>
+                    </div>
+                    <div style="position: absolute; top: 0px; left: 0px; width: 320px; height: 100%; box-sizing: border-box; padding: 20px; overflow-y: auto; display: flex; flex-direction: column; min-height: 0px; opacity: 0; transform: translateY(16px); pointer-events: none; transition: opacity 0.25s, transform 0.25s;">
+                      <div style="width: 44px; height: 44px; border-radius: 12px; background: linear-gradient(135deg, rgb(139, 92, 246), rgb(183, 154, 224)); display: flex; align-items: center; justify-content: center; font-family: var(--font-serif); font-size: 18px; font-weight: 600; color: rgb(27, 24, 21); flex: 0 0 auto;"><span class="sc-interp">04</span></div>
+                      <h4 style="font-family: var(--font-serif); font-size: 28px; font-weight: 600; line-height: 1.1; letter-spacing: -0.02em; color: rgb(244, 241, 236); margin: 14px 0px 0px;"><span class="sc-interp">Loans</span></h4>
+                      <p style="font-family: var(--font-sans); font-size: 13px; line-height: 1.45; color: rgba(244, 241, 236, 0.72); margin: 8px 0px 14px; text-wrap: pretty;"><span class="sc-interp">Designed borrowing against mutual funds, showing exactly what's at stake before people pledge their holdings.</span></p>
+                      
+                      <div style="margin-top: auto;">
+                        
+                          <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding: 9px 0px; border-top-width: medium; border-top-style: none; border-top-color: currentcolor;"><span style="font-family: var(--font-sans); font-size: 13px; color: rgba(244, 241, 236, 0.65); min-width: 0px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;"><span class="sc-interp">Loan lines</span></span><span style="font-family: var(--font-serif); font-size: 17px; font-weight: 600; line-height: 1; color: rgb(183, 154, 224); white-space: nowrap;"><span class="sc-interp">2</span></span></div>
+                        
+                          <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding: 9px 0px; border-top: 1px solid rgba(255, 255, 255, 0.12);"><span style="font-family: var(--font-sans); font-size: 13px; color: rgba(244, 241, 236, 0.65); min-width: 0px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;"><span class="sc-interp">Released</span></span><span style="font-family: var(--font-serif); font-size: 17px; font-weight: 600; line-height: 1; color: rgb(183, 154, 224); white-space: nowrap;"><span class="sc-interp">Aug 2025</span></span></div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                
+                  <div role="button" class="scp1" style="flex: 0 0 41.5px; min-width: 0px; box-sizing: border-box; border-radius: 16px; overflow: hidden; position: relative; cursor: pointer; scroll-snap-align: start; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); transition: flex-basis 700ms cubic-bezier(0.22, 1, 0.36, 1), background 0.25s; will-change: flex-basis;">
+                    <div style="position: absolute; inset: 0px; display: flex; flex-direction: column; align-items: center; padding: 16px 0px; opacity: 1; pointer-events: none; transition: opacity 0.15s;">
+                      <span style="font-family: var(--font-sans); font-size: 12px; color: rgba(244, 241, 236, 0.7);"><span class="sc-interp">05</span></span>
+                      <span style="writing-mode: vertical-rl; transform: rotate(180deg); font-family: var(--font-serif); font-size: clamp(16px, 1.3vw, 20px); color: rgb(244, 241, 236); white-space: nowrap; margin: auto 0px;"><span class="sc-interp">IPO</span></span>
+                    </div>
+                    <div style="position: absolute; top: 0px; left: 0px; width: 320px; height: 100%; box-sizing: border-box; padding: 20px; overflow-y: auto; display: flex; flex-direction: column; min-height: 0px; opacity: 0; transform: translateY(16px); pointer-events: none; transition: opacity 0.25s, transform 0.25s;">
+                      <div style="width: 44px; height: 44px; border-radius: 12px; background: linear-gradient(135deg, rgb(139, 92, 246), rgb(183, 154, 224)); display: flex; align-items: center; justify-content: center; font-family: var(--font-serif); font-size: 18px; font-weight: 600; color: rgb(27, 24, 21); flex: 0 0 auto;"><span class="sc-interp">05</span></div>
+                      <h4 style="font-family: var(--font-serif); font-size: 28px; font-weight: 600; line-height: 1.1; letter-spacing: -0.02em; color: rgb(244, 241, 236); margin: 14px 0px 0px;"><span class="sc-interp">IPO</span></h4>
+                      <p style="font-family: var(--font-sans); font-size: 13px; line-height: 1.45; color: rgba(244, 241, 236, 0.72); margin: 8px 0px 14px; text-wrap: pretty;"><span class="sc-interp">Redesigned the existing IPO flow to make applying simpler and cut support load.</span></p>
+                      
+                      <div style="margin-top: auto;">
+                        
+                          <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding: 9px 0px; border-top-width: medium; border-top-style: none; border-top-color: currentcolor;"><span style="font-family: var(--font-sans); font-size: 13px; color: rgba(244, 241, 236, 0.65); min-width: 0px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;"><span class="sc-interp">Support tickets dropped</span></span><span style="font-family: var(--font-serif); font-size: 17px; font-weight: 600; line-height: 1; color: rgb(183, 154, 224); white-space: nowrap;"><span class="sc-interp">−80%</span></span></div>
+                        
+                          <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding: 9px 0px; border-top: 1px solid rgba(255, 255, 255, 0.12);"><span style="font-family: var(--font-sans); font-size: 13px; color: rgba(244, 241, 236, 0.65); min-width: 0px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;"><span class="sc-interp">IPO revenue grew</span></span><span style="font-family: var(--font-serif); font-size: 17px; font-weight: 600; line-height: 1; color: rgb(183, 154, 224); white-space: nowrap;"><span class="sc-interp">3×</span></span></div>
+                        
+                          <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding: 9px 0px; border-top: 1px solid rgba(255, 255, 255, 0.12);"><span style="font-family: var(--font-sans); font-size: 13px; color: rgba(244, 241, 236, 0.65); min-width: 0px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;"><span class="sc-interp">Active users applying per IPO</span></span><span style="font-family: var(--font-serif); font-size: 17px; font-weight: 600; line-height: 1; color: rgb(183, 154, 224); white-space: nowrap;"><span class="sc-interp">10%</span></span></div>
+                        
+                          <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding: 9px 0px; border-top: 1px solid rgba(255, 255, 255, 0.12);"><span style="font-family: var(--font-sans); font-size: 13px; color: rgba(244, 241, 236, 0.65); min-width: 0px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;"><span class="sc-interp">Released</span></span><span style="font-family: var(--font-serif); font-size: 17px; font-weight: 600; line-height: 1; color: rgb(183, 154, 224); white-space: nowrap;"><span class="sc-interp">Jun 2024</span></span></div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                
+                  <div role="button" class="scp1" style="flex: 0 0 41.5px; min-width: 0px; box-sizing: border-box; border-radius: 16px; overflow: hidden; position: relative; cursor: pointer; scroll-snap-align: start; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); transition: flex-basis 700ms cubic-bezier(0.22, 1, 0.36, 1), background 0.25s; will-change: flex-basis;">
+                    <div style="position: absolute; inset: 0px; display: flex; flex-direction: column; align-items: center; padding: 16px 0px; opacity: 1; pointer-events: none; transition: opacity 0.15s;">
+                      <span style="font-family: var(--font-sans); font-size: 12px; color: rgba(244, 241, 236, 0.7);"><span class="sc-interp">06</span></span>
+                      <span style="writing-mode: vertical-rl; transform: rotate(180deg); font-family: var(--font-serif); font-size: clamp(16px, 1.3vw, 20px); color: rgb(244, 241, 236); white-space: nowrap; margin: auto 0px;"><span class="sc-interp">Gold</span></span>
+                    </div>
+                    <div style="position: absolute; top: 0px; left: 0px; width: 320px; height: 100%; box-sizing: border-box; padding: 20px; overflow-y: auto; display: flex; flex-direction: column; min-height: 0px; opacity: 0; transform: translateY(16px); pointer-events: none; transition: opacity 0.25s, transform 0.25s;">
+                      <div style="width: 44px; height: 44px; border-radius: 12px; background: linear-gradient(135deg, rgb(139, 92, 246), rgb(183, 154, 224)); display: flex; align-items: center; justify-content: center; font-family: var(--font-serif); font-size: 18px; font-weight: 600; color: rgb(27, 24, 21); flex: 0 0 auto;"><span class="sc-interp">06</span></div>
+                      <h4 style="font-family: var(--font-serif); font-size: 28px; font-weight: 600; line-height: 1.1; letter-spacing: -0.02em; color: rgb(244, 241, 236); margin: 14px 0px 0px;"><span class="sc-interp">Gold</span></h4>
+                      <p style="font-family: var(--font-sans); font-size: 13px; line-height: 1.45; color: rgba(244, 241, 236, 0.72); margin: 8px 0px 14px; text-wrap: pretty;"><span class="sc-interp">One place for users to buy gold as SGBs, ETFs or mutual funds, and learn which one fits their goal.</span></p>
+                      
+                      <div style="margin-top: auto;">
+                        
+                          <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding: 9px 0px; border-top-width: medium; border-top-style: none; border-top-color: currentcolor;"><span style="font-family: var(--font-sans); font-size: 13px; color: rgba(244, 241, 236, 0.65); min-width: 0px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;"><span class="sc-interp">Gold ETF buyers grew</span></span><span style="font-family: var(--font-serif); font-size: 17px; font-weight: 600; line-height: 1; color: rgb(183, 154, 224); white-space: nowrap;"><span class="sc-interp">+86%</span></span></div>
+                        
+                          <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding: 9px 0px; border-top: 1px solid rgba(255, 255, 255, 0.12);"><span style="font-family: var(--font-sans); font-size: 13px; color: rgba(244, 241, 236, 0.65); min-width: 0px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;"><span class="sc-interp">Design to release</span></span><span style="font-family: var(--font-serif); font-size: 17px; font-weight: 600; line-height: 1; color: rgb(183, 154, 224); white-space: nowrap;"><span class="sc-interp">2 weeks</span></span></div>
+                        
+                          <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding: 9px 0px; border-top: 1px solid rgba(255, 255, 255, 0.12);"><span style="font-family: var(--font-sans); font-size: 13px; color: rgba(244, 241, 236, 0.65); min-width: 0px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;"><span class="sc-interp">Released</span></span><span style="font-family: var(--font-serif); font-size: 17px; font-weight: 600; line-height: 1; color: rgb(183, 154, 224); white-space: nowrap;"><span class="sc-interp">Jun 2023</span></span></div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                
+                  <div role="button" class="scp1" style="flex: 0 0 41.5px; min-width: 0px; box-sizing: border-box; border-radius: 16px; overflow: hidden; position: relative; cursor: pointer; scroll-snap-align: start; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); transition: flex-basis 700ms cubic-bezier(0.22, 1, 0.36, 1), background 0.25s; will-change: flex-basis;">
+                    <div style="position: absolute; inset: 0px; display: flex; flex-direction: column; align-items: center; padding: 16px 0px; opacity: 1; pointer-events: none; transition: opacity 0.15s;">
+                      <span style="font-family: var(--font-sans); font-size: 12px; color: rgba(244, 241, 236, 0.7);"><span class="sc-interp">07</span></span>
+                      <span style="writing-mode: vertical-rl; transform: rotate(180deg); font-family: var(--font-serif); font-size: clamp(16px, 1.3vw, 20px); color: rgb(244, 241, 236); white-space: nowrap; margin: auto 0px;"><span class="sc-interp">Bonds</span></span>
+                    </div>
+                    <div style="position: absolute; top: 0px; left: 0px; width: 320px; height: 100%; box-sizing: border-box; padding: 20px; overflow-y: auto; display: flex; flex-direction: column; min-height: 0px; opacity: 0; transform: translateY(16px); pointer-events: none; transition: opacity 0.25s, transform 0.25s;">
+                      <div style="width: 44px; height: 44px; border-radius: 12px; background: linear-gradient(135deg, rgb(139, 92, 246), rgb(183, 154, 224)); display: flex; align-items: center; justify-content: center; font-family: var(--font-serif); font-size: 18px; font-weight: 600; color: rgb(27, 24, 21); flex: 0 0 auto;"><span class="sc-interp">07</span></div>
+                      <h4 style="font-family: var(--font-serif); font-size: 28px; font-weight: 600; line-height: 1.1; letter-spacing: -0.02em; color: rgb(244, 241, 236); margin: 14px 0px 0px;"><span class="sc-interp">Bonds</span></h4>
+                      <p style="font-family: var(--font-sans); font-size: 13px; line-height: 1.45; color: rgba(244, 241, 236, 0.72); margin: 8px 0px 14px; text-wrap: pretty;"><span class="sc-interp">Helping users invest in bonds, a stable fixed-income option, inside the Invest app.</span></p>
+                      
+                      <div style="margin-top: auto;">
+                        
+                          <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding: 9px 0px; border-top-width: medium; border-top-style: none; border-top-color: currentcolor;"><span style="font-family: var(--font-sans); font-size: 13px; color: rgba(244, 241, 236, 0.65); min-width: 0px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;"><span class="sc-interp">Bond types available</span></span><span style="font-family: var(--font-serif); font-size: 17px; font-weight: 600; line-height: 1; color: rgb(183, 154, 224); white-space: nowrap;"><span class="sc-interp">4</span></span></div>
+                        
+                          <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding: 9px 0px; border-top: 1px solid rgba(255, 255, 255, 0.12);"><span style="font-family: var(--font-sans); font-size: 13px; color: rgba(244, 241, 236, 0.65); min-width: 0px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;"><span class="sc-interp">Released</span></span><span style="font-family: var(--font-serif); font-size: 17px; font-weight: 600; line-height: 1; color: rgb(183, 154, 224); white-space: nowrap;"><span class="sc-interp">Aug 2024</span></span></div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                
+                  <div role="button" class="scp1" style="flex: 0 0 41.5px; min-width: 0px; box-sizing: border-box; border-radius: 16px; overflow: hidden; position: relative; cursor: pointer; scroll-snap-align: start; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); transition: flex-basis 700ms cubic-bezier(0.22, 1, 0.36, 1), background 0.25s; will-change: flex-basis;">
+                    <div style="position: absolute; inset: 0px; display: flex; flex-direction: column; align-items: center; padding: 16px 0px; opacity: 1; pointer-events: none; transition: opacity 0.15s;">
+                      <span style="font-family: var(--font-sans); font-size: 12px; color: rgba(244, 241, 236, 0.7);"><span class="sc-interp">08</span></span>
+                      <span style="writing-mode: vertical-rl; transform: rotate(180deg); font-family: var(--font-serif); font-size: clamp(16px, 1.3vw, 20px); color: rgb(244, 241, 236); white-space: nowrap; margin: auto 0px;"><span class="sc-interp">Fixed Deposits</span></span>
+                    </div>
+                    <div style="position: absolute; top: 0px; left: 0px; width: 320px; height: 100%; box-sizing: border-box; padding: 20px; overflow-y: auto; display: flex; flex-direction: column; min-height: 0px; opacity: 0; transform: translateY(16px); pointer-events: none; transition: opacity 0.25s, transform 0.25s;">
+                      <div style="width: 44px; height: 44px; border-radius: 12px; background: linear-gradient(135deg, rgb(139, 92, 246), rgb(183, 154, 224)); display: flex; align-items: center; justify-content: center; font-family: var(--font-serif); font-size: 18px; font-weight: 600; color: rgb(27, 24, 21); flex: 0 0 auto;"><span class="sc-interp">08</span></div>
+                      <h4 style="font-family: var(--font-serif); font-size: 28px; font-weight: 600; line-height: 1.1; letter-spacing: -0.02em; color: rgb(244, 241, 236); margin: 14px 0px 0px;"><span class="sc-interp">Fixed Deposits</span></h4>
+                      <p style="font-family: var(--font-sans); font-size: 13px; line-height: 1.45; color: rgba(244, 241, 236, 0.72); margin: 8px 0px 14px; text-wrap: pretty;"><span class="sc-interp">Helping users compare fixed deposit rates across banks and invest in NCDs, with calculators to plan their returns.</span></p>
+                      
+                      <div style="margin-top: auto;">
+                        
+                          <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding: 9px 0px; border-top-width: medium; border-top-style: none; border-top-color: currentcolor;"><span style="font-family: var(--font-sans); font-size: 13px; color: rgba(244, 241, 236, 0.65); min-width: 0px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;"><span class="sc-interp">Banks compared</span></span><span style="font-family: var(--font-serif); font-size: 17px; font-weight: 600; line-height: 1; color: rgb(183, 154, 224); white-space: nowrap;"><span class="sc-interp">10+</span></span></div>
+                        
+                          <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding: 9px 0px; border-top: 1px solid rgba(255, 255, 255, 0.12);"><span style="font-family: var(--font-sans); font-size: 13px; color: rgba(244, 241, 236, 0.65); min-width: 0px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;"><span class="sc-interp">NCD partners integrated</span></span><span style="font-family: var(--font-serif); font-size: 17px; font-weight: 600; line-height: 1; color: rgb(183, 154, 224); white-space: nowrap;"><span class="sc-interp">3</span></span></div>
+                        
+                          <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding: 9px 0px; border-top: 1px solid rgba(255, 255, 255, 0.12);"><span style="font-family: var(--font-sans); font-size: 13px; color: rgba(244, 241, 236, 0.65); min-width: 0px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;"><span class="sc-interp">Calculators built</span></span><span style="font-family: var(--font-serif); font-size: 17px; font-weight: 600; line-height: 1; color: rgb(183, 154, 224); white-space: nowrap;"><span class="sc-interp">2</span></span></div>
+                        
+                          <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding: 9px 0px; border-top: 1px solid rgba(255, 255, 255, 0.12);"><span style="font-family: var(--font-sans); font-size: 13px; color: rgba(244, 241, 236, 0.65); min-width: 0px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;"><span class="sc-interp">Released</span></span><span style="font-family: var(--font-serif); font-size: 17px; font-weight: 600; line-height: 1; color: rgb(183, 154, 224); white-space: nowrap;"><span class="sc-interp">Nov 2023</span></span></div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                
+                  <div role="button" class="scp1" style="flex: 0 0 41.5px; min-width: 0px; box-sizing: border-box; border-radius: 16px; overflow: hidden; position: relative; cursor: pointer; scroll-snap-align: start; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); transition: flex-basis 700ms cubic-bezier(0.22, 1, 0.36, 1), background 0.25s; will-change: flex-basis;">
+                    <div style="position: absolute; inset: 0px; display: flex; flex-direction: column; align-items: center; padding: 16px 0px; opacity: 1; pointer-events: none; transition: opacity 0.15s;">
+                      <span style="font-family: var(--font-sans); font-size: 12px; color: rgba(244, 241, 236, 0.7);"><span class="sc-interp">09</span></span>
+                      <span style="writing-mode: vertical-rl; transform: rotate(180deg); font-family: var(--font-serif); font-size: clamp(16px, 1.3vw, 20px); color: rgb(244, 241, 236); white-space: nowrap; margin: auto 0px;"><span class="sc-interp">NPS</span></span>
+                    </div>
+                    <div style="position: absolute; top: 0px; left: 0px; width: 320px; height: 100%; box-sizing: border-box; padding: 20px; overflow-y: auto; display: flex; flex-direction: column; min-height: 0px; opacity: 0; transform: translateY(16px); pointer-events: none; transition: opacity 0.25s, transform 0.25s;">
+                      <div style="width: 44px; height: 44px; border-radius: 12px; background: linear-gradient(135deg, rgb(139, 92, 246), rgb(183, 154, 224)); display: flex; align-items: center; justify-content: center; font-family: var(--font-serif); font-size: 18px; font-weight: 600; color: rgb(27, 24, 21); flex: 0 0 auto;"><span class="sc-interp">09</span></div>
+                      <h4 style="font-family: var(--font-serif); font-size: 28px; font-weight: 600; line-height: 1.1; letter-spacing: -0.02em; color: rgb(244, 241, 236); margin: 14px 0px 0px;"><span class="sc-interp">NPS</span></h4>
+                      <p style="font-family: var(--font-sans); font-size: 13px; line-height: 1.45; color: rgba(244, 241, 236, 0.72); margin: 8px 0px 14px; text-wrap: pretty;"><span class="sc-interp">Helping users invest in the National Pension System and plan for retirement inside the Invest app.</span></p>
+                      
+                      <div style="margin-top: auto;">
+                        
+                          <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding: 9px 0px; border-top-width: medium; border-top-style: none; border-top-color: currentcolor;"><span style="font-family: var(--font-sans); font-size: 13px; color: rgba(244, 241, 236, 0.65); min-width: 0px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;"><span class="sc-interp">Released</span></span><span style="font-family: var(--font-serif); font-size: 17px; font-weight: 600; line-height: 1; color: rgb(183, 154, 224); white-space: nowrap;"><span class="sc-interp">Sep 2025</span></span></div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                
+              </div>
+              <div style="display: flex; align-items: center; gap: 16px; max-width: 480px; width: 100%; margin: 0px auto;">
+                <button aria-label="Previous product" class="scp2 scp3" style="width: 32px; height: 32px; padding: 0px; border: 0px; background: transparent; color: rgb(244, 241, 236); display: flex; align-items: center; justify-content: center; cursor: pointer; opacity: 0.35; transition: opacity 200ms, transform 120ms;"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" style="display: block;"><path d="M13 8H3M7 4L3 8l4 4"></path></svg></button>
+                <div style="flex: 1 1 0%; display: flex; gap: 4px;">
+                  
+                    <button aria-label="Go to product 1" style="position: relative; flex: 1 1 0%; height: 3px; padding: 0px; border: 0px; border-radius: 0px; overflow: hidden; cursor: pointer; background: rgba(244, 241, 236, 0.2);"><span data-acc-fill="0" style="position: absolute; left: 0px; top: 0px; bottom: 0px; background: rgb(244, 241, 236); width: 41.1111%;"></span></button>
+                  
+                    <button aria-label="Go to product 2" style="position: relative; flex: 1 1 0%; height: 3px; padding: 0px; border: 0px; border-radius: 0px; overflow: hidden; cursor: pointer; background: rgba(244, 241, 236, 0.2);"><span data-acc-fill="1" style="position: absolute; left: 0px; top: 0px; bottom: 0px; background: rgb(244, 241, 236); width: 0%;"></span></button>
+                  
+                    <button aria-label="Go to product 3" style="position: relative; flex: 1 1 0%; height: 3px; padding: 0px; border: 0px; border-radius: 0px; overflow: hidden; cursor: pointer; background: rgba(244, 241, 236, 0.2);"><span data-acc-fill="2" style="position: absolute; left: 0px; top: 0px; bottom: 0px; background: rgb(244, 241, 236); width: 0%;"></span></button>
+                  
+                    <button aria-label="Go to product 4" style="position: relative; flex: 1 1 0%; height: 3px; padding: 0px; border: 0px; border-radius: 0px; overflow: hidden; cursor: pointer; background: rgba(244, 241, 236, 0.2);"><span data-acc-fill="3" style="position: absolute; left: 0px; top: 0px; bottom: 0px; background: rgb(244, 241, 236); width: 0%;"></span></button>
+                  
+                    <button aria-label="Go to product 5" style="position: relative; flex: 1 1 0%; height: 3px; padding: 0px; border: 0px; border-radius: 0px; overflow: hidden; cursor: pointer; background: rgba(244, 241, 236, 0.2);"><span data-acc-fill="4" style="position: absolute; left: 0px; top: 0px; bottom: 0px; background: rgb(244, 241, 236); width: 0%;"></span></button>
+                  
+                    <button aria-label="Go to product 6" style="position: relative; flex: 1 1 0%; height: 3px; padding: 0px; border: 0px; border-radius: 0px; overflow: hidden; cursor: pointer; background: rgba(244, 241, 236, 0.2);"><span data-acc-fill="5" style="position: absolute; left: 0px; top: 0px; bottom: 0px; background: rgb(244, 241, 236); width: 0%;"></span></button>
+                  
+                    <button aria-label="Go to product 7" style="position: relative; flex: 1 1 0%; height: 3px; padding: 0px; border: 0px; border-radius: 0px; overflow: hidden; cursor: pointer; background: rgba(244, 241, 236, 0.2);"><span data-acc-fill="6" style="position: absolute; left: 0px; top: 0px; bottom: 0px; background: rgb(244, 241, 236); width: 0%;"></span></button>
+                  
+                    <button aria-label="Go to product 8" style="position: relative; flex: 1 1 0%; height: 3px; padding: 0px; border: 0px; border-radius: 0px; overflow: hidden; cursor: pointer; background: rgba(244, 241, 236, 0.2);"><span data-acc-fill="7" style="position: absolute; left: 0px; top: 0px; bottom: 0px; background: rgb(244, 241, 236); width: 0%;"></span></button>
+                  
+                    <button aria-label="Go to product 9" style="position: relative; flex: 1 1 0%; height: 3px; padding: 0px; border: 0px; border-radius: 0px; overflow: hidden; cursor: pointer; background: rgba(244, 241, 236, 0.2);"><span data-acc-fill="8" style="position: absolute; left: 0px; top: 0px; bottom: 0px; background: rgb(244, 241, 236); width: 0%;"></span></button>
+                  
+                </div>
+                <button aria-label="Next product" class="scp4 scp3" style="width: 32px; height: 32px; padding: 0px; border: 0px; background: transparent; color: rgb(244, 241, 236); display: flex; align-items: center; justify-content: center; cursor: pointer; transition: transform 120ms;"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" style="display: block;"><path d="M3 8h10M9 4l4 4-4 4"></path></svg></button>
+              </div><p style="font-family: var(--font-sans); font-size: 12px; line-height: 1.55; color: rgba(244, 241, 236, 0.55); margin: 4px 0px 0px; max-width: 640px; text-wrap: pretty;">Growth figures are since each product's release date shown above, from Upstox's internal reporting. Design owned the end-to-end experience; marketing, pricing and market conditions also played a part.</p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      </div>
+    
+    </section>
+
+    <section id="mg" data-theme="light" data-screen-label="How I lead">
+      <p class="mg-eye">WHAT I DID AS A MANAGER</p>
+      <div class="mg-layer mg-R" data-side="r" tabindex="0">
+        <h2 class="mg-hd" style="--w1r: 308.848px;"><span>How I led</span><span>the team</span></h2>
+        <span class="mg-hint"><span class="h-d">Hover to explore</span><span class="h-m">Tap to explore</span></span><span class="mg-plus">+</span>
+        <div class="mg-cards mg-team"><div class="mg-snake"><svg class="mg-road" viewBox="0 0 1000 770" aria-hidden="true"><path d="M 90 350 C 121.7 350.7 155.5 340.6 185 352 C 209.4 361.4 226.5 385.6 240 408 C 252.9 429.5 254.2 456.2 262 480 C 270.8 506.8 266.0 545.1 290 560 C 313.0 574.2 344.4 555.5 370 547 C 398.3 537.6 420.9 513.4 450 507 C 471.3 502.3 495.2 505.8 515 515 C 538.6 526.0 549.3 560.7 575 565 C 597.1 568.7 620.1 551.7 635 535 C 649.0 519.2 655.9 496.1 655 475 C 654.1 453.4 645.3 430.3 630 415 C 613.1 398.1 588.6 388.6 565 385 C 543.3 381.7 520.5 387.3 500 395 C 479.7 402.6 466.1 425.0 445 430 C 428.5 433.9 407.7 431.3 395 420 C 380.2 406.8 371.1 384.9 372 365 C 372.9 344.4 383.8 322.7 400 310 C 419.2 294.9 445.7 290.5 470 288 C 495.0 285.4 520.3 299.5 545 295 C 564.1 291.5 583.3 280.5 595 265 C 605.2 251.4 608.7 231.6 605 215 C 601.4 198.7 579.5 191.1 575 175 C 570.5 158.9 570.5 138.8 580 125 C 591.0 109.0 610.7 97.6 630 95 C 650.4 92.2 674.1 96.9 690 110 C 705.5 122.8 709.6 145.6 715 165 C 719.1 179.5 719.8 195.1 718 210 C 714.7 237.1 703.9 262.9 700 290 C 696.2 316.4 691.2 343.5 695 370 C 698.1 391.4 705.8 413.7 720 430 C 733.9 446.0 755.1 454.8 775 462 C 792.4 468.3 811.7 467.3 830 470" fill="none" stroke="#F4F1EC" stroke-opacity=".16" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"></path><path d="M 90 350 C 121.7 350.7 155.5 340.6 185 352 C 209.4 361.4 226.5 385.6 240 408 C 252.9 429.5 254.2 456.2 262 480 C 270.8 506.8 266.0 545.1 290 560 C 313.0 574.2 344.4 555.5 370 547 C 398.3 537.6 420.9 513.4 450 507 C 471.3 502.3 495.2 505.8 515 515 C 538.6 526.0 549.3 560.7 575 565 C 597.1 568.7 620.1 551.7 635 535 C 649.0 519.2 655.9 496.1 655 475 C 654.1 453.4 645.3 430.3 630 415 C 613.1 398.1 588.6 388.6 565 385 C 543.3 381.7 520.5 387.3 500 395 C 479.7 402.6 466.1 425.0 445 430 C 428.5 433.9 407.7 431.3 395 420 C 380.2 406.8 371.1 384.9 372 365 C 372.9 344.4 383.8 322.7 400 310 C 419.2 294.9 445.7 290.5 470 288 C 495.0 285.4 520.3 299.5 545 295 C 564.1 291.5 583.3 280.5 595 265 C 605.2 251.4 608.7 231.6 605 215 C 601.4 198.7 579.5 191.1 575 175 C 570.5 158.9 570.5 138.8 580 125 C 591.0 109.0 610.7 97.6 630 95 C 650.4 92.2 674.1 96.9 690 110 C 705.5 122.8 709.6 145.6 715 165 C 719.1 179.5 719.8 195.1 718 210 C 714.7 237.1 703.9 262.9 700 290 C 696.2 316.4 691.2 343.5 695 370 C 698.1 391.4 705.8 413.7 720 430 C 733.9 446.0 755.1 454.8 775 462 C 792.4 468.3 811.7 467.3 830 470" fill="none" stroke="#F4F1EC" stroke-opacity=".6" stroke-width="1.4" stroke-dasharray="7 9"></path></svg><div class="mg-st d" style="--x: 90; --y: 350; --l: 40; --t: 382; --w: 150; --a: left;"><span class="mg-no">1</span><div class="mg-sx"><span class="mg-tm"><i>Team</i>4 designers</span><h3 class="mg-sh">Day one on Invest</h3><p class="mg-sd">Three junior designers and me, with one design philosophy to share.</p></div></div><div class="mg-st d" style="--x: 290; --y: 560; --l: 265; --t: 592; --w: 215; --a: left;"><span class="mg-no">2</span><div class="mg-sx"><span class="mg-tm"><i>Team</i>10 designers</span><h3 class="mg-sh">Scaled without drifting</h3><p class="mg-sd">From 3 to 10 designers, and the philosophy held.</p></div></div><div class="mg-st d" style="--x: 575; --y: 565; --l: 555; --t: 597; --w: 185; --a: left;"><span class="mg-no">3</span><div class="mg-sx"><span class="mg-tm"><i>Team</i>11 designers</span><h3 class="mg-sh">Opened a second front</h3><p class="mg-sd">Account opening got its own pod, starting with 1 dedicated designer.</p></div></div><div class="mg-st u" style="--x: 372; --y: 365; --l: 170; --t: 331; --w: 190; --a: right;"><span class="mg-no">4</span><div class="mg-sx"><span class="mg-tm"><i>Team</i>20 designers</span><h3 class="mg-sh">Zoomed out</h3><p class="mg-sd">Took over the whole design team: Invest, Pro and Account opening.</p></div></div><div class="mg-st u" style="--x: 575; --y: 175; --l: 350; --t: 141; --w: 190; --a: right;"><span class="mg-no">5</span><div class="mg-sx"><span class="mg-tm"><i>Team</i>26 designers</span><h3 class="mg-sh">Built a web team</h3><p class="mg-sd">Carved out 2 in-house designers, stretched with 4 from a vendor team.</p></div></div><div class="mg-st r" style="--x: 718; --y: 210; --l: 762; --t: 210; --w: 218; --a: left;"><span class="mg-no">6</span><div class="mg-sx"><span class="mg-tm"><i>Team</i>16 designers</span><h3 class="mg-sh">Handed Pro over</h3><p class="mg-sd">Promoted an internal manager to run it: 10 designers, off my plate.</p></div></div><div class="mg-st d" style="--x: 830; --y: 470; --l: 814; --t: 502; --w: 170; --a: left;"><span class="mg-no">7</span><div class="mg-sx"><span class="mg-tm"><i>Team</i>16 designers</span><h3 class="mg-sh">Retired as bottleneck</h3><p class="mg-sd">Promoted 2 more internal managers. Invest stopped waiting on me.</p></div></div></div></div>
+      </div>
+      <div class="mg-layer mg-L" data-side="l" tabindex="0">
+        <h2 class="mg-hd" style="--w1: 308.1484661799631px;"><span style="--d: 63.69953382003695px;">How I led</span><span style="--d: 0px;">the product</span></h2>
+        <span class="mg-hint"><span class="h-d">Hover to explore</span><span class="h-m">Tap to explore</span></span><span class="mg-plus">+</span>
+        <div class="mg-cards mg-prod"><div class="mg-card mg-pc"><span class="mg-ill"><svg viewBox="0 0 40 40" width="100%" height="100%"><circle cx="20" cy="20" r="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 5" opacity="0.55"></circle></svg></span><h3>Finance, minus the jargon</h3><p>Our one rule: if it needed a finance degree, it wasn’t done. Every designer lived by it, and every new hire learned it from day one. It shaped every component, product and screen.</p><div class="mg-ft"><a href="/case-studies/upstox-2.html">See the case study →</a><span class="mg-ct">01 / 03</span></div></div><div class="mg-card mg-pc"><span class="mg-ill"><svg viewBox="0 0 40 40" width="100%" height="100%"><circle cx="20" cy="20" r="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 5" opacity="0.55"></circle></svg></span><h3>Championing users, everywhere</h3><p>Our designers made sure the user had a voice in every room, with PMs, marketing, engineering and leadership alike.</p><div class="mg-ft"><span class="mg-ct">02 / 03</span></div></div><div class="mg-card mg-pc"><span class="mg-ill"><svg viewBox="0 0 40 40" width="100%" height="100%"><circle cx="20" cy="20" r="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 5" opacity="0.55"></circle></svg></span><h3>Speed is a design skill</h3><p>Some products launched in two weeks, others in two months. The trick wasn’t cutting corners, it was working smart: reusing components, reworking pages, A/B testing and shipping small. We hired people who thrived at that pace.</p><div class="mg-ft"><span class="mg-ct">03 / 03</span></div></div></div>
+      </div>
+    </section>
+
+    
+
+    
+
+
+
+    <section data-theme="dark" style="background: rgb(27, 24, 21); color: rgb(244, 241, 236); padding: 80px 60px; min-height: max(100svh, 720px); scroll-snap-align: start; scroll-snap-stop: always; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center;">
+      <p style="font-family: var(--font-sans); font-size: 12px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; opacity: 0.6; margin: 0px 0px 12px;">SELECTED WORK</p>
+      <h2 style="color: rgb(244, 241, 236); font-family: var(--font-serif); font-size: 40px; font-weight: 700; margin: 0px 0px 40px; letter-spacing: -0.02em;">Case studies</h2>
+      <div style="display: grid; grid-template-columns: repeat(3, minmax(0px, 1fr)); gap: 24px;">
+        
+          
+          <a class="cs-card" href="/case-studies/upstox-1.html" style="display: flex; flex-direction: column; box-sizing: border-box; background: rgba(244, 241, 236, 0.06); border: 1px solid rgba(244, 241, 236, 0.14); border-radius: 4px; padding: 20px; text-decoration: none; color: inherit; min-height: clamp(460px, 60svh, 560px);"><div style="position: relative; overflow: hidden; border-radius: 4px; background: rgba(244, 241, 236, 0.08); display: flex; align-items: center; justify-content: center; padding: 24px; box-sizing: border-box; flex: 1 1 180px; min-height: 160px; height: auto;"><div role="img" aria-label="Opening Demat account" style="position: absolute; inset: 0px; background-image: url(&quot;/assets/img/thumb-account-opening-dark.webp&quot;); background-size: cover; background-position: center center;"></div></div><div style="margin-top: auto; padding-top: 20px;"><h3 style="font-family: var(--font-serif); font-size: 20px; font-weight: 700; line-height: 1.25; margin: 0px 0px 10px; color: rgb(244, 241, 236);"><span class="sc-interp">Opening Demat account</span></h3><p style="font-family: var(--font-sans); font-size: 14px; line-height: 1.6; color: rgba(244, 241, 236, 0.7); margin: 0px 0px 14px; text-wrap: pretty;"><span class="sc-interp">Rebuilding the account opening flow to cut errors, lift conversion and make every step modular.</span></p><div style="font-family: var(--font-sans); font-size: 12.5px; opacity: 0.6; margin-bottom: 4px;"><span class="sc-interp">Jan 2025</span></div><div style="font-family: var(--font-sans); font-size: 12.5px; opacity: 0.6; margin-bottom: 16px;"><span class="sc-interp">Growth funnel · Cross-team</span></div></div><div style="border-top: 1.2px dotted rgba(244, 241, 236, 0.35); padding-top: 10px; display: flex; justify-content: space-between; align-items: center; gap: 12px; white-space: nowrap;"><span style="display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-sans); font-size: 14px; font-weight: 600; color: rgb(183, 148, 232);"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg><span>Read case study →</span></span><span style="font-family: var(--font-sans); font-size: 12.5px; opacity: 0.6;"><span class="sc-interp">Leader + hands-on</span></span></div></a>
+          
+          
+        
+          
+          <a class="cs-card" href="/case-studies/upstox-2.html" style="display: flex; flex-direction: column; box-sizing: border-box; background: rgba(244, 241, 236, 0.06); border: 1px solid rgba(244, 241, 236, 0.14); border-radius: 4px; padding: 20px; text-decoration: none; color: inherit; min-height: clamp(460px, 60svh, 560px);"><div style="position: relative; overflow: hidden; border-radius: 4px; background: rgba(244, 241, 236, 0.08); display: flex; align-items: center; justify-content: center; padding: 24px; box-sizing: border-box; flex: 1 1 180px; min-height: 160px; height: auto;"><div role="img" aria-label="Simplifying finance" style="position: absolute; inset: 0px; background-image: url(&quot;/assets/img/thumb-simplifying-finance-dark.webp&quot;); background-size: cover; background-position: center center;"></div></div><div style="margin-top: auto; padding-top: 20px;"><h3 style="font-family: var(--font-serif); font-size: 20px; font-weight: 700; line-height: 1.25; margin: 0px 0px 10px; color: rgb(244, 241, 236);"><span class="sc-interp">Simplifying finance</span></h3><p style="font-family: var(--font-sans); font-size: 14px; line-height: 1.6; color: rgba(244, 241, 236, 0.7); margin: 0px 0px 14px; text-wrap: pretty;"><span class="sc-interp">Bringing one philosophy to every screen in the app, so people of any financial confidence can invest with clarity.</span></p><div style="font-family: var(--font-sans); font-size: 12.5px; opacity: 0.6; margin-bottom: 4px;"><span class="sc-interp">Jan 2022 – Dec 2025</span></div><div style="font-family: var(--font-sans); font-size: 12.5px; opacity: 0.6; margin-bottom: 16px;"><span class="sc-interp">Design philosophy · App-wide</span></div></div><div style="border-top: 1.2px dotted rgba(244, 241, 236, 0.35); padding-top: 10px; display: flex; justify-content: space-between; align-items: center; gap: 12px; white-space: nowrap;"><span style="display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-sans); font-size: 14px; font-weight: 600; color: rgb(183, 148, 232);"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg><span>Read case study →</span></span><span style="font-family: var(--font-sans); font-size: 12.5px; opacity: 0.6;"><span class="sc-interp">Led the team</span></span></div></a>
+          
+          
+        
+          
+          <a class="cs-card" href="/case-studies/upstox-3.html" style="display: flex; flex-direction: column; box-sizing: border-box; background: rgba(244, 241, 236, 0.06); border: 1px solid rgba(244, 241, 236, 0.14); border-radius: 4px; padding: 20px; text-decoration: none; color: inherit; min-height: clamp(460px, 60svh, 560px);"><div style="position: relative; overflow: hidden; border-radius: 4px; background: rgba(244, 241, 236, 0.08); display: flex; align-items: center; justify-content: center; padding: 24px; box-sizing: border-box; flex: 1 1 180px; min-height: 160px; height: auto;"><div role="img" aria-label="Buy insurance" style="position: absolute; inset: 0px; background-image: url(&quot;/assets/img/thumb-insurance-dark.webp&quot;); background-size: cover; background-position: center center;"></div></div><div style="margin-top: auto; padding-top: 20px;"><h3 style="font-family: var(--font-serif); font-size: 20px; font-weight: 700; line-height: 1.25; margin: 0px 0px 10px; color: rgb(244, 241, 236);"><span class="sc-interp">Buy insurance</span></h3><p style="font-family: var(--font-sans); font-size: 14px; line-height: 1.6; color: rgba(244, 241, 236, 0.7); margin: 0px 0px 14px; text-wrap: pretty;"><span class="sc-interp">Building a curated marketplace for life, health and motor insurance.</span></p><div style="font-family: var(--font-sans); font-size: 12.5px; opacity: 0.6; margin-bottom: 4px;"><span class="sc-interp">Aug 2024</span></div><div style="font-family: var(--font-sans); font-size: 12.5px; opacity: 0.6; margin-bottom: 16px;"><span class="sc-interp">0→1 launch · New business line</span></div></div><div style="border-top: 1.2px dotted rgba(244, 241, 236, 0.35); padding-top: 10px; display: flex; justify-content: space-between; align-items: center; gap: 12px; white-space: nowrap;"><span style="display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-sans); font-size: 14px; font-weight: 600; color: rgb(183, 148, 232);"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg><span>Read case study →</span></span><span style="font-family: var(--font-sans); font-size: 12.5px; opacity: 0.6;"><span class="sc-interp">Led the team</span></span></div></a>
+          
+          
+        
+      </div>
+      <p style="font-family: var(--font-sans); font-size: 13.5px; opacity: 0.6; margin: 24px 0px 0px;">Locked case studies are password protected. <a href="/index.html#contact" style="color: inherit; text-decoration: underline;">Message me</a> and I'll send you access.</p>
+    </section>
+
+  </div></div></div></div>
+<script>(function(){var p=document.getElementById("dc-prerender");if(p)p.remove();})();</script>
+<div data-bundle-assets="" aria-hidden="true" hidden=""><img src="/assets/img/thumb-account-opening-dark.webp" alt="" loading="lazy"><img src="/assets/img/thumb-simplifying-finance-dark.webp" alt="" loading="lazy"><img src="/assets/img/thumb-insurance-dark.webp" alt="" loading="lazy"><img src="/assets/img/icon-arrow-outward-light.svg" alt="" loading="lazy"><img src="/assets/img/icon-arrow-outward-dark.svg" alt="" loading="lazy"></div>
 <script type="text/x-dc" data-dc-script="" data-props="{&quot;$preview&quot;: {&quot;width&quot;: &quot;1400px&quot;, &quot;height&quot;: &quot;900px&quot;}, &quot;includedLayout&quot;: {&quot;editor&quot;: &quot;enum&quot;, &quot;options&quot;: [&quot;explorer&quot;, &quot;ledger&quot;, &quot;mosaic&quot;], &quot;default&quot;: &quot;explorer&quot;, &quot;tsType&quot;: &quot;'explorer' | 'ledger' | 'mosaic'&quot;, &quot;section&quot;: &quot;What's included&quot;}}">
 class Component extends DCLogic {
   state = { hlOpen: 0, menuOpen: false, theme: "light", vid: false, inHero: false, handMissing: false, pod: 0, podOut: false, podHov: -1, acc: 0 };
@@ -2478,7 +5020,7 @@ class Component extends DCLogic {
     const vals = {
       year,
       showSidebar: !mobile,
-      showHamburger: mobile,
+      showHamburger: mobile, hdrTheme: this.state.theme || "light",
       menuOpen: mobile && this.state.menuOpen,
       toggleMenu: () => this.setState(s => ({ menuOpen: !s.menuOpen })),
       closeMenu: () => this.setState({ menuOpen: false }),
@@ -2593,7 +5135,7 @@ class Component extends DCLogic {
           tg,
           noVideo: !this.state.vid, vidOpacity: this.state.vid ? 1 : 0, vidLoaded: () => this.setState({ vid: true }),
           handErr: () => this.setState({ handMissing: true }),
-          hh: (() => { const W = window.innerWidth, m = W < 700, on = this.state.inHero, rm = this._rm, miss = this.state.handMissing; const tr = d => rm ? "none" : "opacity .9s cubic-bezier(0.22,1,0.36,1) " + d + ", transform .9s cubic-bezier(0.22,1,0.36,1) " + d; const p = m ? "20px" : W < 980 ? "32px" : "60px"; return {
+          hh: (() => { const W = window.innerWidth, m = W < 700, on = this.state.inHero, rm = this._rm, miss = this.state.handMissing; const tr = d => rm ? "none" : "opacity .5s cubic-bezier(0.22,1,0.36,1) " + d + ", transform .5s cubic-bezier(0.22,1,0.36,1) " + d; const p = m ? "20px" : W < 980 ? "32px" : "60px"; return {
             sec: { position: "relative", minHeight: "100svh", scrollSnapAlign: "start", scrollSnapStop: "always", boxSizing: "border-box", overflow: "hidden", background: "var(--paper)", display: m ? "flex" : "grid", flexDirection: "column", gridTemplateColumns: "minmax(0,1fr) minmax(0,1fr)", alignItems: m ? "stretch" : "center", padding: m ? "88px " + p + " 0" : "0 " + p },
             textCol: { display: "flex", flexDirection: "column", minWidth: 0, gridColumn: m ? "auto" : 2, paddingLeft: m ? 0 : W < 980 ? "32px" : "72px", opacity: on || rm ? 1 : 0, transform: on || rm ? "none" : "translateY(40px)", transition: tr(".2s") },
             h1: { fontFamily: "var(--font-serif)", fontSize: m ? "56px" : "72px", fontWeight: 600, lineHeight: 1.02, letterSpacing: "-0.03em", color: "var(--ink)", margin: 0 },
@@ -2633,7 +5175,7 @@ class Component extends DCLogic {
               podSel: P[cur], podCard: { idx: String(cur + 1).padStart(2, "0"), isMobile: cur === 1, isDesktop: cur === 2, rows: ([[], [["Team", "Me + 1 designer"]], [["Team", "4 designers"], ["Structure", "1 manager, 3 juniors"]]][cur] || []).map(([label, value], k) => ({ label, value, bt: k ? "1px solid rgba(255,255,255,.12)" : "none" })) }, isInvestPod: cur === 0, notInvestPod: cur !== 0,
               ...(() => {
                 const m = window.innerWidth < 700, rm = this._rm, act = this.state.acc; const AW = this.state.accW || 640; const sPx = Math.max(28, Math.min(Math.max(44, Math.min(76, window.innerWidth * 0.042)), (AW - 64 - 320) / 8)); const oPx = Math.max(320, AW - 64 - 8 * sPx);
-                const D = [["Stocks","Designed discovering, buying and tracking stocks, with clear signals on risk so first-time investors knew what they were buying.",[["Monthly active traders","11×"],["Orders grew","13×"]],"Mar 2022"],["Mutual Funds","Designed mutual fund investing around goals, not fund jargon: discovery, SIPs and portfolio tracking.",[["Monthly mutual fund investors","9×"],["Orders grew","8.8×"],["SIP orders grew","5.8×"]],"Sep 2022"],["Insurance","Designed discovery and purchase across motor, health and term life, with plain-language comparisons of cover and cost.",[["Policies issued grew","3.1×"],["Insurance lines","3"]],"Sep – Dec 2024"],["Loans","Designed borrowing against mutual funds, showing exactly what's at stake before people pledge their holdings.",[["Loan lines","2"]],"Aug 2025"],["IPO","Redesigned the existing IPO flow to make applying simpler and cut support load.",[["Reduce support tickets","−80%"],["Grow IPO revenue","3×"],["Active users applying per IPO","10%"]],"Jun 2024"],["Gold","One place for users to buy gold as SGBs, ETFs or mutual funds, and learn which one fits their goal.",[["Users ordering gold ETFs","+86%"],["Design to release","2 weeks"]],"Jun 2023"],["Bonds","Helping users invest in bonds, a stable fixed-income option, inside the Invest app.",[["Bond types available","4"]],"Aug 2024"],["Fixed Deposits","Helping users compare fixed deposit rates across banks and invest in NCDs, with calculators to plan their returns.",[["Banks compared","10+"],["NCD partners integrated","3"],["Calculators built","2"]],"Nov 2023"],["NPS","Helping users invest in the National Pension System and plan for retirement inside the Invest app.",[],"Sep 2025"]];
+                const D = [["Stocks","Designed discovering, buying and tracking stocks, with clear signals on risk so first-time investors knew what they were buying.",[["Monthly active traders grew","11×"],["Orders grew","13×"]],"Mar 2022"],["Mutual Funds","Designed mutual fund investing around goals, not fund jargon: discovery, SIPs and portfolio tracking.",[["Monthly MF investors grew","9×"],["Orders grew","8.8×"],["SIP orders grew","5.8×"]],"Sep 2022"],["Insurance","Designed discovery and purchase across motor, health and term life, with plain-language comparisons of cover and cost.",[["Policies issued grew","3.1×"],["Insurance lines","3"]],"Sep – Dec 2024"],["Loans","Designed borrowing against mutual funds, showing exactly what's at stake before people pledge their holdings.",[["Loan lines","2"]],"Aug 2025"],["IPO","Redesigned the existing IPO flow to make applying simpler and cut support load.",[["Support tickets dropped","−80%"],["IPO revenue grew","3×"],["Active users applying per IPO","10%"]],"Jun 2024"],["Gold","One place for users to buy gold as SGBs, ETFs or mutual funds, and learn which one fits their goal.",[["Gold ETF buyers grew","+86%"],["Design to release","2 weeks"]],"Jun 2023"],["Bonds","Helping users invest in bonds, a stable fixed-income option, inside the Invest app.",[["Bond types available","4"]],"Aug 2024"],["Fixed Deposits","Helping users compare fixed deposit rates across banks and invest in NCDs, with calculators to plan their returns.",[["Banks compared","10+"],["NCD partners integrated","3"],["Calculators built","2"]],"Nov 2023"],["NPS","Helping users invest in the National Pension System and plan for retirement inside the Invest app.",[],"Sep 2025"]];
                 const ease = "cubic-bezier(.65,0,.35,1)";
                 return { accRef: this.accRef, accPause: () => { this._accHover = true; }, accResume: () => { this._accHover = false; }, accPrev: () => { if (act > 0) this.accGo(act - 1); }, accNext: () => this.accGo(act === 8 ? 0 : act + 1), accPrevOp: act === 0 ? 0.35 : 1, accDots: D.map((_, i) => ({ i, label: "Go to product " + (i + 1), onClick: () => this.accGo(i) })),
                 accCards: D.map(([name, desc, st, rel], i) => { const on = m || i === act; return {
@@ -2716,9 +5258,9 @@ class Component extends DCLogic {
       ],
       
       caseStudies: [
-        { id: "case-1", title: "Opening Demat account", summary: "Rebuilding the account opening flow to cut errors, lift conversion and make every step modular.", tags: ["Growth funnel", "Cross-team"], date: "Jan 2025", role: "Leader + hands-on", tags: ["Growth funnel", "Cross-team"], meta: "", href: "/case-studies/upstox-1.html", image: "/assets/img/thumb-account-opening-dark.png" },
-        { id: "case-2", title: "Simplifying finance", summary: "Bringing one philosophy to every screen in the app, so people of any financial confidence can invest with clarity.", tags: ["Design philosophy", "App-wide"], date: "Jan 2022 – Dec 2025", role: "Led the team", meta: "", href: "/case-studies/upstox-2.html", image: "/assets/img/thumb-simplifying-finance-dark.png" },
-        { id: "case-3", title: "Buy insurance", summary: "Building a curated marketplace for life, health and motor insurance.", tags: ["0→1 launch", "New business line"], date: "Aug 2024", role: "Led the team", meta: "", href: "/case-studies/upstox-3.html", image: "/assets/img/thumb-insurance-dark.png" }
+        { id: "case-1", title: "Opening Demat account", summary: "Rebuilding the account opening flow to cut errors, lift conversion and make every step modular.", tags: ["Growth funnel", "Cross-team"], date: "Jan 2025", role: "Leader + hands-on", tags: ["Growth funnel", "Cross-team"], meta: "", href: "/case-studies/upstox-1.html", image: "/assets/img/thumb-account-opening-dark.webp" },
+        { id: "case-2", title: "Simplifying finance", summary: "Bringing one philosophy to every screen in the app, so people of any financial confidence can invest with clarity.", tags: ["Design philosophy", "App-wide"], date: "Jan 2022 – Dec 2025", role: "Led the team", meta: "", href: "/case-studies/upstox-2.html", image: "/assets/img/thumb-simplifying-finance-dark.webp" },
+        { id: "case-3", title: "Buy insurance", summary: "Building a curated marketplace for life, health and motor insurance.", tags: ["0→1 launch", "New business line"], date: "Aug 2024", role: "Led the team", meta: "", href: "/case-studies/upstox-3.html", image: "/assets/img/thumb-insurance-dark.webp" }
       ]
     };
     vals.caseStudies = vals.caseStudies.map(c => ({ ...c, tagLine: c.tags.join(" · "), soon: !c.href, locked: !!c.href && !c.unlocked, noImage: !c.image, imgStyle: c.image ? { position: "absolute", inset: 0, backgroundImage: `url("${c.image}")`, backgroundSize: "cover", backgroundPosition: "center" } : null }));
