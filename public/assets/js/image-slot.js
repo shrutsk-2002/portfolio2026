@@ -171,7 +171,8 @@
 
   function load() {
     if (loadP) return loadP;
-    loadP = fetch(STATE_FILE)
+    // Outside Claude Design every slot already has its src, so skip the sidecar lookup (avoids a 404).
+    loadP = (window.omelette ? fetch(STATE_FILE) : Promise.resolve({ ok: false }))
       .then((r) => (r.ok ? r.json() : null))
       .then((j) => {
         // Merge: sidecar loses to any in-memory change that raced ahead of
