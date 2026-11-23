@@ -4673,7 +4673,7 @@ hr {
             
             
               <div style="display: flex; flex-direction: column; flex: 1 1 0%; min-height: 0px; gap: 16px;">
-              <div data-noscroll="" style="display: flex; gap: 8px; flex: 1 1 0%; min-width: 0px; overflow: hidden; min-height: 0px; outline: none;">
+              <div data-noscroll="" style="display: flex; gap: 8px; flex: 1 1 0%; min-width: 0px; overflow: hidden; min-height: 410px; outline: none;">
                 
                   <div role="button" class="scp1" style="flex: 0 0 320px; min-width: 0px; box-sizing: border-box; border-radius: 16px; overflow: hidden; position: relative; cursor: default; scroll-snap-align: start; background: rgba(255, 255, 255, 0.08); border: 1px solid transparent; transition: flex-basis 700ms cubic-bezier(0.22, 1, 0.36, 1), background 0.25s; will-change: flex-basis;">
                     <div style="position: absolute; inset: 0px; display: flex; flex-direction: column; align-items: center; padding: 16px 0px; opacity: 0; pointer-events: none; transition: opacity 0.15s;">
@@ -4876,7 +4876,7 @@ hr {
                 <button aria-label="Previous product" class="scp2 scp3" style="width: 32px; height: 32px; padding: 0px; border: 0px; background: transparent; color: rgb(244, 241, 236); display: flex; align-items: center; justify-content: center; cursor: pointer; opacity: 0.35; transition: opacity 200ms, transform 120ms;"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" style="display: block;"><path d="M13 8H3M7 4L3 8l4 4"></path></svg></button>
                 <div style="flex: 1 1 0%; display: flex; gap: 4px;">
                   
-                    <button aria-label="Go to product 1" style="position: relative; flex: 1 1 0%; height: 3px; padding: 0px; border: 0px; border-radius: 0px; overflow: hidden; cursor: pointer; background: rgba(244, 241, 236, 0.2);"><span data-acc-fill="0" style="position: absolute; left: 0px; top: 0px; bottom: 0px; background: rgb(244, 241, 236); width: 41.1111%;"></span></button>
+                    <button aria-label="Go to product 1" style="position: relative; flex: 1 1 0%; height: 3px; padding: 0px; border: 0px; border-radius: 0px; overflow: hidden; cursor: pointer; background: rgba(244, 241, 236, 0.2);"><span data-acc-fill="0" style="position: absolute; left: 0px; top: 0px; bottom: 0px; background: rgb(244, 241, 236); width: 42.5911%;"></span></button>
                   
                     <button aria-label="Go to product 2" style="position: relative; flex: 1 1 0%; height: 3px; padding: 0px; border: 0px; border-radius: 0px; overflow: hidden; cursor: pointer; background: rgba(244, 241, 236, 0.2);"><span data-acc-fill="1" style="position: absolute; left: 0px; top: 0px; bottom: 0px; background: rgb(244, 241, 236); width: 0%;"></span></button>
                   
@@ -5158,7 +5158,7 @@ class Component extends DCLogic {
             cardRight: { flex: 1, minWidth: 0, minHeight: window.innerWidth < 1100 ? "320px" : 0, display: "flex", alignItems: this.state.pod === 1 ? "stretch" : "center", justifyContent: "center", overflow: "hidden" },
             rowsWrap: m ? { marginTop: "24px", display: "flex", gap: "8px", overflowX: "auto", paddingBottom: "4px", scrollbarWidth: "none", msOverflowStyle: "none" } : { marginTop: "32px" },
             ctl: { display: m ? "none" : "flex", alignItems: "center", gap: "16px", maxWidth: "480px", width: "100%", margin: "0 auto" },
-            acc: { display: "flex", gap: "8px", flex: 1, minWidth: 0, ...(m ? {} : { overflow: "hidden" }), minHeight: m ? "440px" : 0, outline: "none", ...(m ? { overflowX: "auto", scrollSnapType: "x mandatory", paddingBottom: "8px", scrollbarWidth: "none" } : {}) },
+            acc: { display: "flex", gap: "8px", flex: 1, minWidth: 0, ...(m ? {} : { overflow: "hidden" }), minHeight: m ? "440px" : "410px", outline: "none", ...(m ? { overflowX: "auto", scrollSnapType: "x mandatory", paddingBottom: "8px", scrollbarWidth: "none" } : {}) },
             panel: { display: "flex", flexDirection: "column", flex: 1, borderRadius: "16px", border: "1px solid rgba(255,255,255,.1)", background: "rgba(255,255,255,.04)", padding: "36px", boxSizing: "border-box", minWidth: 0 },
             fade: { display: "flex", flexDirection: "column", flex: 1, opacity: this.state.podOut ? 0 : 1, transition: "opacity .25s ease" },
             nine: { marginTop: "28px", paddingBottom: "20px", display: "grid", gridTemplateColumns: m ? "repeat(2, minmax(0,1fr))" : "repeat(3, minmax(0,1fr))", gap: "8px" }
