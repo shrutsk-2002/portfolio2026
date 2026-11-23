@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /case-studies/
+Disallow: /api/
+
+Sitemap: https://www.shruti-kalamdani.com/sitemap.xml
