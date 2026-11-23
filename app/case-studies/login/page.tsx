@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Private case study | Shruti Kalamdani",
+  description: "This case study is password protected. Ask Shruti for access.",
+  robots: { index: false, follow: false },
+};
+
 export default function LoginPage({
   searchParams,
 }: {
